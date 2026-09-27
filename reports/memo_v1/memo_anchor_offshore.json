@@ -1,0 +1,342 @@
+{
+  "facts": [
+    {
+      "section": "financials",
+      "key": "revenue_fy26",
+      "question": "What was revenue from operations in Fiscal 2026?",
+      "found": true,
+      "answer": "1,058.27",
+      "value": 1058.27,
+      "unit": "₹ million",
+      "crore": 105.83,
+      "page": 355,
+      "quote": "Total 1,058.27 1,399.89 1,179.04",
+      "cost_usd": 0.000384,
+      "latency_s": 2.12
+    },
+    {
+      "section": "financials",
+      "key": "revenue_fy25",
+      "question": "What was revenue from operations in Fiscal 2025?",
+      "found": true,
+      "answer": "1,399.89",
+      "value": 1399.89,
+      "unit": "₹ million",
+      "crore": 139.99,
+      "page": 355,
+      "quote": "Total 1,058.27 1,399.89 1,179.04",
+      "cost_usd": 0.000355,
+      "latency_s": 1.41
+    },
+    {
+      "section": "financials",
+      "key": "revenue_fy24",
+      "question": "What was revenue from operations in Fiscal 2024?",
+      "found": true,
+      "answer": "1,179.04",
+      "value": 1179.04,
+      "unit": "₹ million",
+      "crore": 117.9,
+      "page": 355,
+      "quote": "Total 1,058.27 1,399.89 1,179.04",
+      "cost_usd": 0.000344,
+      "latency_s": 1.49
+    },
+    {
+      "section": "financials",
+      "key": "pat_fy26",
+      "question": "What was the restated profit or loss after tax for Fiscal 2026?",
+      "found": true,
+      "answer": "80.35",
+      "value": 80.35,
+      "unit": "₹ million",
+      "crore": 8.04,
+      "page": 80,
+      "quote": "Restated profit/(loss) for the year (G = E-F) 80.35 128.86 (67.09)",
+      "cost_usd": 0.000383,
+      "latency_s": 106.78
+    },
+    {
+      "section": "financials",
+      "key": "pat_fy25",
+      "question": "What was the restated profit or loss after tax for Fiscal 2025?",
+      "found": true,
+      "answer": "128.86 million",
+      "value": 128.86,
+      "unit": "₹ million",
+      "crore": 12.89,
+      "page": 80,
+      "quote": "Restated profit/(loss) for the year (G = E-F) 80.35 128.86 (67.09)",
+      "cost_usd": 0.000384,
+      "latency_s": 1.98
+    },
+    {
+      "section": "financials",
+      "key": "pbt_fy26",
+      "question": "What was the restated profit or loss before tax for Fiscal 2026?",
+      "found": true,
+      "answer": "The restated profit before tax for Fiscal 2026 was 117.36 million.",
+      "value": 117.36,
+      "unit": "₹ million",
+      "crore": 11.74,
+      "page": 80,
+      "quote": "Restated profit before tax (E = C+D) 117.36 163.15 45.60",
+      "cost_usd": 0.000384,
+      "latency_s": 103.27
+    },
+    {
+      "section": "financials",
+      "key": "finance_costs_fy26",
+      "question": "What were the finance costs in Fiscal 2026?",
+      "found": true,
+      "answer": "23.46",
+      "value": 23.46,
+      "unit": "₹ million",
+      "crore": 2.35,
+      "page": 310,
+      "quote": "Total 23.46 21.69 22.77",
+      "cost_usd": 0.000339,
+      "latency_s": 1.69
+    },
+    {
+      "section": "leverage",
+      "key": "equity_fy26",
+      "question": "What was total equity as at March 31, 2026?",
+      "found": true,
+      "answer": "1,304.25",
+      "value": 1304.25,
+      "unit": "₹ million",
+      "crore": 130.43,
+      "page": 326,
+      "quote": "Total equity as per the restated consolidated \nstatement of assets and liabilities\n 1,304.25 914.04 785.95",
+      "cost_usd": 0.000367,
+      "latency_s": 2.18
+    },
+    {
+      "section": "leverage",
+      "key": "current_borrowings_fy26",
+      "question": "What were current borrowings as at March 31, 2026?",
+      "found": true,
+      "answer": "153.96",
+      "value": 153.96,
+      "unit": "₹ million",
+      "crore": 15.4,
+      "page": 305,
+      "quote": "Total 153.96 238.71 197.57",
+      "cost_usd": 0.000379,
+      "latency_s": 1.58
+    },
+    {
+      "section": "leverage",
+      "key": "noncurrent_borrowings_fy26",
+      "question": "What were non-current borrowings as at March 31, 2026?",
+      "found": false,
+      "answer": "",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": null,
+      "quote": null,
+      "cost_usd": 0.000287,
+      "latency_s": 112.35
+    },
+    {
+      "section": "leverage",
+      "key": "receivables_fy26",
+      "question": "What were trade receivables as at March 31, 2026?",
+      "found": true,
+      "answer": "687.19",
+      "value": 687.19,
+      "unit": "₹ million",
+      "crore": 68.72,
+      "page": 303,
+      "quote": "Trade receivables considered good - unsecured 687.19 399.96 452.55",
+      "cost_usd": 0.000358,
+      "latency_s": 17.45
+    },
+    {
+      "section": "leverage",
+      "key": "receivables_fy25",
+      "question": "What were trade receivables as at March 31, 2025?",
+      "found": true,
+      "answer": "399.96",
+      "value": 399.96,
+      "unit": "₹ million",
+      "crore": 40.0,
+      "page": 303,
+      "quote": "Trade receivables considered good - unsecured 687.19 399.96 452.55",
+      "cost_usd": 0.000358,
+      "latency_s": 1.53
+    },
+    {
+      "section": "leverage",
+      "key": "inventories_fy26",
+      "question": "What were inventories as at March 31, 2026?",
+      "found": false,
+      "answer": "",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": null,
+      "quote": null,
+      "cost_usd": 0.000299,
+      "latency_s": 1.75
+    },
+    {
+      "section": "leverage",
+      "key": "inventories_fy25",
+      "question": "What were inventories as at March 31, 2025?",
+      "found": false,
+      "answer": "",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": null,
+      "quote": null,
+      "cost_usd": 0.000308,
+      "latency_s": 1.33
+    },
+    {
+      "section": "litigation",
+      "key": "litigation_against_company",
+      "question": "What is the aggregate amount involved in outstanding litigation against the Company?",
+      "found": true,
+      "answer": "49.71",
+      "value": 49.71,
+      "unit": "₹ million",
+      "crore": 4.97,
+      "page": 47,
+      "quote": "By our Company \nNil 3 Nil N.A. \n \n2 49.71",
+      "cost_usd": 0.000643,
+      "latency_s": 3.32
+    },
+    {
+      "section": "litigation",
+      "key": "criminal_against_promoters",
+      "question": "How many criminal proceedings are pending against the Promoters?",
+      "found": true,
+      "answer": "There are NIL criminal proceedings pending against the Promoters.",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": 374,
+      "quote": "II. Litigation involving our Promoters\n\nLitigation against our Promoters\n\nCriminal Litigations\n\nNIL\n\nActions taken by regulatory/statutory authorities\n\nNIL\n\nOther Material Litigation\n\nNIL\n\nLitigation by our Promoters\n\nCriminal Litigation\n\nNIL",
+      "cost_usd": 0.000351,
+      "latency_s": 1.81
+    },
+    {
+      "section": "litigation",
+      "key": "litigation_against_promoters",
+      "question": "How many material civil litigations are pending against the Promoters?",
+      "found": false,
+      "answer": "Not verified: the value 0.0 does not appear in the quote.",
+      "value": 0.0,
+      "unit": "₹ million",
+      "crore": null,
+      "page": 374,
+      "quote": "II. Litigation involving our Promoters \n \nLitigation against our Promoters \n \nCriminal Litigations \n \nNIL \n \nActions taken by regulatory/statutory authorities \n \nNIL \n \nOther Material Litigation \n \nNIL \n \nLitigation by our Promoters \n \nCriminal Litigation \n \nNIL \n \nOther Material Litigation \n \nNIL",
+      "cost_usd": 0.000693,
+      "latency_s": 72.49
+    },
+    {
+      "section": "offer",
+      "key": "promoters",
+      "question": "Who are the promoters of the company?",
+      "found": true,
+      "answer": "The Promoters of our Company are Narothamdas Chanillo, Sujata N Chanillo and Siddesh N Chanillo.",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": 7,
+      "quote": "“Promoters” The Promoters of our Company namely, Narothamdas Chanillo, Sujata N Chanillo and Siddesh N Chanillo.",
+      "cost_usd": 0.000305,
+      "latency_s": 1.5
+    },
+    {
+      "section": "offer",
+      "key": "fresh_issue",
+      "question": "What is the size of the fresh issue?",
+      "found": false,
+      "answer": "",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": null,
+      "quote": null,
+      "cost_usd": 0.000313,
+      "latency_s": 112.73
+    },
+    {
+      "section": "offer",
+      "key": "offer_for_sale",
+      "question": "How many equity shares are offered in the offer for sale by selling shareholders?",
+      "found": true,
+      "answer": "Up to 6,00,000 equity shares are offered in the offer for sale by selling shareholders.",
+      "value": 600000.0,
+      "unit": "Equity Shares",
+      "crore": null,
+      "page": 75,
+      "quote": "Offer for Sale(2) Up to 6,00,000 Equity Shares of face value of ₹ 10 each aggregating up to ₹ [●] million by the Promoter Selling Shareholders",
+      "cost_usd": 0.000326,
+      "latency_s": 2.77
+    },
+    {
+      "section": "offer",
+      "key": "objects",
+      "question": "What are the objects of the issue, i.e. how will the fresh issue proceeds be used?",
+      "found": true,
+      "answer": "Funding long-term working capital requirements of our Company; Repayment/pre-payment, in full, of a borrowing availed by our Company; and General corporate purposes.",
+      "value": null,
+      "unit": null,
+      "crore": null,
+      "page": 122,
+      "quote": "a. Funding long-term working capital requirements of our Company;\nb. Repayment/pre-payment, in full, of a borrowing availed by our Company; and\nc. General corporate purposes.",
+      "cost_usd": 0.000322,
+      "latency_s": 1.84
+    }
+  ],
+  "flags": [
+    {
+      "rule": "Revenue decline",
+      "detail": "Revenue fell 24.4% from Fiscal 2025 to Fiscal 2026.",
+      "severity": "high",
+      "pages": [
+        355
+      ]
+    },
+    {
+      "rule": "Trade receivables outgrowing revenue",
+      "detail": "Trade receivables grew 71.8% vs revenue -24.4%: check collection / stock build-up.",
+      "severity": "medium",
+      "pages": [
+        303,
+        355
+      ]
+    },
+    {
+      "rule": "Selling shareholders",
+      "detail": "Part of the IPO is an offer for sale: Up to 6,00,000 equity shares are offered in the offer for sale by selling shareholders.",
+      "severity": "info",
+      "pages": [
+        75
+      ]
+    }
+  ],
+  "memo": {
+    "headline": "Investment Diligence Memo: Anchor Offshore Services Limited",
+    "summary": "Anchor Offshore Services Limited operates in the marine and offshore engineering services sector, led by promoters Narothamdas Chanillo, Sujata N Chanillo, and Siddesh N Chanillo [p. 7]. For Fiscal 2026, the company reported revenue of 1,058.27 million (₹105.83 crore) compared to 1,399.89 million (₹139.99 crore) in Fiscal 2025 and 1,179.04 million (₹117.90 crore) in Fiscal 2024 [p. 355]. Profit after tax for Fiscal 2026 stood at 80.35 million (₹8.04 crore) down from 128.86 million (₹12.89 crore) in Fiscal 2025 [p. 80]. Total equity as of Fiscal 2026 was recorded at 1,304.25 million (₹130.43 crore) with current borrowings at 153.96 million (₹15.40 crore) [p. 305, p. 326]. The proposed offering includes an offer for sale of up to 6,00,000 equity shares by selling shareholders [p. 75].",
+    "red_flags": [
+      "Revenue fell 24.4% from Fiscal 2025 to Fiscal 2026 [p. 355].",
+      "Trade receivables grew 71.8% to 687.19 million (₹68.72 crore) in Fiscal 2026 from 399.96 million (₹40.00 crore) in Fiscal 2025 despite falling revenue [p. 303, p. 355].",
+      "Part of the IPO is an offer for sale of up to 6,00,000 equity shares by selling shareholders [p. 75]."
+    ],
+    "questions_for_management": [
+      "What were the primary drivers behind the 24.4% decline in revenue from 1,399.89 million (₹139.99 crore) in Fiscal 2025 to 1,058.27 million (₹105.83 crore) in Fiscal 2026 [p. 355]?",
+      "Why did trade receivables increase significantly to 687.19 million (₹68.72 crore) in Fiscal 2026 from 399.96 million (₹39.99 crore) in Fiscal 2025 while revenues dropped [p. 303, p. 355]?",
+      "What is the expected realization timeline for the outstanding trade receivables of 687.19 million (₹68.72 crore) recorded in Fiscal 2026 [p. 303]?",
+      "Can management provide details regarding the ongoing litigation against the company amounting to 49.71 million (₹4.97 crore) [p. 47]?",
+      "How does the company plan to allocate the proceeds between funding long-term working capital requirements and the repayment or pre-payment of borrowings [p. 122]?"
+    ]
+  },
+  "dropped": []
+}

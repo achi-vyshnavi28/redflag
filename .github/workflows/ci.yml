@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t redflag .
+      - name: API starts and answers health check (no API key needed)
+        run: |
+          docker run -d -p 8900:8900 -e REDFLAG_SKIP_SETUP=1 --name rf redflag
+          for i in $(seq 1 30); do curl -sf localhost:8900/health && exit 0; sleep 2; done
+          docker logs rf; exit 1
