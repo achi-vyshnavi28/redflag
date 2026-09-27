@@ -40,8 +40,16 @@ with ask_tab:
         from redflag.ingest import load_pages
         from redflag.qa import ask
 
-        with st.spinner("Retrieving, extracting and checking the citation..."):
-            r = ask(q, doc)
+        from redflag.llm import MissingKey
+
+        try:
+            with st.spinner("Retrieving, extracting and checking the citation..."):
+                r = ask(q, doc)
+        except MissingKey:
+            st.info("This question isn't in the demo's saved answers, and no model API key is configured on this deployment. "
+                    "Try one of the example questions above, or see the Red-flag memo and reliability tabs. "
+                    "(Owner: add GEMINI_API_KEY under the app's Settings → Secrets.)")
+            st.stop()
         if r["found"]:
             st.success(r["answer"])
             c1, c2, c3 = st.columns(3)
