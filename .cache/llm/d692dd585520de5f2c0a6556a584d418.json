@@ -1,0 +1,1 @@
+{"out": {"found": false, "answer": "", "value": null, "unit": null, "page": null, "quote": null, "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 36.74, "tokens_in": 2629, "tokens_out": 64, "cost_usd": 0.0008, "cached": false}}

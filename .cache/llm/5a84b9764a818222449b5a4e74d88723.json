@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "6,00,000", "value": 600000.0, "unit": "Equity Shares", "page": 122, "quote": "Offer for Sale of up to 6,00,000 Equity Shares of face value of \u20b910 each", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 36.82, "tokens_in": 2679, "tokens_out": 111, "cost_usd": 0.000842, "cached": false}}

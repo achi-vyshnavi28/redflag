@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Trade receivables as at March 31, 2026 were \u20b9\u202f720.97\u202fmillion.", "value": 720.97, "unit": "\u20b9 million", "page": 303, "quote": "720.97 433.71 484.36", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 21.92, "tokens_in": 2617, "tokens_out": 397, "cost_usd": 0.000631, "cached": false}}

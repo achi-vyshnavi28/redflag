@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,399.89", "value": 1399.89, "unit": "\u20b9 million", "page": 309, "quote": "Total 1,058.27 1,399.89 1,179.04", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 36.93, "tokens_in": 3013, "tokens_out": 114, "cost_usd": 0.000941, "cached": false}}

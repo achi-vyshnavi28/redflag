@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 data/raw/
-data/index/
+data/index/qdrant_minilm/
+data/index/qdrant_gemini/
+*.lock
 .env
-.cache/
+.streamlit/secrets.toml

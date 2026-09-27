@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "44,401.61", "value": 44401.61, "unit": "\u20b9 lakhs", "page": 350, "quote": "Revenue from Operations 24 44,401.61 33,956.36 23,925.12", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 36.95, "tokens_in": 3611, "tokens_out": 125, "cost_usd": 0.001121, "cached": false}}

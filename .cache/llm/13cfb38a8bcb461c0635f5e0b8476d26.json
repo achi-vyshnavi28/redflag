@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b9 1,058.27 million", "value": 1058.27, "unit": "\u20b9 million", "page": 283, "quote": "Revenue from operations 1,058.27", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 13.94, "tokens_in": 2370, "tokens_out": 466, "cost_usd": 0.000635, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b9 25,272.88 lakhs", "value": 25272.88, "unit": "\u20b9 lakhs", "page": 424, "quote": "C. Total Secured (C) = (A)+(B) 27,445.94 25,272.88", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 8.61, "tokens_in": 2194, "tokens_out": 127, "cost_usd": 0.000711, "cached": false}}

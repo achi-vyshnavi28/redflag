@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Total Equity 1,861.46", "value": 1861.46, "unit": null, "page": 375, "quote": "Total Equity 1,861.46", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 22.13, "tokens_in": 2479, "tokens_out": 514, "cost_usd": 0.00068, "cached": false}}

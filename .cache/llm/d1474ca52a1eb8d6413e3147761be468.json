@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "153.96", "value": 153.96, "unit": "\u20b9 million", "page": 79, "quote": "i) Borrowings 153.96 238.71 197.57", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.8, "tokens_in": 2918, "tokens_out": 100, "cost_usd": 0.000332, "cached": false}}

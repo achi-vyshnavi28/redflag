@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Nil", "value": 0.0, "unit": "\u20b9 million", "page": 50, "quote": "Promoters\nBy the Promoters Nil N/A N/A N/A Nil Nil\nAgainst the Promoters Nil Nil Nil Nil 1 9.28", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 21.08, "tokens_in": 2859, "tokens_out": 102, "cost_usd": 0.000327, "cached": false}}

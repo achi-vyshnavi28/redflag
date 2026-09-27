@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b9 708.16 lakhs", "value": 708.16, "unit": "\u20b9 lakhs", "page": 474, "quote": "Finance Costs 1,222.48 708.16 72.63%", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 37.13, "tokens_in": 3157, "tokens_out": 112, "cost_usd": 0.000982, "cached": false}}

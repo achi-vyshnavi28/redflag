@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,861.46", "value": 1861.46, "unit": "\u20b9 million", "page": 375, "quote": "Total Equity 1,861.46 947.10 2,013.71", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 36.88, "tokens_in": 3029, "tokens_out": 112, "cost_usd": 0.000944, "cached": false}}

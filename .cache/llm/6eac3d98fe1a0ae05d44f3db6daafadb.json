@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "2,849.62", "value": 2849.62, "unit": "INR millions", "page": 344, "quote": "Total 2,849.62 1,410.84 1,212.78", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 36.89, "tokens_in": 3543, "tokens_out": 109, "cost_usd": 0.001092, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "11,789.73", "value": 11789.73, "unit": "\u20b9 in lakhs", "page": 467, "quote": "Total Equity (\u20b9 in\nlakhs) (A)\n11,789.73", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.61, "tokens_in": 2800, "tokens_out": 91, "cost_usd": 0.000316, "cached": false}}

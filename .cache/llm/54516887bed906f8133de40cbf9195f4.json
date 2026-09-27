@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "9,595.12", "value": 9595.12, "unit": "\u20b9 million", "page": 399, "quote": "Revenue from operations 12,937.67 97.71% 9,595.12 95.89% 7,969.76 96.49%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.91, "tokens_in": 3032, "tokens_out": 130, "cost_usd": 0.000355, "cached": false}}

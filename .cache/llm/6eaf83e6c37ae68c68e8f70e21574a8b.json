@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Total equity as at March 31, 2026 was 11,789.73", "value": 11789.73, "unit": "\u20b9 lakhs", "page": 416, "quote": "Closing Equity3 B 11789.73", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 21.43, "tokens_in": 2566, "tokens_out": 279, "cost_usd": 0.000552, "cached": false}}

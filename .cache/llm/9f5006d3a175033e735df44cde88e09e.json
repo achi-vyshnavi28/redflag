@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b94,500 million", "value": 4500.0, "unit": "million", "page": 150, "quote": "Gross Proceeds Up to 4,500.00 (1)", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 5.29, "tokens_in": 2333, "tokens_out": 231, "cost_usd": 0.000489, "cached": false}}

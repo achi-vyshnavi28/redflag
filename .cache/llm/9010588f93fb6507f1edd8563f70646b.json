@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "2,483.17", "value": 2483.17, "unit": "\u20b9 million", "page": 400, "quote": "Employee benefits expense 2,098.97 15.85% 1,586.50 15.85% 2,483.17 30.07%", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 20.89, "tokens_in": 3472, "tokens_out": 136, "cost_usd": 0.001087, "cached": false}}

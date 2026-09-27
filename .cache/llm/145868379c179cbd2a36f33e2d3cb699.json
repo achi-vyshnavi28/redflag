@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "18,628.02", "value": 18628.02, "unit": "\u20b9 lakhs", "page": 423, "quote": "Short-Term Borrowings#(A) 18,628.02 [\u25cf]", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.8, "tokens_in": 2536, "tokens_out": 102, "cost_usd": 0.000294, "cached": false}}

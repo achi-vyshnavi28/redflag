@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "2,849.62", "value": 2849.62, "unit": "million INR", "page": 344, "quote": "Total 2,849.62 1,410.84 1,212.78", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 38.11, "tokens_in": 2875, "tokens_out": 493, "cost_usd": 0.000727, "cached": false}}

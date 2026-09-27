@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,399.89", "value": 1399.89, "unit": "\u20b9 million", "page": 355, "quote": "Total 1,058.27 1,399.89 1,179.04", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.41, "tokens_in": 3126, "tokens_out": 107, "cost_usd": 0.000355, "cached": false}}

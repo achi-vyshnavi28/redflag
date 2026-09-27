@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Up to 4,500.00", "value": 4500.0, "unit": "\u20b9 in million", "page": 150, "quote": "Gross Proceeds Up to 4,500.00 (1)", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 8.6, "tokens_in": 2501, "tokens_out": 107, "cost_usd": 0.000788, "cached": false}}

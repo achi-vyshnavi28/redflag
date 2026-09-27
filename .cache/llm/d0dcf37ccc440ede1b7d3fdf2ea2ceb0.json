@@ -1,0 +1,1 @@
+{"out": {"found": false, "answer": "", "value": null, "unit": null, "page": null, "quote": null, "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 37.16, "tokens_in": 2528, "tokens_out": 260, "cost_usd": 0.000535, "cached": false}}

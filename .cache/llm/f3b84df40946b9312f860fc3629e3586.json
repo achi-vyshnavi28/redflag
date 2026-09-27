@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "26,945.94", "value": 26945.94, "unit": "\u20b9 lakhs", "page": 424, "quote": "Total Fund Based (A) 26,945.94", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 20.85, "tokens_in": 2725, "tokens_out": 105, "cost_usd": 0.000852, "cached": false}}

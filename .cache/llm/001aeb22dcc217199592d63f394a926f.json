@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Jayant Agrawal", "value": null, "unit": null, "page": 330, "quote": "Jayant Agrawal is the sole Promoter of our Company.", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 20.71, "tokens_in": 2604, "tokens_out": 83, "cost_usd": 0.000804, "cached": false}}

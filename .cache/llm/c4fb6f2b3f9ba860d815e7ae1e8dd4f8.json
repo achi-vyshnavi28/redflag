@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "12,937.67", "value": 12937.67, "unit": "\u20b9 million", "page": 163, "quote": "Revenue (1) (\u20b9 in million) 12,937.67 9,595.12 7,969.76", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 96.46, "tokens_in": 3097, "tokens_out": 118, "cost_usd": 0.000357, "cached": false}}

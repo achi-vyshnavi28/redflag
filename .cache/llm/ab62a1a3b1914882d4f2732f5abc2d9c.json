@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Bhilai", "value": null, "unit": null, "page": 93, "quote": "Address: 21/A, Light Industrial Area, Bhilai, Durg \u2013 490026, Chhattisgarh, India", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 8.58, "tokens_in": 2484, "tokens_out": 96, "cost_usd": 0.000777, "cached": false}}

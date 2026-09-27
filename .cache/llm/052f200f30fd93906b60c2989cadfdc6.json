@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "2,397.53", "value": 2397.53, "unit": "\u20b9 in million", "page": 34, "quote": "Current borrowings (B) 2,397.53 1,573.14 1,431.57", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.6, "tokens_in": 1433, "tokens_out": 97, "cost_usd": 0.000182, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Bhilai", "value": null, "unit": null, "page": 2, "quote": "Registered Office: 21/A, Light Industrial Area, Bhilai, Durg \u2013 490026, Chhattisgarh, India.", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 11.54, "tokens_in": 1777, "tokens_out": 79, "cost_usd": 0.000209, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "7,969.76", "value": 7969.76, "unit": "\u20b9 million", "page": 83, "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 0.58, "tokens_in": 3447, "tokens_out": 115, "cost_usd": 0.001067, "cached": false}}

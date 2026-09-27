@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "12,937.67", "value": 12937.67, "unit": "INR millions", "page": 320, "quote": "Revenue from operations 21 12,937.67", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 1.42, "tokens_in": 2993, "tokens_out": 364, "cost_usd": 0.000667, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "180.43", "value": 180.43, "unit": "Rupees Lakhs", "page": 399, "quote": "As on 31.03.2024\n-... Total 180.43", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.43, "tokens_in": 2298, "tokens_out": 88, "cost_usd": 0.000265, "cached": false}}

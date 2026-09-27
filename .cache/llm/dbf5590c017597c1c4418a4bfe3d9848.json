@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b9 3,776.84 million", "value": 3776.84, "unit": "\u20b9 million", "page": 50, "quote": "Against the Company Nil 3 Nil N/A 1 3,776.84", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 21.91, "tokens_in": 2576, "tokens_out": 327, "cost_usd": 0.000583, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "As at March 31, 2026, current borrowings were \u20b92,397.53 million.", "value": 2397.53, "unit": "\u20b9 million", "page": 34, "quote": "Current borrowings (B) 2,397.53", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.8-flash", "latency_s": 18.66, "tokens_in": 3217, "tokens_out": 374, "cost_usd": 0.0019, "cached": false}}

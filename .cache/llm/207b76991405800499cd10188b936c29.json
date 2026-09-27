@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "18,628.02", "value": 18628.02, "unit": "\u20b9 lakhs", "page": 85, "quote": "Borrowings 18,628.02 11,405.28 6,848.70", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 4.73, "tokens_in": 2684, "tokens_out": 120, "cost_usd": 0.000849, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": false, "answer": "", "value": null, "unit": null, "page": null, "quote": null, "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.54, "tokens_in": 2438, "tokens_out": 44, "cost_usd": 0.000261, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,10,00,000", "value": 11000000.0, "unit": "Equity Shares", "page": 80, "quote": "Fresh Issue Up to 1,10,00,000 Equity Shares of face value of \u20b910 each", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 8.62, "tokens_in": 2541, "tokens_out": 117, "cost_usd": 0.000806, "cached": false}}

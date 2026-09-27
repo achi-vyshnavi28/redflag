@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "100.54", "value": 100.54, "unit": "\u20b9 million", "page": 78, "quote": "Inventories 78.27 100.54 233.74", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 113.64, "tokens_in": 3274, "tokens_out": 97, "cost_usd": 0.000366, "cached": false}}

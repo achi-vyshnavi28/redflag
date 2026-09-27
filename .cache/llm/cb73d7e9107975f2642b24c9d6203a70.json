@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b924.31 million", "value": 24.31, "unit": "\u20b9 million", "page": 362, "quote": "from \u20b911.25 million in Fiscal 2024 to \u20b924.31 million in Fiscal 2025", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 22.94, "tokens_in": 3100, "tokens_out": 113, "cost_usd": 0.000966, "cached": false}}

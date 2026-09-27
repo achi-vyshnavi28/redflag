@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "50 tax proceedings pending against the Company", "value": 50.0, "unit": "count", "page": 47, "quote": "Against our Company Nil 50^ N.A. N.A. 1 0.92$", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 21.89, "tokens_in": 2437, "tokens_out": 521, "cost_usd": 0.000678, "cached": false}}

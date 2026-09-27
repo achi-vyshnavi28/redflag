@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "44,401.61", "value": 44401.61, "unit": "Rupees Lakhs", "page": 350, "quote": "Revenue from Operations 24 44,401.61 33,956.36 23,925.12", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 37.58, "tokens_in": 2946, "tokens_out": 320, "cost_usd": 0.000634, "cached": false}}

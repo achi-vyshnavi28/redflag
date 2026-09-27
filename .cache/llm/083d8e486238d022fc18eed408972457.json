@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "2,397.53", "value": 2397.53, "unit": "\u20b9 million", "page": 34, "quote": "Current borrowings (B) 2,397.53 1,573.14 1,431.57", "operation": "none", "operands": []}, "meta": {"model": "qwen3.8-27b", "latency_s": 20.79, "tokens_in": 3121, "tokens_out": 113, "cost_usd": 0.000972, "cached": false}}

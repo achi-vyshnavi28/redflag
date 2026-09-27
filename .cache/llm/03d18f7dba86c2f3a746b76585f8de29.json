@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "3,239.02", "value": 3239.02, "unit": "\u20b9 lakhs", "page": 86, "quote": "Profit Before Tax (III-IV) 3,239.02 2,480.16 1,733.90", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.6, "tokens_in": 3387, "tokens_out": 113, "cost_usd": 0.000384, "cached": false}}

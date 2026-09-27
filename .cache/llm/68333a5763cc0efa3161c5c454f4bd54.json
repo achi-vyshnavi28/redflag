@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "128.86 million", "value": 128.86, "unit": "\u20b9 million", "page": 80, "quote": "Restated profit/(loss) for the year (G = E-F) 80.35 128.86 (67.09)", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.98, "tokens_in": 3395, "tokens_out": 111, "cost_usd": 0.000384, "cached": false}}

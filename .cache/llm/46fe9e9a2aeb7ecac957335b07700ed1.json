@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "24.31 million", "value": 24.31, "unit": "\u20b9 million", "page": 362, "quote": "from \u20b911.25 million in Fiscal 2024 to \u20b924.31 million in Fiscal 2025", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 47.33, "tokens_in": 1867, "tokens_out": 91, "cost_usd": 0.000223, "cached": false}}

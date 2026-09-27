@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "909.09", "value": 909.09, "unit": "\u20b9 lakhs", "page": 416, "quote": "Non-current Liabilities \u2013 Borrowings A 909.09", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.56, "tokens_in": 2876, "tokens_out": 91, "cost_usd": 0.000324, "cached": false}}

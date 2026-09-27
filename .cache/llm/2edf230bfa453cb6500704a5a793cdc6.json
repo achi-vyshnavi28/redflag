@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "\u20b92,483.17 million", "value": 2483.17, "unit": "\u20b9 million", "page": 400, "quote": "Employee benefits expense 2,483.17", "operation": "none", "operands": []}, "meta": {"model": "gpt-oss-120b", "latency_s": 21.83, "tokens_in": 2885, "tokens_out": 234, "cost_usd": 0.000573, "cached": false}}

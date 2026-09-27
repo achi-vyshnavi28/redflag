@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "17,273.17", "value": 17273.17, "unit": "\u20b9 lakhs", "page": 84, "quote": "Inventories 17,273.17 15,000.13 9,419.90", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 250.27, "tokens_in": 3270, "tokens_out": 111, "cost_usd": 0.000371, "cached": false}}
