@@ -13,10 +13,13 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-# On Streamlit Cloud, keys come from the app's Secrets settings (never from the repo).
+# On Streamlit Cloud, keys come from the app's Secrets settings (never from the repo). Accept keys at the top level or
+# inside a [section], in any letter case.
 try:
     for _k, _v in st.secrets.items():
-        os.environ.setdefault(_k, str(_v))
+        for _kk, _vv in (_v.items() if hasattr(_v, "items") else [(_k, _v)]):
+            if isinstance(_vv, str) and _vv.strip():
+                os.environ[_kk.upper()] = _vv.strip()
 except Exception:
     pass
 
@@ -27,16 +30,25 @@ st.title("RedFlag")
 st.caption("Diligence answers from Indian IPO prospectuses (DRHPs filed with SEBI). Every answer cites its page, "
            "and is automatically checked against that page before it is shown.")
 
+st.sidebar.caption("Model key detected: " + ("yes" if os.getenv("GEMINI_API_KEY") or os.getenv("GROQ_API_KEY") else
+                                              "no (example questions still work)"))
 doc = st.selectbox("Prospectus", list(DOCS), format_func=lambda d: f"{DOCS[d]['company']} (filed {DOCS[d]['filed']})")
 ask_tab, memo_tab, eval_tab = st.tabs(["Ask", "Red-flag memo", "How reliable is it?"])
 
 with ask_tab:
-    examples = ["What were current borrowings as at March 31, 2026?", "By what percentage did revenue grow from Fiscal 2025 to Fiscal 2026?",
+    examples = ["What were current borrowings as at March 31, 2026 in the restated balance sheet?", "By what percentage did revenue grow from Fiscal 2025 to Fiscal 2026?",
                 "What was revenue from operations in Fiscal 2026 expressed in rupees crore?", "Who are the promoters of the company?",
                 "What revenue does the company forecast for Fiscal 2028?"]
-    q = st.text_input("Question", value=examples[0])
-    st.caption("Try: " + " · ".join(examples[1:]))
-    if st.button("Ask", type="primary") and q.strip():
+    st.caption("Example questions (answered instantly, even without an API key):")
+    cols = st.columns(len(examples))
+    for i, (col, ex) in enumerate(zip(cols, examples)):
+        if col.button(ex, key=f"ex{i}", use_container_width=True):
+            st.session_state["q"] = ex
+            st.session_state["go"] = True
+    st.session_state.setdefault("q", examples[0])
+    q = st.text_input("Or type your own question", key="q")
+    go = st.button("Ask", type="primary") or st.session_state.pop("go", False)
+    if go and q.strip():
         from redflag.ingest import load_pages
         from redflag.qa import ask
 
