@@ -12,7 +12,9 @@ INDEX = ROOT / "data" / "index"
 CACHE = ROOT / ".cache"
 REPORTS = ROOT / "reports"
 
-for env in (ROOT / ".env", ROOT.parents[1] / "rootcause" / ".env"):
+# a local .env, or (on the author's machine) the shared one next to the sibling rootcause project.
+# ROOT may be /app inside Docker, which has no grandparent, so guard the second path.
+for env in [ROOT / ".env"] + ([ROOT.parents[1] / "rootcause" / ".env"] if len(ROOT.parents) > 1 else []):
     if env.exists():
         load_dotenv(env)
 

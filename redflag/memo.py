@@ -157,6 +157,9 @@ def _allowed_numbers(state: State) -> set[float]:
     for fl in state["flags"]:
         nums |= {round(n, 2) for n in numbers_in(fl["detail"])} | {round(n, 1) for n in numbers_in(fl["detail"])}
         nums |= set(fl["pages"])
+    # sums of two verified money figures (e.g. current + non-current borrowings) are traceable, so allowed
+    money = [x["value"] for x in state["facts"] if isinstance(x.get("value"), (int, float))] +             [x["crore"] for x in state["facts"] if isinstance(x.get("crore"), (int, float))]
+    nums |= {round(abs(a + b), 2) for i, a in enumerate(money) for b in money[i + 1:]}
     return nums | {2024, 2025, 2026, 2027, 2028, 31}
 
 

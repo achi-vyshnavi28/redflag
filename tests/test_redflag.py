@@ -109,3 +109,10 @@ def test_api_validates_input(tmp_path, monkeypatch):
 
 def test_pages_are_available():
     assert len(load_pages("atomberg")) == 505
+
+
+def test_memo_guardrail_allows_sum_of_two_verified_figures():
+    state = {"doc": "madhur_steel", "flags": [],
+             "facts": [_fact("current_borrowings_fy26", 18628.02, "lakhs", 85), _fact("noncurrent_borrowings_fy26", 864.53, "lakhs", 84)],
+             "memo": {"headline": "x", "summary": "Total borrowings were ₹19,492.55 lakhs [p. 85].", "red_flags": [], "questions_for_management": []}}
+    assert check_memo(state)["memo"]["summary"] == "Total borrowings were ₹19,492.55 lakhs [p. 85]."
