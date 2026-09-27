@@ -9,6 +9,18 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -r requirements.txt
       - run: pytest -q
+  quality-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - name: Retrieval recall and (if the secret is set) answer accuracy must not regress
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m evals.gate
   docker:
     runs-on: ubuntu-latest
     timeout-minutes: 15

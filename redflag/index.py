@@ -10,8 +10,11 @@ see evals/retrieval.py.
 """
 
 import atexit
+import shutil
 import sys
+import tempfile
 import threading
+from pathlib import Path
 import time
 from functools import lru_cache
 
@@ -74,7 +77,17 @@ def _client(embedder: str) -> QdrantClient:
     """One local Qdrant store per embedder (local mode allows one process per store, so a slow rebuild of one
     never blocks queries on the other)."""
     INDEX.mkdir(parents=True, exist_ok=True)
-    q = QdrantClient(path=str(INDEX / f"qdrant_{embedder}"))
+    path = INDEX / f"qdrant_{embedder}"
+    try:
+        q = QdrantClient(path=str(path))
+    except RuntimeError as e:
+        # Qdrant local mode allows one process per store. Queries only read it, so when another process (the web app,
+        # the API, an eval) holds the lock, open a private snapshot copy instead of failing.
+        if "already accessed" not in str(e):
+            raise
+        snap = Path(tempfile.mkdtemp(prefix=f"qdrant_{embedder}_"))
+        shutil.copytree(path, snap, dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.lock"))
+        q = QdrantClient(path=str(snap))
     atexit.register(q.close)
     return q
 
