@@ -23,7 +23,7 @@ RF = RedFlag (this repo) · CW = [CovenantWatch](https://github.com/achi-vyshnav
 | LLMs, RAG, AI agents, frameworks | above |
 | Debug and improve performance and reliability | RF `docs/failure_catalogue.md`: 10 failures, each with fix and measured effect (accuracy 65% → 89%); CW page-citation fix (recall 33% → 96%) |
 | Prototypes into production | Dockerfiles, GitHub Actions CI that builds the image and calls the running API, pinned requirements, health checks, retries, graceful degradation |
-| Customer feedback → product improvements | RF `/feedback` endpoint + log; CW analyst verdicts on every alert; RF `docs/pow/04_customer_feedback_guide.md` |
+| Customer feedback → product improvements | RF `/feedback` endpoint + log; CW analyst verdicts on every alert; feedback sorted into build / configure / not-now (08); interview guide (04) |
 | Across engineering, AI, product, customer implementation | both repos include the build, the evaluation, and the deployment playbook |
 
 ## What we're looking for
@@ -34,7 +34,7 @@ RF = RedFlag (this repo) · CW = [CovenantWatch](https://github.com/achi-vyshnav
 | Exposure to LLMs, GenAI, RAG, agents | above |
 | Problem-solving and debugging | failure catalogue; two real inconsistencies found in the filings |
 | Ambiguous problems → practical solutions | numeric covenants not disclosed → fund policy triggers until lenders share terms |
-| Communication, working with customers | onboarding playbook, 30-day plan, memos written for an investment committee |
+| Communication, working with customers | Written for three audiences: a pilot proposal for a fund partner (06), an incident review for engineers (07), a customer update + product-feedback note (08); plus the onboarding playbook, 30-day plan and IC-style memos |
 
 ## Good to have
 | Item | Evidence |
