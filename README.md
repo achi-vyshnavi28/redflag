@@ -1,5 +1,7 @@
 # RedFlag
 
+**Live demo: https://redflag1.streamlit.app** · usable from Claude Desktop via MCP ([setup](docs/claude_desktop.md))
+
 Diligence answers and red-flag memos from Indian IPO prospectuses, where **every answer cites its page and is
 checked against that page before it is shown**, and the system declines rather than guesses.
 
