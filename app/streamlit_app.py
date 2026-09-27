@@ -67,6 +67,10 @@ with ask_tab:
                     "Try one of the example questions above, or see the Red-flag memo and reliability tabs. "
                     f"(Owner: add GEMINI_API_KEY under the app's Settings → Secrets. Status: {SECRETS_STATUS}.)")
             st.stop()
+        if r.get("trace"):
+            with st.expander(f"How this answer was produced ({len(r['trace'])} agent steps, {r['attempts']} model call(s), "
+                             f"${r['cost_usd']:.5f})", expanded=r["attempts"] > 1):
+                st.dataframe(pd.DataFrame(r["trace"]).rename(columns={"ms": "time (ms)"}), hide_index=True, use_container_width=True)
         if r["found"]:
             st.success(r["answer"])
             c1, c2, c3 = st.columns(3)

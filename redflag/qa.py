@@ -10,6 +10,7 @@ Four switches turn each reliability step on, so each one's effect can be measure
 """
 
 import re
+import time
 from dataclasses import dataclass
 from functools import lru_cache
 from typing import Literal, TypedDict
@@ -109,6 +110,7 @@ class State(TypedDict, total=False):
     feedback: str
     attempts: int
     calls: list[dict]
+    trace: list[dict]
 
 
 def _context(passages: list[dict], units: bool) -> str:
@@ -222,18 +224,45 @@ def finalise(state: State) -> State:
                        "attempts": state.get("attempts", 1), "latency_s": round(sum(c["latency_s"] for c in calls), 2),
                        "cost_usd": round(sum(c["cost_usd"] for c in calls), 6),
                        "tokens": sum(c["tokens_in"] + c["tokens_out"] for c in calls),
-                       "pages_retrieved": [p["page"] for p in state["passages"]]}}
+                       "pages_retrieved": [p["page"] for p in state["passages"]], "trace": state.get("trace", [])}}
+
+
+def _summary(step: str, state: State, out: State) -> str:
+    """One readable line per step for the trace (shown under every answer in the app and returned by the API)."""
+    if step == "retrieve":
+        pages = sorted({p["page"] for p in out["passages"]})
+        return f"{len(out['passages'])} passages from pages {', '.join(map(str, pages[:10]))}{' ...' if len(pages) > 10 else ''}"
+    if step == "extract":
+        ex, meta = out["ex"], out["calls"][-1]
+        what = f"operands for {ex.operation}" if ex.operation != "none" else (f"value {ex.value} {ex.unit or ''} on p. {ex.page}" if ex.found else "not found")
+        return (f"attempt {out['attempts']} with {meta.get('model', state['cfg'].model)}{' (cached)' if meta.get('cached') else ''}: "
+                f"{what}; {meta.get('tokens_in', 0) + meta.get('tokens_out', 0)} tokens, ${meta.get('cost_usd', 0):.5f}")
+    if step == "compute":
+        return f"Python computed {out['ex'].value} {out['ex'].unit}" if out else "nothing to compute"
+    if step == "verify":
+        return "citation verified: quote found on the page and contains the number" if not out["feedback"] else f"failed: {out['feedback']}"
+    if step == "abstain":
+        return "declined: could not verify an answer"
+    return ""
+
+
+def traced(step: str, fn):
+    def run(state: State) -> State:
+        t = time.perf_counter()
+        out = fn(state) or {}
+        if step == "finalise":
+            return out
+        entry = {"step": step, "ms": round((time.perf_counter() - t) * 1000), "detail": _summary(step, state, out)}
+        return {**out, "trace": state.get("trace", []) + [entry]}
+    return run
 
 
 @lru_cache(maxsize=None)
 def graph(verify_on: bool, compute_on: bool):
     g = StateGraph(State)
-    g.add_node("retrieve", retrieve)
-    g.add_node("extract", extract)
-    g.add_node("compute", compute)
-    g.add_node("verify", verify)
-    g.add_node("abstain", abstain)
-    g.add_node("finalise", finalise)
+    for name, fn in (("retrieve", retrieve), ("extract", extract), ("compute", compute), ("verify", verify),
+                     ("abstain", abstain), ("finalise", finalise)):
+        g.add_node(name, traced(name, fn))
     g.set_entry_point("retrieve")
     g.add_edge("retrieve", "extract")
     g.add_edge("extract", "compute" if compute_on else ("verify" if verify_on else "finalise"))

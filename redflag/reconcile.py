@@ -41,6 +41,10 @@ TARGETS = [
 ]
 
 
+# ~4.5k tokens of context: fits free-tier per-minute limits (Groq: 8k tokens/min), so one call can always go through
+MAX_PASSAGES = 12
+
+
 class Mention(BaseModel):
     value: float
     unit: str | None = None  # lakhs / million / crore / count
@@ -86,12 +90,13 @@ def to_common(m: dict, page_unit: str | None) -> float | None:
 
 def reconcile_target(doc: str, target: dict, model: str) -> dict:
     seen, passages = set(), []
-    for q in target["queries"]:
-        for p in search(q, doc, "hybrid", 12, "bge"):
-            if p["id"] not in seen:
-                seen.add(p["id"])
-                passages.append(p)
-    passages = passages[:24]
+    ranked = [search(q, doc, "hybrid", 12, "bge") for q in target["queries"]]
+    for rank in range(12):  # interleave the queries' results so each phrasing gets its best passages in
+        for hits in ranked:
+            if rank < len(hits) and hits[rank]["id"] not in seen:
+                seen.add(hits[rank]["id"])
+                passages.append(hits[rank])
+    passages = passages[:MAX_PASSAGES]
     context = "\n\n".join(f"[page {p['page']}" + (f" | unit: ₹ {p['unit']}" if p.get("unit") else "") + f"]\n{p['text']}" for p in passages)
     found, _ = call(model, EXTRACT.format(label=target["label"]), context, Mentions)
     unit_of = {p["page"]: p.get("unit") for p in passages}
@@ -134,7 +139,7 @@ def reconcile(doc: str, model: str = DEFAULT_MODEL) -> dict:
 
 
 if __name__ == "__main__":
-    res = reconcile(sys.argv[1])
+    res = reconcile(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else DEFAULT_MODEL)
     for t in res["targets"]:
         print(f"{t['target']}: {t['statements']} statements, {t['differences']} differences, {len(t['conflicts'])} conflicts")
         for c in t["conflicts"]:
