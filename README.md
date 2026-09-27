@@ -20,7 +20,18 @@ crore), and questions whose answer is not in the document.
 | + citation verification with retry (v1) | 78.3% | 2.9% | 3/3 |
 | **Final: BGE retrieval + forced calculation** | **89.1%** | 5.0% | 3/3 |
 
-Model: Gemini 3.5 Flash-Lite, about 1.8 s and under $0.001 per answer at list prices.
+**Models** (final setup, same 46 questions, one model-agnostic code path):
+
+| Model | Accuracy | Citations correct | Wrong or unsupported | Declined correctly | Median time |
+|---|---|---|---|---|---|
+| Gemini 3.5 Flash-Lite (default) | 89.1% | 95.0% | 5.0% | 3/3 | 1.8 s |
+| OpenAI gpt-oss-120b (via Groq) | 87.0% | 94.9% | 7.7% | 3/3 | 21.9 s* |
+| Qwen 3.8 27B (via Groq) | 89.1% | **100%** | **2.6%** | 3/3 | 20.9 s* |
+
+\*Mostly waiting on Groq's free-tier tokens-per-minute limit, not model speed. Cost per answer is under $0.0011 for
+all three at list prices. The reliability pipeline carries across model families: all three land at 87-89% and decline
+every question the documents cannot answer. Gemini stays the default for speed; Qwen is the most conservative
+(no wrong citations). Claude is wired in but not benchmarked (no key).
 
 **Retrieval** (does the right passage reach the model? recall@8): BM25 72% · MiniLM 86% · BM25+MiniLM 86% ·
 BM25+BGE 88% · **BGE-small 95%**. I expected hybrid to win; it didn't on these documents, so the final setup uses BGE.
@@ -53,7 +64,7 @@ memo:  financials ┐
 
 - **LangGraph** for both agents, **LangChain** BM25 retriever, **LlamaIndex** chunking with page, unit and section metadata,
   **Qdrant** vector store, **fastembed** local embeddings (MiniLM, BGE-small), **LiteLLM** so any model works
-  (Gemini tested; Claude and OpenAI wired in, used when their keys are set).
+  (Gemini, OpenAI gpt-oss and Qwen benchmarked; Claude wired in, used when its key is set).
 - **FastAPI** (`/ask`, `/memo`, `/feedback`), **Streamlit** app, **Docker** image, **GitHub Actions** CI that builds the
   image and checks the running API.
 - Reliability: pydantic-validated JSON with a repair retry, rate-limit back-off, a disk cache (re-running an
@@ -78,7 +89,7 @@ Set `GEMINI_API_KEY` in `.env` (optionally `ANTHROPIC_API_KEY` / `OPENAI_API_KEY
 
 ## Honest limits
 - 46 questions across 3 documents is a small test set; each wrong answer moves accuracy by about 2 points.
-- One model family was benchmarked (Gemini): other models hit free-tier limits or had no key.
+- Three model families were benchmarked (Gemini, OpenAI gpt-oss, Qwen); Claude is supported but not benchmarked (no key).
 - A correct citation does not guarantee the right meaning: the AI mixed definitions ("borrowings" in three tables) and
   confused litigation *by* vs *against* the company. Reconciliation checks and human review of the memo remain necessary.
 - Not investment advice; the memos are a first pass for an analyst.

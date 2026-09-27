@@ -50,6 +50,9 @@ MODELS = {
     "gemini-3.8-flash": {"id": "gemini/gemini-3.8-flash", "in": 0.30, "out": 2.50},
     "gemini-3.6-flash": {"id": "gemini/gemini-3.6-flash", "in": 0.30, "out": 2.50},
     "gemma-4-31b": {"id": "gemini/gemma-4-31b-it", "in": 0.0, "out": 0.0},  # open weights: self-hostable
+    # Groq-hosted open-weight models (approximate Groq list prices)
+    "gpt-oss-120b": {"id": "groq/openai/gpt-oss-120b", "in": 0.15, "out": 0.60},  # OpenAI open-weight model
+    "qwen3.8-27b": {"id": "groq/qwen/qwen3.8-27b", "in": 0.29, "out": 0.59},
     "claude-sonnet": {"id": "anthropic/claude-sonnet-4-5", "in": 3.00, "out": 15.00},  # used when ANTHROPIC_API_KEY is set
     "gpt": {"id": "openai/gpt-5-mini", "in": 0.25, "out": 2.00},  # used when OPENAI_API_KEY is set
 }

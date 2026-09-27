@@ -8,7 +8,7 @@ RF = RedFlag (this repo) · CW = [CovenantWatch](https://github.com/achi-vyshnav
 | LLMs | RF, CW: Gemini models through one model-agnostic layer (LiteLLM), JSON outputs validated with pydantic, retries, caching, cost and latency logged |
 | Agentic workflow / agentic AI | RF: LangGraph Q&A agent (retrieve → extract → compute → verify → retry or decline) and a multi-agent memo graph (4 section agents in parallel → rules → writer → guardrail). RC: LangGraph analyst agent |
 | LangChain | RF: BM25 retriever and document model |
-| Claude | RF, CW: `claude-sonnet` in the model registry, used when `ANTHROPIC_API_KEY` is set (not benchmarked: no key) |
+| Claude / OpenAI | RF: OpenAI gpt-oss-120b benchmarked (87.0%) alongside Gemini (89.1%) and Qwen (89.1%, 100% citations); CW: all three 92% on event triage. Claude wired in (`claude-sonnet`), not benchmarked: no key |
 | LlamaIndex | RF: page documents and sentence-aware chunking with page / unit / section metadata |
 | RAG | RF: page-cited answers over 1,552 pages; 5 retrievers compared (recall@8: BM25 72%, MiniLM 86%, hybrid 86-88%, **BGE 95%**) |
 | Embedding models | RF: MiniLM vs BGE-small (local), Gemini embeddings supported; chosen by measurement |
@@ -39,11 +39,11 @@ RF = RedFlag (this repo) · CW = [CovenantWatch](https://github.com/achi-vyshnav
 ## Good to have
 | Item | Evidence |
 |---|---|
-| OpenAI / Anthropic APIs, LangChain, LangGraph | LangChain + LangGraph used; OpenAI and Anthropic wired in, not benchmarked (no keys) |
+| OpenAI / Anthropic APIs, LangChain, LangGraph | LangChain + LangGraph used; OpenAI gpt-oss benchmarked via Groq; Anthropic wired in, not benchmarked (no key) |
 | Building / deploying GenAI apps | RF and CW APIs + Streamlit apps + Docker; RC is deployed live |
 | Git, Docker, cloud, SQL | Git, Docker, CI, SQL; cloud: RC on Streamlit Cloud |
 | Fintech / financial research / investment workflows | IPO diligence (RF) and private-credit covenant monitoring (CW) on real Indian filings |
 
 ## Honest gaps
-- Claude and OpenAI models are supported but not benchmarked (no API keys available to me).
+- Claude is supported but not benchmarked (no API key); OpenAI is covered by its open-weight gpt-oss-120b via Groq.
 - Docker is verified in CI, not on my laptop (virtualisation is disabled on it).
