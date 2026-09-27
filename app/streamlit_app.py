@@ -15,13 +15,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 # On Streamlit Cloud, keys come from the app's Secrets settings (never from the repo). Accept keys at the top level or
 # inside a [section], in any letter case.
+SECRETS_STATUS = "no secrets set"
 try:
+    _names = []
     for _k, _v in st.secrets.items():
         for _kk, _vv in (_v.items() if hasattr(_v, "items") else [(_k, _v)]):
+            _names.append(_kk)
             if isinstance(_vv, str) and _vv.strip():
-                os.environ[_kk.upper()] = _vv.strip()
-except Exception:
-    pass
+                os.environ[_kk.upper()] = _vv.strip().strip('"').strip("'").strip("“”")
+    if _names:
+        SECRETS_STATUS = "secret names found: " + ", ".join(_names)
+except Exception as _e:  # usually a TOML format error, e.g. a value without quotes
+    SECRETS_STATUS = f"secrets could not be read ({type(_e).__name__}): check the format"
 
 from redflag.config import DOCS, REPORTS  # noqa: E402
 
@@ -60,7 +65,7 @@ with ask_tab:
         except MissingKey:
             st.info("This question isn't in the demo's saved answers, and no model API key is configured on this deployment. "
                     "Try one of the example questions above, or see the Red-flag memo and reliability tabs. "
-                    "(Owner: add GEMINI_API_KEY under the app's Settings → Secrets.)")
+                    f"(Owner: add GEMINI_API_KEY under the app's Settings → Secrets. Status: {SECRETS_STATUS}.)")
             st.stop()
         if r["found"]:
             st.success(r["answer"])
