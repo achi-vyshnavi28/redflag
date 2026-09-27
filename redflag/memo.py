@@ -79,11 +79,14 @@ def _section(name: str):
     def run(state: State) -> State:
         facts = []
         for key, q in CHECKLIST[name]:
-            r = ask(q, state["doc"], "full", state.get("model"))
+            r, asked = ask(q, state["doc"], "full", state.get("model")), q
+            if not r["found"] and " in the restated " in q:  # specific wording found nothing: fall back, and record it
+                asked = re.sub(r" in the restated [^?]*", "", q).replace(" (financial liabilities)", "")
+                r = ask(asked, state["doc"], "full", state.get("model"))
             crore = None
             if r["found"] and r.get("value") is not None and (u := _norm_unit(r.get("unit"))):
                 crore = round(r["value"] * TO_CRORE[u], 2)
-            facts.append({"section": name, "key": key, "question": q, "found": r["found"], "answer": r["answer"],
+            facts.append({"section": name, "key": key, "question": asked, "fallback": asked != q, "found": r["found"], "answer": r["answer"],
                           "value": r.get("value"), "unit": r.get("unit"), "crore": crore, "page": r.get("page"),
                           "quote": r.get("quote"), "cost_usd": r["cost_usd"], "latency_s": r["latency_s"]})
         return {"facts": facts}

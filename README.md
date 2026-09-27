@@ -27,8 +27,9 @@ BM25+BGE 88% · **BGE-small 95%**. I expected hybrid to win; it didn't on these 
 
 **What it found in the filings**
 - **Anchor Offshore:** trade receivables up 71.8% while revenue fell 24.4%.
-- **Atomberg:** restated loss of ₹148.88 crore in FY2026, negative interest cover, and claims against the company equal to 203% of equity.
-- **Madhur Steel:** its summary table labels ₹9,123.93 lakh (about ₹91 crore) of **unsecured** loans as secured (p. 424 vs p. 438-440). Found while checking answers, not by the AI.
+- **Atomberg:** restated loss of ₹148.88 crore in FY2026, inventories doubled while revenue grew 35%, and claims against the company equal to 203% of equity.
+- **Madhur Steel:** trade receivables up 92% while revenue grew 31%; borrowings 1.65x equity.
+- **Madhur Steel (filing issue):** its summary table labels ₹9,123.93 lakh (about ₹91 crore) of **unsecured** loans as secured (p. 424 vs p. 438-440). Found while checking answers, not by the AI.
 
 **What I caught the AI getting wrong** is in [docs/pow/01_memo_review.md](docs/pow/01_memo_review.md), and every failure
 type with its fix is in [docs/failure_catalogue.md](docs/failure_catalogue.md).

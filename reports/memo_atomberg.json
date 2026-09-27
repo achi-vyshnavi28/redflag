@@ -4,6 +4,7 @@
       "section": "financials",
       "key": "revenue_fy26",
       "question": "What was revenue from operations in Fiscal 2026?",
+      "fallback": true,
       "found": true,
       "answer": "12,937.67",
       "value": 12937.67,
@@ -18,6 +19,7 @@
       "section": "financials",
       "key": "revenue_fy25",
       "question": "What was revenue from operations in Fiscal 2025?",
+      "fallback": true,
       "found": true,
       "answer": "9,595.12",
       "value": 9595.12,
@@ -31,21 +33,23 @@
     {
       "section": "financials",
       "key": "revenue_fy24",
-      "question": "What was revenue from operations in Fiscal 2024?",
+      "question": "What was revenue from operations in Fiscal 2024 in the restated statement of profit and loss?",
+      "fallback": false,
       "found": true,
-      "answer": "Revenue from operations in Fiscal 2024 was ₹7,969.76 million.",
+      "answer": "7,969.76",
       "value": 7969.76,
       "unit": "₹ million",
       "crore": 796.98,
       "page": 399,
       "quote": "Revenue from operations ((C) = (A) + (B)) 12,937.67 9,595.12 7,969.76",
-      "cost_usd": 0.000381,
-      "latency_s": 1.67
+      "cost_usd": 0.000396,
+      "latency_s": 1.93
     },
     {
       "section": "financials",
       "key": "pat_fy26",
       "question": "What was the restated profit or loss after tax for Fiscal 2026?",
+      "fallback": false,
       "found": true,
       "answer": "₹1,488.81 million",
       "value": -1488.81,
@@ -60,6 +64,7 @@
       "section": "financials",
       "key": "pat_fy25",
       "question": "What was the restated profit or loss after tax for Fiscal 2025?",
+      "fallback": false,
       "found": true,
       "answer": "The restated loss after tax for the year ended March 31, 2025 was (1,174.05) million ₹.",
       "value": -1174.05,
@@ -74,6 +79,7 @@
       "section": "financials",
       "key": "pbt_fy26",
       "question": "What was the restated profit or loss before tax for Fiscal 2026?",
+      "fallback": false,
       "found": true,
       "answer": "The restated loss before tax for the year for Fiscal 2026 was (1,488.81) million.",
       "value": -1488.81,
@@ -87,7 +93,8 @@
     {
       "section": "financials",
       "key": "finance_costs_fy26",
-      "question": "What were the finance costs in Fiscal 2026?",
+      "question": "What were the finance costs in Fiscal 2026 in the restated statement of profit and loss?",
+      "fallback": false,
       "found": true,
       "answer": "449.07",
       "value": 449.07,
@@ -95,13 +102,14 @@
       "crore": 44.91,
       "page": 400,
       "quote": "Finance costs 449.07 3.39% 476.33 4.76% 276.16 3.34%",
-      "cost_usd": 0.000375,
-      "latency_s": 1.41
+      "cost_usd": 0.000386,
+      "latency_s": 2.01
     },
     {
       "section": "leverage",
       "key": "equity_fy26",
-      "question": "What was total equity as at March 31, 2026?",
+      "question": "What was total equity as at March 31, 2026 in the restated statement of assets and liabilities (balance sheet)?",
+      "fallback": false,
       "found": true,
       "answer": "1,861.46",
       "value": 1861.46,
@@ -109,13 +117,14 @@
       "crore": 186.15,
       "page": 375,
       "quote": "Total Equity 1,861.46 947.10 2,013.71",
-      "cost_usd": 0.00035,
-      "latency_s": 2.61
+      "cost_usd": 0.000314,
+      "latency_s": 10.4
     },
     {
       "section": "leverage",
       "key": "current_borrowings_fy26",
-      "question": "What were current borrowings as at March 31, 2026?",
+      "question": "What were current borrowings (financial liabilities) as at March 31, 2026 in the restated statement of assets and liabilities (balance sheet)?",
+      "fallback": false,
       "found": true,
       "answer": "2,397.53",
       "value": 2397.53,
@@ -123,13 +132,14 @@
       "crore": 239.75,
       "page": 34,
       "quote": "Current borrowings (B) 2,397.53 1,573.14 1,431.57",
-      "cost_usd": 0.000366,
-      "latency_s": 1.97
+      "cost_usd": 0.000336,
+      "latency_s": 250.6
     },
     {
       "section": "leverage",
       "key": "noncurrent_borrowings_fy26",
-      "question": "What were non-current borrowings as at March 31, 2026?",
+      "question": "What were non-current borrowings (financial liabilities) as at March 31, 2026 in the restated statement of assets and liabilities (balance sheet)?",
+      "fallback": false,
       "found": true,
       "answer": "177.75",
       "value": 177.75,
@@ -137,41 +147,44 @@
       "crore": 17.78,
       "page": 34,
       "quote": "Non-current borrowings (A) 177.75 189.99 164.42",
-      "cost_usd": 0.000342,
-      "latency_s": 97.36
+      "cost_usd": 0.000333,
+      "latency_s": 20.49
     },
     {
       "section": "leverage",
       "key": "receivables_fy26",
-      "question": "What were trade receivables as at March 31, 2026?",
+      "question": "What were trade receivables as at March 31, 2026 in the restated statement of assets and liabilities (balance sheet)?",
+      "fallback": false,
       "found": true,
       "answer": "2,389.05",
       "value": 2389.05,
-      "unit": "INR millions",
+      "unit": "₹ million",
       "crore": 238.91,
       "page": 358,
       "quote": "Trade receivables (Refer note 12) 2,389.05 1,755.71 1,677.15",
-      "cost_usd": 0.000384,
-      "latency_s": 1.57
+      "cost_usd": 0.000364,
+      "latency_s": 13.24
     },
     {
       "section": "leverage",
       "key": "receivables_fy25",
-      "question": "What were trade receivables as at March 31, 2025?",
+      "question": "What were trade receivables as at March 31, 2025 in the restated statement of assets and liabilities (balance sheet)?",
+      "fallback": false,
       "found": true,
-      "answer": "1,755.71",
+      "answer": "Trade receivables as at March 31, 2025 were 1,755.71 million INR.",
       "value": 1755.71,
-      "unit": "₹ million",
+      "unit": "INR millions",
       "crore": 175.57,
-      "page": 358,
-      "quote": "Trade receivables (Refer note 12) 2,389.05 1,755.71 1,677.15",
-      "cost_usd": 0.000379,
-      "latency_s": 1.7
+      "page": 345,
+      "quote": "Total 2,389.05 1,755.71 1,677.15",
+      "cost_usd": 0.000381,
+      "latency_s": 7.77
     },
     {
       "section": "leverage",
       "key": "inventories_fy26",
       "question": "What were inventories as at March 31, 2026?",
+      "fallback": true,
       "found": true,
       "answer": "Total inventories as at March 31, 2026 were 2,849.62 ₹ millions.",
       "value": 2849.62,
@@ -185,21 +198,23 @@
     {
       "section": "leverage",
       "key": "inventories_fy25",
-      "question": "What were inventories as at March 31, 2025?",
-      "found": false,
-      "answer": "",
-      "value": null,
-      "unit": null,
-      "crore": null,
-      "page": null,
-      "quote": null,
-      "cost_usd": 0.000321,
-      "latency_s": 1.68
+      "question": "What were inventories as at March 31, 2025 in the restated statement of assets and liabilities (balance sheet)?",
+      "fallback": false,
+      "found": true,
+      "answer": "1,410.84",
+      "value": 1410.84,
+      "unit": "₹ million",
+      "crore": 141.08,
+      "page": 344,
+      "quote": "Total 2,849.62 1,410.84 1,212.78",
+      "cost_usd": 0.000341,
+      "latency_s": 2.1
     },
     {
       "section": "litigation",
       "key": "litigation_against_company",
       "question": "What is the aggregate amount involved in outstanding litigation against the Company?",
+      "fallback": false,
       "found": true,
       "answer": "The aggregate amount involved in outstanding material civil litigations against the Company is ₹3,776.84 million.",
       "value": 3776.84,
@@ -214,6 +229,7 @@
       "section": "litigation",
       "key": "criminal_against_promoters",
       "question": "How many criminal proceedings are pending against the Promoters?",
+      "fallback": false,
       "found": true,
       "answer": "There are no outstanding criminal proceedings that have been initiated against our Promoters.",
       "value": null,
@@ -228,6 +244,7 @@
       "section": "litigation",
       "key": "litigation_against_promoters",
       "question": "How many material civil litigations are pending against the Promoters?",
+      "fallback": false,
       "found": true,
       "answer": "There is 1 material civil litigation pending against the Promoters.",
       "value": 1.0,
@@ -242,6 +259,7 @@
       "section": "offer",
       "key": "promoters",
       "question": "Who are the promoters of the company?",
+      "fallback": false,
       "found": true,
       "answer": "Manoj Kumar Meena and Sibabrata Das",
       "value": null,
@@ -256,6 +274,7 @@
       "section": "offer",
       "key": "fresh_issue",
       "question": "What is the size of the fresh issue?",
+      "fallback": false,
       "found": true,
       "answer": "Up to 4,500.00 million",
       "value": 4500.0,
@@ -270,6 +289,7 @@
       "section": "offer",
       "key": "offer_for_sale",
       "question": "How many equity shares are offered in the offer for sale by selling shareholders?",
+      "fallback": false,
       "found": true,
       "answer": "Up to 76,541,851 Equity Shares",
       "value": 76541851.0,
@@ -284,6 +304,7 @@
       "section": "offer",
       "key": "objects",
       "question": "What are the objects of the issue, i.e. how will the fresh issue proceeds be used?",
+      "fallback": false,
       "found": true,
       "answer": "The net proceeds of the Fresh Issue are proposed to be utilized for: (a) Repayment / prepayment, in full or in part, of certain borrowings availed by our Company; (b) Brand awareness and performance marketing activities; (c) Investment in research and development; and (d) General corporate purposes.",
       "value": null,
@@ -302,6 +323,16 @@
       "severity": "high",
       "pages": [
         83
+      ]
+    },
+    {
+      "rule": "Inventories outgrowing revenue",
+      "detail": "Inventories grew 102.0% vs revenue 34.8%: check collection / stock build-up.",
+      "severity": "medium",
+      "pages": [
+        163,
+        344,
+        399
       ]
     },
     {
@@ -349,21 +380,23 @@
   ],
   "memo": {
     "headline": "Investment Diligence Memo: Atomberg Technologies Limited",
-    "summary": "Atomberg Technologies Limited operates in the consumer electrical appliances sector, focusing on fans and BLDC motors [p. 163]. Revenue from operations grew to ₹1,293.77 crore in Fiscal 2026 from ₹959.51 crore in Fiscal 2025 and ₹796.98 crore in Fiscal 2024 [p. 163, p. 399]. However, the company continues to incur losses, reporting a restated loss after tax of ₹148.88 crore in Fiscal 2026 following a loss of ₹117.41 crore in Fiscal 2025 [p. 83]. Total equity stood at ₹186.15 crore as of Fiscal 2026, alongside current borrowings of ₹239.75 crore and non-current borrowings of ₹17.78 crore [p. 34, p. 375]. The proposed fresh issue aims to raise up to ₹450.00 crore to repay certain borrowings, fund brand awareness, invest in R&D, and for general corporate purposes, alongside an offer for sale of up to 76,541,851 equity shares [p. 150].",
+    "summary": "Atomberg Technologies Limited operates in the consumer electrical appliances sector, focusing on fans and BLDC motors [p. 163]. Revenue grew to 12,937.67 million ₹ in Fiscal 2026 from 9,595.12 million ₹ in Fiscal 2025 and 7,969.76 million ₹ in Fiscal 2024 [p. 163, p. 399]. However, the company remains loss-making, reporting a restated loss after tax of (1,488.81) million ₹ for Fiscal 2026 and (1,174.05) million ₹ for Fiscal 2025 [p. 83]. Total equity stood at 1,861.46 million ₹ alongside current borrowings of 2,397.53 million ₹ and non-current borrowings of 177.75 million ₹ [p. 34, p. 375]. The proposed fresh issue aims to raise up to 4,500.00 million ₹ alongside an offer for sale of up to 76,541,851 equity shares [p. 150].",
     "red_flags": [
-      "Restated loss of ₹148.88 crore in Fiscal 2026 [p. 83].",
-      "Borrowings are 1.38x total equity with current borrowings of ₹239.75 crore and non-current borrowings of ₹17.78 crore against equity of ₹186.15 crore [p. 34, p. 375].",
-      "EBIT covers finance costs negative 2.32x in Fiscal 2026 with finance costs at ₹44.91 crore [p. 400].",
-      "Aggregate material civil litigations against the company involve ₹377.68 crore, equal to 203% of total equity [p. 50, p. 375].",
-      "There is 1 material civil litigation pending against the promoters, Manoj Kumar Meena and Sibabrata Das [p. 50, p. 309].",
-      "Part of the IPO is an offer for sale of up to 76,541,851 equity shares [p. 150]."
+      "Restated loss after tax was (1,488.81) million ₹ in Fiscal 2026 [p. 83].",
+      "Total inventories doubled to 2,849.62 ₹ millions as at March 31, 2026 compared to 1,410.84 million ₹ in Fiscal 2025 [p. 344].",
+      "Aggregate amount involved in outstanding material civil litigations against the company is ₹3,776.84 million [p. 50].",
+      "Current borrowings of 2,397.53 million ₹ and non-current borrowings of 177.75 million ₹ exceed total equity of 1,861.46 million ₹ [p. 34, p. 375].",
+      "Finance costs for Fiscal 2026 were 449.07 million ₹ against a restated loss before tax of (1,488.81) million [p. 400].",
+      "There is 1 material civil litigation pending against the Promoters [p. 50].",
+      "The offering includes an offer for sale of up to 76,541,851 equity shares [p. 150]."
     ],
     "questions_for_management": [
-      "How does management plan to achieve profitability given that losses expanded from ₹117.41 crore in Fiscal 2025 to ₹148.88 crore in Fiscal 2026 [p. 83]?",
-      "Given that finance costs were ₹44.91 crore in Fiscal 2026 against a loss before tax of ₹148.88 crore, how will the proposed fresh issue of up to ₹450.00 crore sufficiently de-leverage the balance sheet [p. 150, p. 400]?",
-      "What is the underlying status and potential financial exposure of the ₹377.68 crore in outstanding material civil litigations against the company [p. 50]?",
-      "Can management clarify the nature of the 1 material civil litigation pending against the promoters [p. 50]?",
-      "How do trade receivables of ₹238.91 crore and inventories of ₹284.96 crore as of Fiscal 2026 impact the company's working capital cycle and cash burn [p. 344, p. 358]?"
+      "What are the primary drivers behind the widening net losses from (1,174.05) million ₹ in Fiscal 2025 to (1,488.81) million ₹ in Fiscal 2026 [p. 83]?",
+      "How does management justify the sharp increase in total inventories to 2,849.62 ₹ millions in Fiscal 2026 from 1,410.84 million ₹ in Fiscal 2025 [p. 344]?",
+      "What is the expected timeline and potential liability resolution for the ₹3,776.84 million in outstanding material civil litigations against the company [p. 50]?",
+      "Given that current borrowings of 2,397.53 million ₹ and non-current borrowings of 177.75 million ₹ exceed total equity of 1,861.46 million ₹, how will the fresh issue proceeds of up to 4,500.00 million ₹ be allocated across debt repayment [p. 34, p. 150, p. 375]?",
+      "What specific operational steps are being taken to improve trade receivables, which grew to 2,389.05 million ₹ in Fiscal 2026 from 1,755.71 million INR in Fiscal 2025 [p. 345, p. 358]?",
+      "Can management provide details on the nature of the 1 material civil litigation pending against the promoters [p. 50]?"
     ]
   },
   "dropped": []

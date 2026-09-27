@@ -4,40 +4,41 @@
 
 **Investment Diligence Memo: Madhur Iron & Steel (India) Limited**
 
-Madhur Iron & Steel (India) Limited operates in steel products trading and manufacturing, reporting a revenue from operations of ₹44,401.61 lakhs in Fiscal 2026 compared to ₹33,956.36 lakhs in Fiscal 2025 [p. 471, 473]. The restated profit after tax for Fiscal 2026 stood at ₹2,387.57 lakhs, up from ₹1,812.25 lakhs in Fiscal 2025, alongside a Fiscal 2026 profit before tax of ₹3,239.02 lakhs [p. 86]. The company's total equity for Fiscal 2026 was reported at ₹11,789.73 lakhs [p. 467], backed by current borrowings of ₹18,277.99 lakhs [p. 478] and non-current borrowings of ₹909.09 lakhs [p. 416]. Inventories shifted from ₹15,000.13 lakhs in Fiscal 2025 to ₹17,273.17 lakhs in Fiscal 2026 [p. 372], while receivables in Fiscal 2025 stood at ₹4,172.94 lakhs [p. 155]. The proposed fresh issue consists of up to 1,10,00,000 Equity Shares [p. 80] with proceeds earmarked for debt repayment, capital expenditure for the proposed unit in Berla, Chhattisgarh, and working capital requirements [p. 134].
+Madhur Iron & Steel (India) Limited operates in steel products trading and manufacturing, reporting a restated revenue of 44,401.61 ₹ lakhs for Fiscal 2026 [p. 86]. The restated profit after tax for Fiscal 2026 stood at 2,387.57 ₹ lakhs, compared to 1,812.25 ₹ lakhs in Fiscal 2025 [p. 86]. Total borrowings include current borrowings of 18,628.02 ₹ lakhs and non-current borrowings of 864.53 ₹ lakhs against an equity of 11,789.73 ₹ lakhs [p. 85, p. 348, p. 467]. The company is planning a fresh issue of up to 1,10,00,000 Equity Shares to fund capital expenditure for its proposed unit in Berla, Chhattisgarh, repay borrowings, and support working capital [p. 80, p. 134]. Jayant Agrawal serves as the sole Promoter of the company [p. 330].
 
 ## Red flags
-- Borrowings are 1.63x total equity, consisting of ₹18,277.99 lakhs in current borrowings and ₹909.09 lakhs in non-current borrowings against total equity of ₹11,789.73 lakhs [p. 416, 467, 478].
-- High finance costs of ₹1,847.29 lakhs in Fiscal 2026 consume a substantial portion of the ₹3,239.02 lakhs profit before tax [p. 86, 472].
-- Heavy capital lockup in inventory, which increased from ₹15,000.13 lakhs in Fiscal 2025 to ₹17,273.17 lakhs in Fiscal 2026 [p. 372].
+- Trade receivables grew significantly to 8,020.52 ₹ lakhs in Fiscal 2026 from 4,172.94 ₹ lakhs in Fiscal 2025 alongside surging inventories of 17,273.17 ₹ lakhs [p. 84, p. 86, p. 473].
+- High leverage profile with total borrowings of 19,492.55 ₹ lakhs exceeding total equity of 11,789.73 ₹ lakhs [p. 85, p. 348, p. 467].
 
 ## Questions for management
-- How does management plan to optimize the heavy inventory holding of ₹17,273.17 lakhs in Fiscal 2026 compared to ₹15,000.13 lakhs in Fiscal 2025 [p. 372]?
-- With finance costs at ₹1,847.29 lakhs in Fiscal 2026 [p. 472], what specific tranches of current borrowings of ₹18,277.99 lakhs [p. 478] and non-current borrowings of ₹909.09 lakhs [p. 416] will be paid off using the fresh issue proceeds [p. 134]?
-- What is the total projected capital expenditure and timeline for setting up the proposed unit in Berla, Chhattisgarh for manufacturing re-rolled structural steel products [p. 134]?
-- Given that current borrowings stand at ₹18,277.99 lakhs against total equity of ₹11,789.73 lakhs [p. 467, 478], what is the target leverage ratio post-IPO?
-- How does the company intend to manage its working capital requirements, given the allocation of IPO proceeds towards it alongside debt repayment and capex [p. 134]?
+- What are the specific drivers behind trade receivables nearly doubling to 8,020.52 ₹ lakhs in Fiscal 2026 [p. 84]?
+- How does management justify finance costs of 1,847.29 ₹ lakhs relative to the profit before tax of 3,239.02 ₹ lakhs for Fiscal 2026 [p. 86]?
+- What is the exact allocation of the fresh issue proceeds of up to 1,10,00,000 Equity Shares between debt repayment and working capital requirements [p. 80, p. 134]?
+- What are the expected capital expenditure timelines and projected returns for the proposed manufacturing unit in Berla, Chhattisgarh [p. 134]?
+- Given that inventories have increased to 17,273.17 ₹ lakhs in Fiscal 2026 compared to 15,000.13 ₹ lakhs in Fiscal 2025, what is the strategy to optimize working capital [p. 84]?
 
 ## Verified facts
 
 | Item | Answer | Page |
 |---|---|---|
-| revenue_fy26 | The revenue from operations in Fiscal 2026 was ₹44,401.61 lakhs. | 471 |
+| revenue_fy26 | 44,401.61 | 86 |
 | revenue_fy25 | 33,956.36 | 473 |
+| revenue_fy24 | 23,925.12 | 86 |
 | pat_fy26 | The restated profit after tax for Fiscal 2026 was ₹2,387.57 lakhs. | 86 |
 | pat_fy25 | 1,812.25 | 86 |
 | pbt_fy26 | 3,239.02 | 86 |
-| finance_costs_fy26 | 1,847.29 lakhs | 472 |
+| finance_costs_fy26 | 1,847.29 | 86 |
 | equity_fy26 | 11,789.73 | 467 |
-| current_borrowings_fy26 | 18,277.99 | 478 |
-| noncurrent_borrowings_fy26 | 909.09 | 416 |
-| receivables_fy25 | 4,172.94 | 155 |
-| inventories_fy26 | 17,273.17 | 372 |
-| inventories_fy25 | 15,000.13 | 372 |
+| current_borrowings_fy26 | 18,628.02 | 85 |
+| noncurrent_borrowings_fy26 | 864.53 | 348 |
+| receivables_fy26 | 8,020.52 ₹ lakhs | 84 |
+| receivables_fy25 | 4,172.94 | 84 |
+| inventories_fy26 | 17,273.17 | 84 |
+| inventories_fy25 | Inventories as at March 31, 2025 in the restated statement of assets and liabilities were 15,000.13 ₹ in lakhs. | 84 |
 | promoters | Jayant Agrawal is the sole Promoter of the company. | 330 |
 | fresh_issue | Up to 1,10,00,000 Equity Shares | 80 |
 | objects | 1. Repayment/ prepayment, in full or in part, of certain borrowings and accrued interest thereon availed by our Company; | 134 |
 
-*Not found or not verifiable (left out rather than guessed): revenue_fy24, receivables_fy26, litigation_against_company, criminal_against_promoters, litigation_against_promoters, offer_for_sale.*
+*Not found or not verifiable (left out rather than guessed): litigation_against_company, criminal_against_promoters, litigation_against_promoters, offer_for_sale.*
 
-*21 checklist questions; estimated model cost $0.0079 at list prices.*
+*21 checklist questions; estimated model cost $0.0080 at list prices.*

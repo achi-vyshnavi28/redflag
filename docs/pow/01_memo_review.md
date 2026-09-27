@@ -13,7 +13,8 @@ Then I read each memo against the filing, the way an analyst would before it goe
 | Anchor Offshore | **Trade receivables up 71.8% while revenue fell 24.4%** (₹399.96M → ₹687.19M vs ₹1,399.89M → ₹1,058.27M) | restated balance sheet and P&L |
 | Atomberg | **Restated loss of ₹148.88 crore** in FY2026; EBIT does not cover finance costs (interest cover −2.32x) | restated P&L, p. 83 |
 | Atomberg | **Claims against the company of ₹377.68 crore = 203% of total equity**; one material civil case against the promoters | litigation summary, p. 50 |
-| Madhur Steel | Borrowings ≈ 1.6x equity; finance costs of ₹1,847 lakh against PBT of ₹3,239 lakh | restated statements |
+| Atomberg | **Inventories doubled** (₹1,410.84M → ₹2,849.62M, +102%) while revenue grew 34.8% | restated balance sheet, p. 344 |
+| Madhur Steel | **Trade receivables up 92.2% while revenue grew 30.8%** (₹4,172.94 → ₹8,020.52 lakh); borrowings 1.65x equity | restated statements, p. 84-86 |
 
 ## What the AI got wrong: the citation was real, the meaning was not
 
@@ -28,6 +29,11 @@ number**. All three errors below passed the citation check.
    - The restated balance sheet (p. 85, p. 84) says ₹18,628.02 and ₹864.53 lakh.
    The ratio moved only from 1.65x to 1.63x, but a memo that mixes definitions cannot be defended at an IC.
    **Fix:** balance-sheet and P&L questions now ask for the restated statement figure explicitly.
+   **Effect (v2 memo):** current and non-current borrowings now come from the restated balance sheet (₹18,628.02 and
+   ₹864.53 lakh, p. 85), D/E 1.65x, and the fuller answers surfaced a new flag: **receivables up 92% vs revenue up 31%**.
+   The v1 memos are kept in `reports/memo_v1/` for comparison.
+   **Side effect, caught and handled:** the more specific wording made retrieval miss Atomberg's revenue (3 facts lost).
+   The memo now asks the specific question first and falls back to the plain one, recording which was used.
 2. **"By" read as "against" (Anchor Offshore).** A management question cites "litigation against the company amounting
    to ₹49.71 million". On p. 47 that amount is litigation filed **by** the company; claims **against** it total ₹0.92 million.
    **Fix to build:** extract litigation tables as structured rows (party, direction, count, amount) instead of free text.

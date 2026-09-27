@@ -4,41 +4,43 @@
 
 **Investment Diligence Memo: Anchor Offshore Services Limited**
 
-Anchor Offshore Services Limited operates in the marine and offshore engineering services sector, led by promoters Narothamdas Chanillo, Sujata N Chanillo, and Siddesh N Chanillo [p. 7]. For Fiscal 2026, the company reported revenue of 1,058.27 million (₹105.83 crore) compared to 1,399.89 million (₹139.99 crore) in Fiscal 2025 and 1,179.04 million (₹117.90 crore) in Fiscal 2024 [p. 355]. Profit after tax for Fiscal 2026 stood at 80.35 million (₹8.04 crore) down from 128.86 million (₹12.89 crore) in Fiscal 2025 [p. 80]. Total equity as of Fiscal 2026 was recorded at 1,304.25 million (₹130.43 crore) with current borrowings at 153.96 million (₹15.40 crore) [p. 305, p. 326]. The proposed offering includes an offer for sale of up to 6,00,000 equity shares by selling shareholders [p. 75].
+Anchor Offshore Services Limited operates in the marine and offshore engineering services sector, with promoters Narothamdas Chanillo, Sujata N Chanillo, and Siddesh N Chanillo [p. 7]. The company reported revenue of 1,058.27 million in Fiscal 2026, down from 1,399.89 million in Fiscal 2025 and 1,179.04 million in Fiscal 2024 [p. 80, p. 283]. Profit after tax for Fiscal 2026 stood at 80.35 million, compared to 128.86 million in Fiscal 2025 [p. 80]. Equity as of Fiscal 2026 was recorded at 1,304.25 million, supported by current borrowings of 153.96 million and finance costs of 23.46 million [p. 79, p. 80, p. 326]. The proposed offering includes an offer for sale of up to 6,00,000 equity shares by selling shareholders, alongside primary objectives to fund long-term working capital and repay borrowings [p. 75, p. 122].
 
 ## Red flags
-- Revenue fell 24.4% from Fiscal 2025 to Fiscal 2026 [p. 355].
-- Trade receivables grew 71.8% to 687.19 million (₹68.72 crore) in Fiscal 2026 from 399.96 million (₹40.00 crore) in Fiscal 2025 despite falling revenue [p. 303, p. 355].
+- Revenue fell 24.4% from Fiscal 2025 to Fiscal 2026 [p. 80, p. 283].
+- Trade receivables grew 71.8% to 687.19 million in Fiscal 2026 from 399.96 million in Fiscal 2025 while revenue declined by 24.4% [p. 78, p. 80, p. 283].
 - Part of the IPO is an offer for sale of up to 6,00,000 equity shares by selling shareholders [p. 75].
 
 ## Questions for management
-- What were the primary drivers behind the 24.4% decline in revenue from 1,399.89 million (₹139.99 crore) in Fiscal 2025 to 1,058.27 million (₹105.83 crore) in Fiscal 2026 [p. 355]?
-- Why did trade receivables increase significantly to 687.19 million (₹68.72 crore) in Fiscal 2026 from 399.96 million (₹39.99 crore) in Fiscal 2025 while revenues dropped [p. 303, p. 355]?
-- What is the expected realization timeline for the outstanding trade receivables of 687.19 million (₹68.72 crore) recorded in Fiscal 2026 [p. 303]?
-- Can management provide details regarding the ongoing litigation against the company amounting to 49.71 million (₹4.97 crore) [p. 47]?
-- How does the company plan to allocate the proceeds between funding long-term working capital requirements and the repayment or pre-payment of borrowings [p. 122]?
+- What specific operational or market factors drove the 24.4% decline in revenue from 1,399.89 million in Fiscal 2025 to 1,058.27 million in Fiscal 2026 [p. 80, p. 283]?
+- Why did trade receivables increase significantly to 687.19 million in Fiscal 2026 from 399.96 million in Fiscal 2025 despite a contracting top line [p. 78, p. 80, p. 283]?
+- What are the specific terms and repayment schedules for the current borrowings of 153.96 million which are targeted for full repayment or pre-payment [p. 79, p. 122]?
+- How does management intend to allocate the proceeds toward long-term working capital requirements given the current inventory level of 78.27 million [p. 78, p. 122]?
+- What is the underlying status and potential financial exposure of the 49.71 million in litigation pending against the company [p. 47]?
 
 ## Verified facts
 
 | Item | Answer | Page |
 |---|---|---|
-| revenue_fy26 | 1,058.27 | 355 |
-| revenue_fy25 | 1,399.89 | 355 |
-| revenue_fy24 | 1,179.04 | 355 |
+| revenue_fy26 | 1,058.27 million | 283 |
+| revenue_fy25 | 1,399.89 | 80 |
+| revenue_fy24 | 1,179.04 | 80 |
 | pat_fy26 | 80.35 | 80 |
 | pat_fy25 | 128.86 million | 80 |
 | pbt_fy26 | The restated profit before tax for Fiscal 2026 was 117.36 million. | 80 |
-| finance_costs_fy26 | 23.46 | 310 |
+| finance_costs_fy26 | 23.46 | 80 |
 | equity_fy26 | 1,304.25 | 326 |
-| current_borrowings_fy26 | 153.96 | 305 |
-| receivables_fy26 | 687.19 | 303 |
-| receivables_fy25 | 399.96 | 303 |
+| current_borrowings_fy26 | 153.96 | 79 |
+| receivables_fy26 | 687.19 | 78 |
+| receivables_fy25 | Trade receivables as at March 31, 2025 in the restated statement of assets and liabilities were 399.96 million. | 78 |
+| inventories_fy26 | Inventories as at March 31, 2026 were 78.27 million. | 78 |
+| inventories_fy25 | 100.54 | 78 |
 | litigation_against_company | 49.71 | 47 |
 | criminal_against_promoters | There are NIL criminal proceedings pending against the Promoters. | 374 |
 | promoters | The Promoters of our Company are Narothamdas Chanillo, Sujata N Chanillo and Siddesh N Chanillo. | 7 |
 | offer_for_sale | Up to 6,00,000 equity shares are offered in the offer for sale by selling shareholders. | 75 |
 | objects | Funding long-term working capital requirements of our Company; Repayment/pre-payment, in full, of a borrowing availed by | 122 |
 
-*Not found or not verifiable (left out rather than guessed): noncurrent_borrowings_fy26, inventories_fy26, inventories_fy25, litigation_against_promoters, fresh_issue.*
+*Not found or not verifiable (left out rather than guessed): noncurrent_borrowings_fy26, litigation_against_promoters, fresh_issue.*
 
-*21 checklist questions; estimated model cost $0.0079 at list prices.*
+*21 checklist questions; estimated model cost $0.0081 at list prices.*

@@ -4,22 +4,24 @@
 
 **Investment Diligence Memo: Atomberg Technologies Limited**
 
-Atomberg Technologies Limited operates in the consumer electrical appliances sector, focusing on fans and BLDC motors [p. 163]. Revenue from operations grew to ₹1,293.77 crore in Fiscal 2026 from ₹959.51 crore in Fiscal 2025 and ₹796.98 crore in Fiscal 2024 [p. 163, p. 399]. However, the company continues to incur losses, reporting a restated loss after tax of ₹148.88 crore in Fiscal 2026 following a loss of ₹117.41 crore in Fiscal 2025 [p. 83]. Total equity stood at ₹186.15 crore as of Fiscal 2026, alongside current borrowings of ₹239.75 crore and non-current borrowings of ₹17.78 crore [p. 34, p. 375]. The proposed fresh issue aims to raise up to ₹450.00 crore to repay certain borrowings, fund brand awareness, invest in R&D, and for general corporate purposes, alongside an offer for sale of up to 76,541,851 equity shares [p. 150].
+Atomberg Technologies Limited operates in the consumer electrical appliances sector, focusing on fans and BLDC motors [p. 163]. Revenue grew to 12,937.67 million ₹ in Fiscal 2026 from 9,595.12 million ₹ in Fiscal 2025 and 7,969.76 million ₹ in Fiscal 2024 [p. 163, p. 399]. However, the company remains loss-making, reporting a restated loss after tax of (1,488.81) million ₹ for Fiscal 2026 and (1,174.05) million ₹ for Fiscal 2025 [p. 83]. Total equity stood at 1,861.46 million ₹ alongside current borrowings of 2,397.53 million ₹ and non-current borrowings of 177.75 million ₹ [p. 34, p. 375]. The proposed fresh issue aims to raise up to 4,500.00 million ₹ alongside an offer for sale of up to 76,541,851 equity shares [p. 150].
 
 ## Red flags
-- Restated loss of ₹148.88 crore in Fiscal 2026 [p. 83].
-- Borrowings are 1.38x total equity with current borrowings of ₹239.75 crore and non-current borrowings of ₹17.78 crore against equity of ₹186.15 crore [p. 34, p. 375].
-- EBIT covers finance costs negative 2.32x in Fiscal 2026 with finance costs at ₹44.91 crore [p. 400].
-- Aggregate material civil litigations against the company involve ₹377.68 crore, equal to 203% of total equity [p. 50, p. 375].
-- There is 1 material civil litigation pending against the promoters, Manoj Kumar Meena and Sibabrata Das [p. 50, p. 309].
-- Part of the IPO is an offer for sale of up to 76,541,851 equity shares [p. 150].
+- Restated loss after tax was (1,488.81) million ₹ in Fiscal 2026 [p. 83].
+- Total inventories doubled to 2,849.62 ₹ millions as at March 31, 2026 compared to 1,410.84 million ₹ in Fiscal 2025 [p. 344].
+- Aggregate amount involved in outstanding material civil litigations against the company is ₹3,776.84 million [p. 50].
+- Current borrowings of 2,397.53 million ₹ and non-current borrowings of 177.75 million ₹ exceed total equity of 1,861.46 million ₹ [p. 34, p. 375].
+- Finance costs for Fiscal 2026 were 449.07 million ₹ against a restated loss before tax of (1,488.81) million [p. 400].
+- There is 1 material civil litigation pending against the Promoters [p. 50].
+- The offering includes an offer for sale of up to 76,541,851 equity shares [p. 150].
 
 ## Questions for management
-- How does management plan to achieve profitability given that losses expanded from ₹117.41 crore in Fiscal 2025 to ₹148.88 crore in Fiscal 2026 [p. 83]?
-- Given that finance costs were ₹44.91 crore in Fiscal 2026 against a loss before tax of ₹148.88 crore, how will the proposed fresh issue of up to ₹450.00 crore sufficiently de-leverage the balance sheet [p. 150, p. 400]?
-- What is the underlying status and potential financial exposure of the ₹377.68 crore in outstanding material civil litigations against the company [p. 50]?
-- Can management clarify the nature of the 1 material civil litigation pending against the promoters [p. 50]?
-- How do trade receivables of ₹238.91 crore and inventories of ₹284.96 crore as of Fiscal 2026 impact the company's working capital cycle and cash burn [p. 344, p. 358]?
+- What are the primary drivers behind the widening net losses from (1,174.05) million ₹ in Fiscal 2025 to (1,488.81) million ₹ in Fiscal 2026 [p. 83]?
+- How does management justify the sharp increase in total inventories to 2,849.62 ₹ millions in Fiscal 2026 from 1,410.84 million ₹ in Fiscal 2025 [p. 344]?
+- What is the expected timeline and potential liability resolution for the ₹3,776.84 million in outstanding material civil litigations against the company [p. 50]?
+- Given that current borrowings of 2,397.53 million ₹ and non-current borrowings of 177.75 million ₹ exceed total equity of 1,861.46 million ₹, how will the fresh issue proceeds of up to 4,500.00 million ₹ be allocated across debt repayment [p. 34, p. 150, p. 375]?
+- What specific operational steps are being taken to improve trade receivables, which grew to 2,389.05 million ₹ in Fiscal 2026 from 1,755.71 million INR in Fiscal 2025 [p. 345, p. 358]?
+- Can management provide details on the nature of the 1 material civil litigation pending against the promoters [p. 50]?
 
 ## Verified facts
 
@@ -27,7 +29,7 @@ Atomberg Technologies Limited operates in the consumer electrical appliances sec
 |---|---|---|
 | revenue_fy26 | 12,937.67 | 163 |
 | revenue_fy25 | 9,595.12 | 399 |
-| revenue_fy24 | Revenue from operations in Fiscal 2024 was ₹7,969.76 million. | 399 |
+| revenue_fy24 | 7,969.76 | 399 |
 | pat_fy26 | ₹1,488.81 million | 83 |
 | pat_fy25 | The restated loss after tax for the year ended March 31, 2025 was (1,174.05) million ₹. | 83 |
 | pbt_fy26 | The restated loss before tax for the year for Fiscal 2026 was (1,488.81) million. | 400 |
@@ -36,8 +38,9 @@ Atomberg Technologies Limited operates in the consumer electrical appliances sec
 | current_borrowings_fy26 | 2,397.53 | 34 |
 | noncurrent_borrowings_fy26 | 177.75 | 34 |
 | receivables_fy26 | 2,389.05 | 358 |
-| receivables_fy25 | 1,755.71 | 358 |
+| receivables_fy25 | Trade receivables as at March 31, 2025 were 1,755.71 million INR. | 345 |
 | inventories_fy26 | Total inventories as at March 31, 2026 were 2,849.62 ₹ millions. | 344 |
+| inventories_fy25 | 1,410.84 | 344 |
 | litigation_against_company | The aggregate amount involved in outstanding material civil litigations against the Company is ₹3,776.84 million. | 50 |
 | criminal_against_promoters | There are no outstanding criminal proceedings that have been initiated against our Promoters. | 50 |
 | litigation_against_promoters | There is 1 material civil litigation pending against the Promoters. | 50 |
@@ -46,6 +49,4 @@ Atomberg Technologies Limited operates in the consumer electrical appliances sec
 | offer_for_sale | Up to 76,541,851 Equity Shares | 150 |
 | objects | The net proceeds of the Fresh Issue are proposed to be utilized for: (a) Repayment / prepayment, in full or in part, of  | 150 |
 
-*Not found or not verifiable (left out rather than guessed): inventories_fy25.*
-
-*21 checklist questions; estimated model cost $0.0076 at list prices.*
+*21 checklist questions; estimated model cost $0.0075 at list prices.*
