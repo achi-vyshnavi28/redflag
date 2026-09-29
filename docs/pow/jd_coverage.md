@@ -23,7 +23,7 @@ RF = RedFlag (this repo) · CW = [CovenantWatch](https://github.com/achi-vyshnav
 | LLMs, RAG, AI agents, frameworks | above |
 | Debug and improve performance and reliability | RF `docs/failure_catalogue.md`: 10 failures, each with fix and measured effect (accuracy 65% → 89%); CW page-citation fix (recall 33% → 96%) |
 | Prototypes into production | Deployed apps; Dockerfiles; GitHub Actions CI that builds the image and calls the running API; a quality gate that fails the build if retrieval recall or answer accuracy regresses; health checks, retries, graceful degradation |
-| Customer feedback → product improvements | RF `/feedback` endpoint + log; CW analyst verdicts on every alert; feedback sorted into build / configure / not-now (08); interview guide (04) |
+| Customer feedback → product improvements | RF `/feedback` endpoint + log; CW analyst verdicts on every alert; feedback sorted into build / configure / not-now (08) |
 | Across engineering, AI, product, customer implementation | both repos include the build, the evaluation, and the deployment playbook |
 
 ## What we're looking for
@@ -45,5 +45,6 @@ RF = RedFlag (this repo) · CW = [CovenantWatch](https://github.com/achi-vyshnav
 | Fintech / financial research / investment workflows | IPO diligence (RF) and private-credit covenant monitoring (CW) on real Indian filings |
 
 ## Honest gaps
+- No real customer conversations yet: feedback handling is built (endpoints, analyst verdicts, a product-feedback note), but it has not been tested with real finance users.
 - Claude is supported but not benchmarked (no API key); OpenAI is covered by its open-weight gpt-oss-120b via Groq.
 - Docker is verified in CI, not on my laptop (virtualisation is disabled on it).
