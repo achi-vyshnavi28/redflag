@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Page 471 shows 'Sale of Traded Goods' as 15,179.88 lakhs which is just a component of the total 'Revenue from Operations' of 44,401.61 lakhs reported on page 35, along with manufactured goods."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.07, "tokens_in": 625, "tokens_out": 80, "cost_usd": 9.5e-05, "cached": false}}

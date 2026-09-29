@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "709.70", "value": 709.7, "unit": "\u20b9 million", "page": 400, "quote": "Depreciation and amortization expense 709.70 5.36% 489.78 4.89% 391.32 4.74%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.71, "tokens_in": 3257, "tokens_out": 119, "cost_usd": 0.000373, "cached": false}}

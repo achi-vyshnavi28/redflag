@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "18,628.02", "value": 18628.02, "unit": "\u20b9 lakhs", "page": 85, "quote": "Borrowings 18,628.02 11,405.28 6,848.70", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 24.09, "tokens_in": 4135, "tokens_out": 112, "cost_usd": 0.000458, "cached": false}}

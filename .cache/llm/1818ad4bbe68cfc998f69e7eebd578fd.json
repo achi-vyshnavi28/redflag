@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "18,161.02", "value": 18161.02, "unit": "\u20b9 lakhs", "page": 380, "quote": "Purchases of Stock-in-Trade 18,161.02 13,557.65 2,108.47", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.57, "tokens_in": 2981, "tokens_out": 118, "cost_usd": 0.000345, "cached": false}}

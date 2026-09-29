@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Statement A on page 338 refers to a specific revenue component ('Turnkey Engineering Projects'), whereas Statement B on page 27 refers to the overall 'Total' revenue from operations."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 0.98, "tokens_in": 1321, "tokens_out": 57, "cost_usd": 0.000155, "cached": false}}

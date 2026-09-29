@@ -1,0 +1,95 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>RedFlag figures</title>
+<style>
+  :root { --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #8a8984; --grid: #e7e6e2;
+          --series: #2a78d6; --box: #ffffff; --line: #c9c8c2; --accent-bg: #eef4fc; }
+  body { margin: 0; background: var(--surface); font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); }
+  .fig { width: 1180px; padding: 28px 32px; background: var(--surface); box-sizing: border-box; }
+  h2 { margin: 0 0 4px; font-size: 22px; } .sub { color: var(--ink2); font-size: 14px; margin-bottom: 20px; }
+  /* architecture */
+  .lane { display: flex; align-items: stretch; gap: 0; margin: 10px 0 22px; }
+  .lane-title { font-size: 13px; font-weight: 600; color: var(--ink2); text-transform: uppercase; letter-spacing: .04em; margin-top: 14px; }
+  .box { background: var(--box); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 13px; width: 150px; }
+  .box b { display: block; font-size: 14px; margin-bottom: 3px; }
+  .box.key { border-color: var(--series); background: var(--accent-bg); }
+  .arrow { align-self: center; color: var(--muted); font-size: 22px; padding: 0 6px; }
+  .note { font-size: 12px; color: var(--ink2); margin-top: 4px; }
+  .row2 { display: flex; gap: 14px; }
+  .pill { border: 1.5px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 13px; background: var(--box); }
+  /* bars */
+  .chart { margin-top: 8px; }
+  .bar-row { display: grid; grid-template-columns: 330px 1fr; align-items: center; margin: 9px 0; font-size: 14px; }
+  .bar-label { color: var(--ink); padding-right: 12px; }
+  .bar-label small { display: block; color: var(--ink2); font-size: 12px; }
+  .track { position: relative; height: 26px; background: repeating-linear-gradient(90deg, transparent 0 calc(10% - 1px), var(--grid) calc(10% - 1px) 10%); }
+  .bar { height: 26px; background: var(--series); border-radius: 0 4px 4px 0; display: flex; align-items: center; justify-content: flex-end; }
+  .val { position: absolute; top: 3px; font-size: 14px; font-weight: 600; color: var(--ink); padding-left: 8px; }
+  .axis { display: grid; grid-template-columns: 330px 1fr; font-size: 11px; color: var(--muted); }
+  .ticks { display: flex; justify-content: space-between; }
+  .foot { font-size: 12px; color: var(--ink2); margin-top: 14px; }
+</style></head>
+<body>
+
+<div class="fig" id="architecture">
+  <h2>RedFlag: how an answer is produced</h2>
+  <div class="sub">Every figure is traced to a page; anything that cannot be verified is declined, not guessed.</div>
+
+  <div class="lane-title">Question answering agent (LangGraph)</div>
+  <div class="lane">
+    <div class="box"><b>Question</b>about one of 3 SEBI prospectuses (1,552 pages)</div><div class="arrow">→</div>
+    <div class="box"><b>Retrieve</b>BGE embeddings in Qdrant; passages labelled with page, section, ₹ unit</div><div class="arrow">→</div>
+    <div class="box"><b>Extract</b>LLM returns JSON: value, unit, page, verbatim quote (Gemini / gpt-oss / Qwen)</div><div class="arrow">→</div>
+    <div class="box"><b>Compute</b>growth % and ₹ crore conversions done in Python, never by the model</div><div class="arrow">→</div>
+    <div class="box key"><b>Verify</b>quote is on the cited page and contains the number; else retry once with the reason, then decline</div><div class="arrow">→</div>
+    <div class="box"><b>Answer</b>with page citation and a step-by-step trace</div>
+  </div>
+
+  <div class="lane-title">Red-flag memo (multi-agent)</div>
+  <div class="lane">
+    <div class="box"><b>4 section agents</b>financials · leverage · litigation · offer, in parallel, each using the verified Q&amp;A</div><div class="arrow">→</div>
+    <div class="box"><b>Rules</b>loss, falling revenue, leverage, interest cover, receivables vs revenue (Python)</div><div class="arrow">→</div>
+    <div class="box"><b>Writer</b>LLM drafts the memo from verified facts only</div><div class="arrow">→</div>
+    <div class="box key"><b>Guardrail</b>drops any sentence with a number not in the verified facts</div><div class="arrow">→</div>
+    <div class="box"><b>Memo</b>every figure cites its page</div>
+  </div>
+
+  <div class="lane-title">Reconciliation agent</div>
+  <div class="lane">
+    <div class="box"><b>Find</b>every statement of a figure across the filing</div><div class="arrow">→</div>
+    <div class="box"><b>Verify</b>each quote on its page</div><div class="arrow">→</div>
+    <div class="box"><b>Normalise</b>to ₹ crore; group by date</div><div class="arrow">→</div>
+    <div class="box key"><b>Judge</b>different definition, or a real conflict in the filing?</div>
+  </div>
+
+  <div class="lane-title">Where it runs</div>
+  <div class="row2">
+    <div class="pill">Streamlit app (live)</div><div class="pill">FastAPI</div><div class="pill">MCP server: tools for Claude</div>
+    <div class="pill">Docker</div><div class="pill">CI: tests + quality gate (fails if recall &lt; 90%)</div>
+  </div>
+</div>
+
+<div class="fig" id="accuracy">
+  <h2>Answer accuracy after each fix</h2>
+  <div class="sub">Same 46 questions with hand-checked answers; Gemini 3.5 Flash-Lite. Each row adds one change.</div>
+  <div class="chart">
+    <div class="bar-row"><div class="bar-label">Plain RAG<small>MiniLM embeddings, top 5 passages</small></div><div class="track"><div class="bar" style="width:65.2%"></div><span class="val" style="left:65.2%">65.2%</span></div></div>
+    <div class="bar-row"><div class="bar-label">+ hybrid search<small>BM25 keywords + embeddings</small></div><div class="track"><div class="bar" style="width:76.1%"></div><span class="val" style="left:76.1%">76.1%</span></div></div>
+    <div class="bar-row"><div class="bar-label">+ unit labels, Python arithmetic<small>₹ lakhs / million / crore handled in code</small></div><div class="track"><div class="bar" style="width:80.4%"></div><span class="val" style="left:80.4%">80.4%</span></div></div>
+    <div class="bar-row"><div class="bar-label">+ citation check with retry<small>quote must be on the cited page</small></div><div class="track"><div class="bar" style="width:78.3%"></div><span class="val" style="left:78.3%">78.3%</span></div></div>
+    <div class="bar-row"><div class="bar-label">Final: BGE retrieval, forced calculation<small>retriever chosen by measurement (recall@8 95%)</small></div><div class="track"><div class="bar" style="width:89.1%"></div><span class="val" style="left:89.1%">89.1%</span></div></div>
+  </div>
+  <div class="axis"><div></div><div class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div></div>
+  <div class="foot">The citation check traded a little accuracy for trust (it declines what it cannot verify); wrong or unsupported answers fell from 12.9% to 2.9%.</div>
+</div>
+
+<div class="fig" id="models">
+  <h2>Same pipeline, three model families</h2>
+  <div class="sub">Final configuration, same 46 questions. All three declined every question whose answer is not in the documents.</div>
+  <div class="chart">
+    <div class="bar-row"><div class="bar-label">Gemini 3.5 Flash-Lite<small>default: fastest (1.8 s median)</small></div><div class="track"><div class="bar" style="width:89.1%"></div><span class="val" style="left:89.1%">89.1%</span></div></div>
+    <div class="bar-row"><div class="bar-label">Qwen 3.8 27B (Groq)<small>100% of citations correct</small></div><div class="track"><div class="bar" style="width:89.1%"></div><span class="val" style="left:89.1%">89.1%</span></div></div>
+    <div class="bar-row"><div class="bar-label">OpenAI gpt-oss-120b (Groq)<small>open-weight model from OpenAI</small></div><div class="track"><div class="bar" style="width:87.0%"></div><span class="val" style="left:87.0%">87.0%</span></div></div>
+  </div>
+  <div class="axis"><div></div><div class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div></div>
+</div>
+</body></html>

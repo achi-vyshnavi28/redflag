@@ -1,50 +1,865 @@
 [
-  {"id": "A01", "doc": "atomberg", "type": "table_number", "q": "What was Atomberg's revenue from operations in Fiscal 2026?", "value": 12937.67, "unit": "million", "evidence": "12,937.67"},
-  {"id": "A02", "doc": "atomberg", "type": "table_number", "q": "What was the revenue from operations in the financial year ended March 31, 2024?", "value": 7969.76, "unit": "million", "evidence": "7,969.76"},
-  {"id": "A03", "doc": "atomberg", "type": "table_number", "q": "What was the restated loss after tax for Fiscal 2026?", "value": -1488.81, "unit": "million", "evidence": "1,488.81"},
-  {"id": "A04", "doc": "atomberg", "type": "table_number", "q": "What were the finance costs in Fiscal 2025?", "value": 476.33, "unit": "million", "evidence": "476.33"},
-  {"id": "A05", "doc": "atomberg", "type": "table_number", "q": "What was total equity as at March 31, 2026?", "value": 1861.46, "unit": "million", "evidence": "1,861.46"},
-  {"id": "A06", "doc": "atomberg", "type": "table_number", "q": "What were current borrowings as at March 31, 2026?", "value": 2397.53, "unit": "million", "evidence": "2,397.53"},
-  {"id": "A07", "doc": "atomberg", "type": "table_number", "q": "What was the value of inventories as at March 31, 2026?", "value": 2849.62, "unit": "million", "evidence": "2,849.62"},
-  {"id": "A08", "doc": "atomberg", "type": "text_number", "q": "What is the size of the fresh issue in rupees?", "value": 4500.0, "unit": "million", "evidence": "4,500.00"},
-  {"id": "A09", "doc": "atomberg", "type": "text", "q": "Who are the promoters of the company?", "keywords": ["Manoj Kumar Meena", "Sibabrata Das"], "evidence": "SIBABRATA DAS"},
-  {"id": "A10", "doc": "atomberg", "type": "text_number", "q": "What is the aggregate amount involved in outstanding litigation against the Company?", "value": 3776.84, "unit": "million", "evidence": "3,776.84"},
-  {"id": "A11", "doc": "atomberg", "type": "computed", "q": "By what percentage did revenue from operations grow from Fiscal 2025 to Fiscal 2026?", "value": 34.84, "unit": "percent", "evidence": "12,937.67"},
-  {"id": "A12", "doc": "atomberg", "type": "unit_conversion", "q": "What was revenue from operations in Fiscal 2026 expressed in rupees crore?", "value": 1293.77, "unit": "crore", "evidence": "12,937.67"},
-  {"id": "A13", "doc": "atomberg", "type": "not_disclosed", "q": "What revenue does the company forecast for Fiscal 2028?", "value": null, "unit": null, "evidence": null},
-  {"id": "A14", "doc": "atomberg", "type": "text", "q": "Who are the statutory auditors of the company?", "keywords": ["SSKM", "S R B C"], "evidence": "SSKM"},
-  {"id": "A15", "doc": "atomberg", "type": "table_number", "q": "What was the total of employee benefits expense in Fiscal 2024?", "value": 2483.17, "unit": "million", "evidence": "2,483.17"},
-
-  {"id": "M01", "doc": "madhur_steel", "type": "table_number", "q": "What was Madhur Iron & Steel's revenue from operations in Fiscal 2026?", "value": 44401.61, "unit": "lakhs", "evidence": "44,401.61"},
-  {"id": "M02", "doc": "madhur_steel", "type": "table_number", "q": "What was the profit for the year in Fiscal 2026?", "value": 2387.57, "unit": "lakhs", "evidence": "2,387.57"},
-  {"id": "M03", "doc": "madhur_steel", "type": "table_number", "q": "What were the finance costs in Fiscal 2024?", "value": 708.16, "unit": "lakhs", "evidence": "708.16"},
-  {"id": "M04", "doc": "madhur_steel", "type": "table_number", "q": "What was total equity as at March 31, 2026?", "value": 11789.73, "unit": "lakhs", "evidence": "11,789.73"},
-  {"id": "M05", "doc": "madhur_steel", "type": "table_number", "q": "What were current borrowings as at March 31, 2026?", "value": 18628.02, "unit": "lakhs", "evidence": "18,628.02"},
-  {"id": "M06", "doc": "madhur_steel", "type": "table_number", "q": "What were trade receivables as at March 31, 2024?", "value": 180.43, "unit": "lakhs", "evidence": "180.43"},
-  {"id": "M07", "doc": "madhur_steel", "type": "text_number", "q": "What was the total secured borrowing outstanding as on August 31, 2026?", "value": 25272.88, "unit": "lakhs", "evidence": "25,272.88"},
-  {"id": "M08", "doc": "madhur_steel", "type": "text_number", "q": "What debt-to-equity ratio must be maintained under the RBL Bank term loan for the solar plant?", "value": 3.33, "unit": "ratio", "evidence": "3.33:1"},
-  {"id": "M09", "doc": "madhur_steel", "type": "text_number", "q": "How many equity shares are offered in the fresh issue?", "value": 11000000, "unit": "shares", "evidence": "1,10,00,000"},
-  {"id": "M10", "doc": "madhur_steel", "type": "text", "q": "Who is the promoter of the company?", "keywords": ["Jayant Agrawal"], "evidence": "JAYANT AGRAWAL"},
-  {"id": "M11", "doc": "madhur_steel", "type": "text", "q": "Who is the statutory auditor of the company?", "keywords": ["Sanjib Jain"], "evidence": "Sanjib Jain"},
-  {"id": "M12", "doc": "madhur_steel", "type": "text", "q": "In which city is the registered office located?", "keywords": ["Bhilai"], "evidence": "Bhilai"},
-  {"id": "M13", "doc": "madhur_steel", "type": "computed", "q": "By what percentage did revenue from operations grow from Fiscal 2025 to Fiscal 2026?", "value": 30.76, "unit": "percent", "evidence": "44,401.61"},
-  {"id": "M14", "doc": "madhur_steel", "type": "unit_conversion", "q": "What was revenue from operations in Fiscal 2026 expressed in rupees crore?", "value": 444.02, "unit": "crore", "evidence": "44,401.61"},
-  {"id": "M15", "doc": "madhur_steel", "type": "not_disclosed", "q": "What revenue does the company forecast for Fiscal 2028?", "value": null, "unit": null, "evidence": null},
-  {"id": "M16", "doc": "madhur_steel", "type": "text_number", "q": "What is the total sanctioned limit of fund-based facilities?", "value": 26945.94, "unit": "lakhs", "evidence": "26,945.94"},
-
-  {"id": "N01", "doc": "anchor_offshore", "type": "table_number", "q": "What was Anchor Offshore's revenue from operations in Fiscal 2026?", "value": 1058.27, "unit": "million", "evidence": "1,058.27"},
-  {"id": "N02", "doc": "anchor_offshore", "type": "table_number", "q": "What was revenue from operations for the year ended March 31, 2025?", "value": 1399.89, "unit": "million", "evidence": "1,399.89"},
-  {"id": "N03", "doc": "anchor_offshore", "type": "table_number", "q": "What was the restated profit or loss for the year in Fiscal 2024?", "value": -67.09, "unit": "million", "evidence": "67.09"},
-  {"id": "N04", "doc": "anchor_offshore", "type": "table_number", "q": "What was the share of profit of the joint venture in Fiscal 2025?", "value": 24.31, "unit": "million", "evidence": "24.31"},
-  {"id": "N05", "doc": "anchor_offshore", "type": "table_number", "q": "What was total equity as at March 31, 2026?", "value": 1304.25, "unit": "million", "evidence": "1,304.25"},
-  {"id": "N06", "doc": "anchor_offshore", "type": "table_number", "q": "What were current borrowings as at March 31, 2026?", "value": 153.96, "unit": "million", "evidence": "153.96"},
-  {"id": "N07", "doc": "anchor_offshore", "type": "table_number", "q": "What were trade receivables as at March 31, 2026?", "value": 687.19, "unit": "million", "evidence": "687.19"},
-  {"id": "N08", "doc": "anchor_offshore", "type": "text_number", "q": "How many equity shares are offered in the fresh issue?", "value": 6400000, "unit": "shares", "evidence": "64,00,000"},
-  {"id": "N09", "doc": "anchor_offshore", "type": "text_number", "q": "How many equity shares are offered in the offer for sale?", "value": 600000, "unit": "shares", "evidence": "6,00,000"},
-  {"id": "N10", "doc": "anchor_offshore", "type": "text", "q": "Who are the promoters of the company?", "keywords": ["Narothamdas", "Sujata", "Siddesh"], "evidence": "SIDDESH"},
-  {"id": "N11", "doc": "anchor_offshore", "type": "text_number", "q": "How many tax proceedings are pending against the Company?", "value": 50, "also_accept": [53], "unit": "count", "evidence": "50^", "note": "The DRHP is internally inconsistent: the summary (p. 47) says 50, the litigation chapter (p. 375) lists 52 direct + 1 indirect."},
-  {"id": "N12", "doc": "anchor_offshore", "type": "text", "q": "Who are the statutory auditors of the company?", "keywords": ["Jagadish"], "evidence": "Jagadish"},
-  {"id": "N13", "doc": "anchor_offshore", "type": "computed", "q": "By what percentage did revenue from operations change from Fiscal 2025 to Fiscal 2026?", "value": -24.40, "unit": "percent", "evidence": "1,058.27"},
-  {"id": "N14", "doc": "anchor_offshore", "type": "unit_conversion", "q": "What was revenue from operations in Fiscal 2026 expressed in rupees crore?", "value": 105.83, "unit": "crore", "evidence": "1,058.27"},
-  {"id": "N15", "doc": "anchor_offshore", "type": "not_disclosed", "q": "What revenue does the company forecast for Fiscal 2028?", "value": null, "unit": null, "evidence": null}
+ {
+  "id": "A01",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was Atomberg's revenue from operations in Fiscal 2026?",
+  "value": 12937.67,
+  "unit": "million",
+  "evidence": "12,937.67"
+ },
+ {
+  "id": "A02",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the revenue from operations in the financial year ended March 31, 2024?",
+  "value": 7969.76,
+  "unit": "million",
+  "evidence": "7,969.76"
+ },
+ {
+  "id": "A03",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the restated loss after tax for Fiscal 2026?",
+  "value": -1488.81,
+  "unit": "million",
+  "evidence": "1,488.81"
+ },
+ {
+  "id": "A04",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What were the finance costs in Fiscal 2025?",
+  "value": 476.33,
+  "unit": "million",
+  "evidence": "476.33"
+ },
+ {
+  "id": "A05",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was total equity as at March 31, 2026?",
+  "value": 1861.46,
+  "unit": "million",
+  "evidence": "1,861.46"
+ },
+ {
+  "id": "A06",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What were current borrowings as at March 31, 2026?",
+  "value": 2397.53,
+  "unit": "million",
+  "evidence": "2,397.53"
+ },
+ {
+  "id": "A07",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the value of inventories as at March 31, 2026?",
+  "value": 2849.62,
+  "unit": "million",
+  "evidence": "2,849.62"
+ },
+ {
+  "id": "A08",
+  "doc": "atomberg",
+  "type": "text_number",
+  "q": "What is the size of the fresh issue in rupees?",
+  "value": 4500.0,
+  "unit": "million",
+  "evidence": "4,500.00"
+ },
+ {
+  "id": "A09",
+  "doc": "atomberg",
+  "type": "text",
+  "q": "Who are the promoters of the company?",
+  "keywords": [
+   "Manoj Kumar Meena",
+   "Sibabrata Das"
+  ],
+  "evidence": "SIBABRATA DAS"
+ },
+ {
+  "id": "A10",
+  "doc": "atomberg",
+  "type": "text_number",
+  "q": "What is the aggregate amount involved in outstanding litigation against the Company?",
+  "value": 3776.84,
+  "unit": "million",
+  "evidence": "3,776.84"
+ },
+ {
+  "id": "A11",
+  "doc": "atomberg",
+  "type": "computed",
+  "q": "By what percentage did revenue from operations grow from Fiscal 2025 to Fiscal 2026?",
+  "value": 34.84,
+  "unit": "percent",
+  "evidence": "12,937.67"
+ },
+ {
+  "id": "A12",
+  "doc": "atomberg",
+  "type": "unit_conversion",
+  "q": "What was revenue from operations in Fiscal 2026 expressed in rupees crore?",
+  "value": 1293.77,
+  "unit": "crore",
+  "evidence": "12,937.67"
+ },
+ {
+  "id": "A13",
+  "doc": "atomberg",
+  "type": "not_disclosed",
+  "q": "What revenue does the company forecast for Fiscal 2028?",
+  "value": null,
+  "unit": null,
+  "evidence": null
+ },
+ {
+  "id": "A14",
+  "doc": "atomberg",
+  "type": "text",
+  "q": "Who are the statutory auditors of the company?",
+  "keywords": [
+   "SSKM",
+   "S R B C"
+  ],
+  "evidence": "SSKM"
+ },
+ {
+  "id": "A15",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the total of employee benefits expense in Fiscal 2024?",
+  "value": 2483.17,
+  "unit": "million",
+  "evidence": "2,483.17"
+ },
+ {
+  "id": "M01",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was Madhur Iron & Steel's revenue from operations in Fiscal 2026?",
+  "value": 44401.61,
+  "unit": "lakhs",
+  "evidence": "44,401.61"
+ },
+ {
+  "id": "M02",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was the profit for the year in Fiscal 2026?",
+  "value": 2387.57,
+  "unit": "lakhs",
+  "evidence": "2,387.57"
+ },
+ {
+  "id": "M03",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were the finance costs in Fiscal 2024?",
+  "value": 708.16,
+  "unit": "lakhs",
+  "evidence": "708.16"
+ },
+ {
+  "id": "M04",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was total equity as at March 31, 2026?",
+  "value": 11789.73,
+  "unit": "lakhs",
+  "evidence": "11,789.73"
+ },
+ {
+  "id": "M05",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were current borrowings as at March 31, 2026?",
+  "value": 18628.02,
+  "unit": "lakhs",
+  "evidence": "18,628.02"
+ },
+ {
+  "id": "M06",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were trade receivables as at March 31, 2024?",
+  "value": 180.43,
+  "unit": "lakhs",
+  "evidence": "180.43"
+ },
+ {
+  "id": "M07",
+  "doc": "madhur_steel",
+  "type": "text_number",
+  "q": "What was the total secured borrowing outstanding as on August 31, 2026?",
+  "value": 25272.88,
+  "unit": "lakhs",
+  "evidence": "25,272.88"
+ },
+ {
+  "id": "M08",
+  "doc": "madhur_steel",
+  "type": "text_number",
+  "q": "What debt-to-equity ratio must be maintained under the RBL Bank term loan for the solar plant?",
+  "value": 3.33,
+  "unit": "ratio",
+  "evidence": "3.33:1"
+ },
+ {
+  "id": "M09",
+  "doc": "madhur_steel",
+  "type": "text_number",
+  "q": "How many equity shares are offered in the fresh issue?",
+  "value": 11000000,
+  "unit": "shares",
+  "evidence": "1,10,00,000"
+ },
+ {
+  "id": "M10",
+  "doc": "madhur_steel",
+  "type": "text",
+  "q": "Who is the promoter of the company?",
+  "keywords": [
+   "Jayant Agrawal"
+  ],
+  "evidence": "JAYANT AGRAWAL"
+ },
+ {
+  "id": "M11",
+  "doc": "madhur_steel",
+  "type": "text",
+  "q": "Who is the statutory auditor of the company?",
+  "keywords": [
+   "Sanjib Jain"
+  ],
+  "evidence": "Sanjib Jain"
+ },
+ {
+  "id": "M12",
+  "doc": "madhur_steel",
+  "type": "text",
+  "q": "In which city is the registered office located?",
+  "keywords": [
+   "Bhilai"
+  ],
+  "evidence": "Bhilai"
+ },
+ {
+  "id": "M13",
+  "doc": "madhur_steel",
+  "type": "computed",
+  "q": "By what percentage did revenue from operations grow from Fiscal 2025 to Fiscal 2026?",
+  "value": 30.76,
+  "unit": "percent",
+  "evidence": "44,401.61"
+ },
+ {
+  "id": "M14",
+  "doc": "madhur_steel",
+  "type": "unit_conversion",
+  "q": "What was revenue from operations in Fiscal 2026 expressed in rupees crore?",
+  "value": 444.02,
+  "unit": "crore",
+  "evidence": "44,401.61"
+ },
+ {
+  "id": "M15",
+  "doc": "madhur_steel",
+  "type": "not_disclosed",
+  "q": "What revenue does the company forecast for Fiscal 2028?",
+  "value": null,
+  "unit": null,
+  "evidence": null
+ },
+ {
+  "id": "M16",
+  "doc": "madhur_steel",
+  "type": "text_number",
+  "q": "What is the total sanctioned limit of fund-based facilities?",
+  "value": 26945.94,
+  "unit": "lakhs",
+  "evidence": "26,945.94"
+ },
+ {
+  "id": "N01",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was Anchor Offshore's revenue from operations in Fiscal 2026?",
+  "value": 1058.27,
+  "unit": "million",
+  "evidence": "1,058.27"
+ },
+ {
+  "id": "N02",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was revenue from operations for the year ended March 31, 2025?",
+  "value": 1399.89,
+  "unit": "million",
+  "evidence": "1,399.89"
+ },
+ {
+  "id": "N03",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was the restated profit or loss for the year in Fiscal 2024?",
+  "value": -67.09,
+  "unit": "million",
+  "evidence": "67.09"
+ },
+ {
+  "id": "N04",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was the share of profit of the joint venture in Fiscal 2025?",
+  "value": 24.31,
+  "unit": "million",
+  "evidence": "24.31"
+ },
+ {
+  "id": "N05",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was total equity as at March 31, 2026?",
+  "value": 1304.25,
+  "unit": "million",
+  "evidence": "1,304.25"
+ },
+ {
+  "id": "N06",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What were current borrowings as at March 31, 2026?",
+  "value": 153.96,
+  "unit": "million",
+  "evidence": "153.96"
+ },
+ {
+  "id": "N07",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What were trade receivables as at March 31, 2026?",
+  "value": 687.19,
+  "unit": "million",
+  "evidence": "687.19"
+ },
+ {
+  "id": "N08",
+  "doc": "anchor_offshore",
+  "type": "text_number",
+  "q": "How many equity shares are offered in the fresh issue?",
+  "value": 6400000,
+  "unit": "shares",
+  "evidence": "64,00,000"
+ },
+ {
+  "id": "N09",
+  "doc": "anchor_offshore",
+  "type": "text_number",
+  "q": "How many equity shares are offered in the offer for sale?",
+  "value": 600000,
+  "unit": "shares",
+  "evidence": "6,00,000"
+ },
+ {
+  "id": "N10",
+  "doc": "anchor_offshore",
+  "type": "text",
+  "q": "Who are the promoters of the company?",
+  "keywords": [
+   "Narothamdas",
+   "Sujata",
+   "Siddesh"
+  ],
+  "evidence": "SIDDESH"
+ },
+ {
+  "id": "N11",
+  "doc": "anchor_offshore",
+  "type": "text_number",
+  "q": "How many tax proceedings are pending against the Company?",
+  "value": 50,
+  "also_accept": [
+   53
+  ],
+  "unit": "count",
+  "evidence": "50^",
+  "note": "The DRHP is internally inconsistent: the summary (p. 47) says 50, the litigation chapter (p. 375) lists 52 direct + 1 indirect."
+ },
+ {
+  "id": "N12",
+  "doc": "anchor_offshore",
+  "type": "text",
+  "q": "Who are the statutory auditors of the company?",
+  "keywords": [
+   "Jagadish"
+  ],
+  "evidence": "Jagadish"
+ },
+ {
+  "id": "N13",
+  "doc": "anchor_offshore",
+  "type": "computed",
+  "q": "By what percentage did revenue from operations change from Fiscal 2025 to Fiscal 2026?",
+  "value": -24.4,
+  "unit": "percent",
+  "evidence": "1,058.27"
+ },
+ {
+  "id": "N14",
+  "doc": "anchor_offshore",
+  "type": "unit_conversion",
+  "q": "What was revenue from operations in Fiscal 2026 expressed in rupees crore?",
+  "value": 105.83,
+  "unit": "crore",
+  "evidence": "1,058.27"
+ },
+ {
+  "id": "N15",
+  "doc": "anchor_offshore",
+  "type": "not_disclosed",
+  "q": "What revenue does the company forecast for Fiscal 2028?",
+  "value": null,
+  "unit": null,
+  "evidence": null
+ },
+ {
+  "id": "A16",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the carrying value of property, plant and equipment as at March 31, 2026?",
+  "value": 1890.76,
+  "unit": "million",
+  "evidence": "1,890.76"
+ },
+ {
+  "id": "A17",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What were trade receivables as at March 31, 2025?",
+  "value": 1755.71,
+  "unit": "million",
+  "evidence": "1,755.71"
+ },
+ {
+  "id": "A18",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was cash and cash equivalents as at March 31, 2026?",
+  "value": 407.53,
+  "unit": "million",
+  "evidence": "407.53"
+ },
+ {
+  "id": "A19",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What were total assets as at March 31, 2024?",
+  "value": 8449.72,
+  "unit": "million",
+  "evidence": "8,449.72"
+ },
+ {
+  "id": "A20",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What were non-current lease liabilities as at March 31, 2026?",
+  "value": 1432.65,
+  "unit": "million",
+  "evidence": "1,432.65"
+ },
+ {
+  "id": "A21",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was other income in Fiscal 2025?",
+  "value": 411.41,
+  "unit": "million",
+  "evidence": "411.41"
+ },
+ {
+  "id": "A22",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the cost of raw material and components consumed in Fiscal 2026?",
+  "value": 6722.28,
+  "unit": "million",
+  "evidence": "6,722.28"
+ },
+ {
+  "id": "A23",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was depreciation and amortisation expense in Fiscal 2026?",
+  "value": 709.7,
+  "unit": "million",
+  "evidence": "709.70"
+ },
+ {
+  "id": "A24",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What were exceptional items in Fiscal 2026?",
+  "value": -129.07,
+  "unit": "million",
+  "evidence": "129.07"
+ },
+ {
+  "id": "A25",
+  "doc": "atomberg",
+  "type": "table_number",
+  "q": "What was the restated loss after tax for Fiscal 2025?",
+  "value": -1174.05,
+  "unit": "million",
+  "evidence": "1,174.05"
+ },
+ {
+  "id": "A26",
+  "doc": "atomberg",
+  "type": "text_number",
+  "q": "What was the total outstanding borrowing of the company and its subsidiaries as of July 15, 2026?",
+  "value": 2745.67,
+  "unit": "million",
+  "evidence": "2,745.67"
+ },
+ {
+  "id": "A27",
+  "doc": "atomberg",
+  "type": "text_number",
+  "q": "How many equity shares are offered in the offer for sale?",
+  "value": 76541851,
+  "unit": "shares",
+  "evidence": "76,541,851"
+ },
+ {
+  "id": "A28",
+  "doc": "atomberg",
+  "type": "computed",
+  "q": "By what percentage did inventories grow from March 31, 2025 to March 31, 2026?",
+  "value": 101.98,
+  "unit": "percent",
+  "evidence": "2,849.62"
+ },
+ {
+  "id": "A29",
+  "doc": "atomberg",
+  "type": "unit_conversion",
+  "q": "What were total assets as at March 31, 2026 expressed in rupees crore?",
+  "value": 1194.64,
+  "unit": "crore",
+  "evidence": "11,946.38"
+ },
+ {
+  "id": "A30",
+  "doc": "atomberg",
+  "type": "not_disclosed",
+  "q": "At what price will the equity shares be listed on the stock exchanges?",
+  "value": null,
+  "unit": null,
+  "evidence": null
+ },
+ {
+  "id": "M17",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were inventories as at March 31, 2024?",
+  "value": 9419.9,
+  "unit": "lakhs",
+  "evidence": "9,419.90"
+ },
+ {
+  "id": "M18",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were trade receivables as at March 31, 2026?",
+  "value": 8020.52,
+  "unit": "lakhs",
+  "evidence": "8,020.52"
+ },
+ {
+  "id": "M19",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was capital work-in-progress as at March 31, 2026?",
+  "value": 1991.69,
+  "unit": "lakhs",
+  "evidence": "1,991.69"
+ },
+ {
+  "id": "M20",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were total assets as at March 31, 2026?",
+  "value": 33422.7,
+  "unit": "lakhs",
+  "evidence": "33,422.70"
+ },
+ {
+  "id": "M21",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was equity share capital as at March 31, 2026?",
+  "value": 2978.45,
+  "unit": "lakhs",
+  "evidence": "2,978.45"
+ },
+ {
+  "id": "M22",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were non-current borrowings as at March 31, 2026 in the restated statement of assets and liabilities?",
+  "value": 864.53,
+  "unit": "lakhs",
+  "evidence": "864.53"
+ },
+ {
+  "id": "M23",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were purchases of stock-in-trade in Fiscal 2026?",
+  "value": 18161.02,
+  "unit": "lakhs",
+  "evidence": "18,161.02"
+ },
+ {
+  "id": "M24",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was employee benefits expense in Fiscal 2026?",
+  "value": 670.5,
+  "unit": "lakhs",
+  "evidence": "670.50"
+ },
+ {
+  "id": "M25",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What were other expenses in Fiscal 2025?",
+  "value": 1413.07,
+  "unit": "lakhs",
+  "evidence": "1,413.07"
+ },
+ {
+  "id": "M26",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was current tax expense in Fiscal 2026?",
+  "value": 854.3,
+  "unit": "lakhs",
+  "evidence": "854.30"
+ },
+ {
+  "id": "M27",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was profit before tax in Fiscal 2025?",
+  "value": 2480.16,
+  "unit": "lakhs",
+  "evidence": "2,480.16"
+ },
+ {
+  "id": "M28",
+  "doc": "madhur_steel",
+  "type": "table_number",
+  "q": "What was total income in Fiscal 2024?",
+  "value": 23980.68,
+  "unit": "lakhs",
+  "evidence": "23,980.68"
+ },
+ {
+  "id": "M29",
+  "doc": "madhur_steel",
+  "type": "text_number",
+  "q": "What minimum security coverage does the Bajaj Finance short term revolving limit require?",
+  "value": 1.33,
+  "unit": "ratio",
+  "evidence": "1.33X"
+ },
+ {
+  "id": "M30",
+  "doc": "madhur_steel",
+  "type": "text_number",
+  "q": "What fixed asset coverage ratio (FACR) must the immovable collateral provide for the Bajaj Finance facility?",
+  "value": 0.3,
+  "unit": "ratio",
+  "evidence": "FACR of 0.3x"
+ },
+ {
+  "id": "M31",
+  "doc": "madhur_steel",
+  "type": "computed",
+  "q": "By what percentage did finance costs increase from Fiscal 2025 to Fiscal 2026?",
+  "value": 51.11,
+  "unit": "percent",
+  "evidence": "1,847.29"
+ },
+ {
+  "id": "M32",
+  "doc": "madhur_steel",
+  "type": "unit_conversion",
+  "q": "What were total assets as at March 31, 2026 expressed in rupees crore?",
+  "value": 334.23,
+  "unit": "crore",
+  "evidence": "33,422.70"
+ },
+ {
+  "id": "M33",
+  "doc": "madhur_steel",
+  "type": "not_disclosed",
+  "q": "At what price will the equity shares be listed on the stock exchanges?",
+  "value": null,
+  "unit": null,
+  "evidence": null
+ },
+ {
+  "id": "N16",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was the carrying value of property, plant and equipment as at March 31, 2026?",
+  "value": 529.74,
+  "unit": "million",
+  "evidence": "529.74"
+ },
+ {
+  "id": "N17",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What were inventories as at March 31, 2024?",
+  "value": 233.74,
+  "unit": "million",
+  "evidence": "233.74"
+ },
+ {
+  "id": "N18",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was cash and cash equivalents as at March 31, 2026?",
+  "value": 4.1,
+  "unit": "million",
+  "evidence": "4.10"
+ },
+ {
+  "id": "N19",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What were total assets as at March 31, 2026?",
+  "value": 2195.77,
+  "unit": "million",
+  "evidence": "2,195.77"
+ },
+ {
+  "id": "N20",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was equity share capital as at March 31, 2026?",
+  "value": 183.11,
+  "unit": "million",
+  "evidence": "183.11"
+ },
+ {
+  "id": "N21",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What were non-current borrowings as at March 31, 2026?",
+  "value": 54.34,
+  "unit": "million",
+  "evidence": "54.34"
+ },
+ {
+  "id": "N22",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was the cost of material consumed in Fiscal 2025?",
+  "value": 877.61,
+  "unit": "million",
+  "evidence": "877.61"
+ },
+ {
+  "id": "N23",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What were employee benefit expenses in Fiscal 2026?",
+  "value": 201.96,
+  "unit": "million",
+  "evidence": "201.96"
+ },
+ {
+  "id": "N24",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was the finance cost in Fiscal 2026?",
+  "value": 23.46,
+  "unit": "million",
+  "evidence": "23.46"
+ },
+ {
+  "id": "N25",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was other income in Fiscal 2025?",
+  "value": 82.21,
+  "unit": "million",
+  "evidence": "82.21"
+ },
+ {
+  "id": "N26",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was restated profit before tax in Fiscal 2026?",
+  "value": 117.36,
+  "unit": "million",
+  "evidence": "117.36"
+ },
+ {
+  "id": "N27",
+  "doc": "anchor_offshore",
+  "type": "table_number",
+  "q": "What was the total tax expense in Fiscal 2024?",
+  "value": 112.69,
+  "unit": "million",
+  "evidence": "112.69"
+ },
+ {
+  "id": "N28",
+  "doc": "anchor_offshore",
+  "type": "text_number",
+  "q": "What were total outstanding borrowings including non-fund based limits as of August 14, 2026?",
+  "value": 509.67,
+  "unit": "million",
+  "evidence": "509.67"
+ },
+ {
+  "id": "N29",
+  "doc": "anchor_offshore",
+  "type": "text",
+  "q": "What interest rate range applies to the overdraft facilities availed from lenders?",
+  "keywords": [
+   "8.55",
+   "9.60"
+  ],
+  "evidence": "8.55% to 9.60%"
+ },
+ {
+  "id": "N30",
+  "doc": "anchor_offshore",
+  "type": "computed",
+  "q": "By what percentage did trade receivables grow from March 31, 2025 to March 31, 2026?",
+  "value": 71.81,
+  "unit": "percent",
+  "evidence": "687.19"
+ },
+ {
+  "id": "N31",
+  "doc": "anchor_offshore",
+  "type": "not_disclosed",
+  "q": "At what price will the equity shares be listed on the stock exchanges?",
+  "value": null,
+  "unit": null,
+  "evidence": null
+ }
 ]

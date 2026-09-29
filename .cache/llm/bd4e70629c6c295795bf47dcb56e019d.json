@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "11,789.73", "value": 11789.73, "unit": "\u20b9 lakhs", "page": 408, "quote": "Total equity under Ind AS 11,789.73 9,399.47 4,277.12 1,935.90", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.53, "tokens_in": 4759, "tokens_out": 123, "cost_usd": 0.000525, "cached": false}}

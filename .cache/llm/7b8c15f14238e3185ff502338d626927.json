@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "233.74", "value": 233.74, "unit": "\u20b9 in Millions", "page": 303, "quote": "Finished goods 78.27 100.54 233.74 \nTotal 78.27 100.54 233.74", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 9.23, "tokens_in": 4115, "tokens_out": 122, "cost_usd": 0.00046, "cached": false}}

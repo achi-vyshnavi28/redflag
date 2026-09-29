@@ -29,7 +29,8 @@ from redflag.qa import TO_CRORE, _norm_unit, _num, check_citation
 
 TARGETS = [
     {"key": "borrowings_breakdown", "label": "total borrowings outstanding at the latest date, and how much of it is secured vs unsecured",
-     "queries": ["total secured borrowings outstanding", "unsecured borrowings sub-total", "total outstanding borrowings fund based"]},
+     "queries": ["total secured borrowings outstanding", "Sub-Total unsecured borrowings", "Total (A+B) sanctioned outstanding",
+                 "total outstanding borrowings fund based"]},
     {"key": "tax_proceedings", "label": "number of tax proceedings (direct and indirect) pending against the Company itself",
      "queries": ["number of tax proceedings pending against the company", "direct tax indirect tax cases company amount involved"]},
     {"key": "litigation_against_company", "label": "aggregate amount involved in litigation against the Company",
@@ -41,19 +42,20 @@ TARGETS = [
 ]
 
 
-# ~4.5k tokens of context: fits free-tier per-minute limits (Groq: 8k tokens/min), so one call can always go through
-MAX_PASSAGES = 12
+# ~6k tokens of context. Groq's free tier (8k in / 1k out per minute) cannot run this; Gemini Flash-Lite can.
+MAX_PASSAGES = 16
 
 
 class Mention(BaseModel):
-    value: float
+    value: float | None = None  # statements without a number or page are dropped: they cannot be verified
     unit: str | None = None  # lakhs / million / crore / count
     as_of: str = ""  # e.g. "2026-03-31", "2026-08-31", "Fiscal 2026"
     label: str = ""  # the row / line label exactly as printed
-    page: int
-    quote: str
+    page: int | None = None
+    quote: str = ""
 
     _v = field_validator("value", "page", mode="before")(lambda cls, v: _num(v))
+    _s = field_validator("as_of", "label", "quote", mode="before")(lambda cls, v: "" if v is None else str(v))
 
 
 class Mentions(BaseModel):
@@ -88,6 +90,24 @@ def to_common(m: dict, page_unit: str | None) -> float | None:
     return round(m["value"] * TO_CRORE[u], 2) if u in TO_CRORE else None
 
 
+def parts_check(statements: list[dict]) -> list[dict]:
+    """Deterministic check, no model judgement: a figure labelled 'secured' that equals secured + unsecured parts for the
+    same date means unsecured borrowing is being presented as secured."""
+    out = []
+    lab = lambda m: m["label"].lower()  # noqa: E731
+    for total in [m for m in statements if "secured" in lab(m) and "unsecured" not in lab(m) and m["common"]]:
+        for unsec in [m for m in statements if "unsecured" in lab(m) and m["common"] and m["as_of"] == total["as_of"]]:
+            for sec in [m for m in statements if "secured" in lab(m) and "unsecured" not in lab(m) and m is not total
+                        and m["common"] and m["as_of"] == total["as_of"]]:
+                if abs(sec["common"] + unsec["common"] - total["common"]) <= 0.005 * total["common"]:
+                    out.append({"pages": [total["page"], sec["page"], unsec["page"]], "a": total, "b": unsec, "verdict": "conflict",
+                                "explanation": (f"p. {total['page']} presents {total['value']:,} as '{total['label']}', but it equals the secured "
+                                                f"part ({sec['value']:,}, p. {sec['page']}) plus an unsecured part ({unsec['value']:,}, "
+                                                f"p. {unsec['page']}): unsecured borrowing is included in a figure labelled secured."),
+                                "method": "arithmetic check"})
+    return out
+
+
 def reconcile_target(doc: str, target: dict, model: str) -> dict:
     seen, passages = set(), []
     ranked = [search(q, doc, "hybrid", 12, "bge") for q in target["queries"]]
@@ -102,7 +122,7 @@ def reconcile_target(doc: str, target: dict, model: str) -> dict:
     unit_of = {p["page"]: p.get("unit") for p in passages}
     verified, dropped = [], 0
     for m in found.mentions:
-        if check_citation(doc, m.page, m.quote, m.value) is None:
+        if m.value is not None and m.page and check_citation(doc, m.page, m.quote, m.value) is None:
             d = m.model_dump()
             d["common"] = to_common(d, unit_of.get(m.page))
             verified.append(d)
@@ -126,6 +146,7 @@ def reconcile_target(doc: str, target: dict, model: str) -> dict:
                 f"All verified statements of this figure in the filing:\n" + "\n".join(parts))
         v, _ = call(model, JUDGE, user, Verdict)
         findings.append({"pages": [a["page"], b["page"]], "a": a, "b": b, **v.model_dump()})
+    findings += parts_check(verified)
     conflicts = [f for f in findings if f["verdict"] == "conflict"]
     return {"target": target["key"], "statements": len(verified), "dropped_unverified": dropped,
             "differences": len(findings), "conflicts": conflicts, "definition_differences": [f for f in findings if f["verdict"] == "definition"]}

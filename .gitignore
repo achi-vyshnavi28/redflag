@@ -7,3 +7,4 @@ data/index/qdrant_gemini/
 *.lock
 .env
 .streamlit/secrets.toml
+data/index/qdrant_bge_v1/

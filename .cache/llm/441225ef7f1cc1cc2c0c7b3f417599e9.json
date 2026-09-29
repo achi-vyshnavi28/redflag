@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,861.46", "value": 1861.46, "unit": "\u20b9 million", "page": 375, "quote": "Total Equity 1,861.46 947.10 2,013.71", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.46, "tokens_in": 4879, "tokens_out": 106, "cost_usd": 0.00053, "cached": false}}

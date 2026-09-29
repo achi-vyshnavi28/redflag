@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Manoj Kumar Meena and Sibabrata Das", "value": null, "unit": null, "page": 309, "quote": "The Promoters of our Company are Manoj Kumar Meena and Sibabrata Das.", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.58, "tokens_in": 3478, "tokens_out": 88, "cost_usd": 0.000383, "cached": false}}

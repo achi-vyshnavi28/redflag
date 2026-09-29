@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "4.10", "value": 4.1, "unit": "\u20b9 million", "page": 303, "quote": "Total cash and cash equivalents 4.10 1.52 12.", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 4.97, "tokens_in": 5138, "tokens_out": 90, "cost_usd": 0.00055, "cached": false}}

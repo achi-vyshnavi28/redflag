@@ -45,7 +45,7 @@ CONFIGS = {
     "units_compute": Config("units_compute", hybrid=True, units=True, compute=True, verify=False),
     "full_v1": Config("full_v1"),
     # v2: retrieval chosen by measurement (evals/retrieval.py: dense BGE recall@8 0.95 vs hybrid 0.88) + forced compute
-    "full": Config("full", hybrid=False, embedder="bge", force_compute=True),
+    "full": Config("full", hybrid=False, embedder="bge", force_compute=True, k=12),
 }
 NEEDS_COMPUTE = re.compile(r"(percent|percentage|growth|grow|change|increase|decrease|in (rupees )?crore|expressed in)", re.I)
 

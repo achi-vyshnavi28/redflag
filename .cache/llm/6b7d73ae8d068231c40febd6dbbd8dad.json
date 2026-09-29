@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Statement A on page 418 refers only to the 'Equity share capital' component, whereas Statement B on page 415 refers to the total 'Net Worth' (sum of equity share capital and other equity)."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.53, "tokens_in": 555, "tokens_out": 64, "cost_usd": 8.1e-05, "cached": false}}

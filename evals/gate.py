@@ -1,6 +1,6 @@
 """Quality gate for CI: fail the build if a change makes RedFlag worse.
 
-  retrieval  always runs (no API key needed): recall@8 of the production retriever (BGE) on the gold set >= 0.90
+  retrieval  always runs (no API key needed): recall of the production retriever (BGE, production k) on the gold set >= 0.90
   answers    runs when GEMINI_API_KEY is available (e.g. a GitHub Actions secret): accuracy >= 0.85, and every
              not-in-the-document question declined. Answers already in the committed cache cost nothing.
 
@@ -21,9 +21,9 @@ MIN_RECALL, MIN_ACCURACY = 0.90, 0.85
 
 def main() -> int:
     failures, report = [], {}
-    r, ms, missed = recall("dense", "bge", 8)
-    report["retrieval_recall_at_8"] = round(r, 3)
-    print(f"retrieval recall@8 (BGE) = {r:.3f}  (min {MIN_RECALL})  missed {missed}")
+    r, ms, missed = recall("dense", "bge", CONFIGS["full"].k)
+    report[f"retrieval_recall_at_{CONFIGS['full'].k}"] = round(r, 3)
+    print(f"retrieval recall@{CONFIGS['full'].k} (BGE) = {r:.3f}  (min {MIN_RECALL})  missed {missed}")
     if r < MIN_RECALL:
         failures.append(f"retrieval recall {r:.3f} < {MIN_RECALL}")
     if os.getenv("GEMINI_API_KEY"):

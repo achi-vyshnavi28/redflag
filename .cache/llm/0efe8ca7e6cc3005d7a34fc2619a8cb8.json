@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "2,480.16", "value": 2480.16, "unit": "\u20b9 lakhs", "page": 476, "quote": "Net Profit before tax for Fiscal 2025 was \u20b9 2,480.16 lakhs.", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.44, "tokens_in": 3339, "tokens_out": 102, "cost_usd": 0.000375, "cached": false}}

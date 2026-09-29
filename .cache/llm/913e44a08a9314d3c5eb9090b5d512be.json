@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Statement A on page 369 refers specifically to the working capital component of the borrowings, whereas Statement B on page 364 refers to the total unsecured loans of the company."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 0.98, "tokens_in": 1016, "tokens_out": 56, "cost_usd": 0.000124, "cached": false}}

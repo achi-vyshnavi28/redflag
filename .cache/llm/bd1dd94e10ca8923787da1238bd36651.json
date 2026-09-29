@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,413.07", "value": 1413.07, "unit": "\u20b9 lakhs", "page": 474, "quote": "Other Expenses 1,413.07 1,006.19 40.44%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.33, "tokens_in": 3500, "tokens_out": 105, "cost_usd": 0.000392, "cached": false}}

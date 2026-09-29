@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "1,890.76", "value": 1890.76, "unit": "\u20b9 million", "page": 341, "quote": "Net book value as at March 31, 2026 1,434.91 143.04 85.84 60.83 3.07 163.07 1,890.76", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.82, "tokens_in": 3212, "tokens_out": 144, "cost_usd": 0.000379, "cached": false}}

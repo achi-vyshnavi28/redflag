@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "670.43", "value": 670.43, "unit": "\u20b9 lakhs", "page": 286, "quote": "670.43 1.62% 293.72 0.93% 171.22 0.77%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.31, "tokens_in": 3488, "tokens_out": 113, "cost_usd": 0.000394, "cached": false}}

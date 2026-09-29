@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "82.21", "value": 82.21, "unit": "\u20b9 million", "page": 357, "quote": "II. Other income 26 35.58 3.25% 82.21 5.55% 45.32 3.70%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 3.21, "tokens_in": 4502, "tokens_out": 116, "cost_usd": 0.000497, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "0.3x", "value": 0.3, "unit": "x", "page": 431, "quote": "2. Exclusive charge on immovable collateral providing FACR of 0.3x of facility amount.", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.98, "tokens_in": 2857, "tokens_out": 89, "cost_usd": 0.000321, "cached": false}}

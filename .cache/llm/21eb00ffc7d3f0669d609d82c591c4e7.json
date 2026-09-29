@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "Other expenses in Fiscal 2025 were 1,413.07 lakhs.", "value": 1413.07, "unit": "\u20b9 lakhs", "page": 474, "quote": "Other Expenses 1,413.07 1,006.19 40.44%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 11.1, "tokens_in": 4968, "tokens_out": 118, "cost_usd": 0.000544, "cached": false}}

@@ -9,6 +9,10 @@ checked against that page before it is shown**, and the system declines rather t
 (consumer appliances), Madhur Iron & Steel (steel), Anchor Offshore Services (marine services). 1,552 pages,
 5,359 passages.
 
+![How RedFlag produces an answer](docs/img/architecture.png)
+
+![An answer with its agent trace: retrieval, the model extracts the raw figures with citations, Python computes the growth, and the citation is verified](docs/img/ask_with_trace.png)
+
 ## Results (46 questions with known answers)
 
 The test set covers numbers inside tables, facts in text, growth calculations, unit conversions (lakhs / million /
@@ -34,6 +38,16 @@ crore), and questions whose answer is not in the document.
 all three at list prices. The reliability pipeline carries across model families: all three land at 87-89% and decline
 every question the documents cannot answer. Gemini stays the default for speed; Qwen is the most conservative
 (no wrong citations). Claude is wired in but not benchmarked (no key).
+
+**Expanded test set (94 questions).** I then doubled the test set with 48 harder questions, mostly balance-sheet
+line items from different years. The final setup scored **84.0%** (wrong or unsupported answers 5.3%; all 6
+not-in-the-document questions declined). Most misses are cautious "not found" answers on table rows. Retrieving
+12 passages instead of 8 raised accuracy from 80.9%; a popular fix, contextual chunk headers, made retrieval worse
+and was reverted ([failure catalogue](docs/failure_catalogue.md), F11).
+
+![Accuracy after each fix](docs/img/accuracy.png)
+
+![Three model families on the same pipeline](docs/img/models.png)
 
 **Retrieval** (does the right passage reach the model? recall@8): BM25 72% · MiniLM 86% · BM25+MiniLM 86% ·
 BM25+BGE 88% · **BGE-small 95%**. I expected hybrid to win; it didn't on these documents, so the final setup uses BGE.

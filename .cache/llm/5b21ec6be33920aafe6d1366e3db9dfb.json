@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Statement A on page 418 refers only to 'Other equity', whereas Statement B on page 467 refers to 'Total Equity', which is the sum of equity share capital and other equity as shown on page 418."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.06, "tokens_in": 567, "tokens_out": 68, "cost_usd": 8.4e-05, "cached": false}}

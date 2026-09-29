@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Statement A on page 418 refers to 'Equity share capital' while Statement B on page 417 refers to 'Other equity', which are distinct components that together make up the total equity."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.34, "tokens_in": 552, "tokens_out": 60, "cost_usd": 7.9e-05, "cached": false}}

@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "112.69", "value": 112.69, "unit": "\u20b9 million", "page": 357, "quote": "Total Tax Expense 37.01 3.38% 34.29 2.31% 112.69 9.20%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.68, "tokens_in": 4401, "tokens_out": 115, "cost_usd": 0.000486, "cached": false}}

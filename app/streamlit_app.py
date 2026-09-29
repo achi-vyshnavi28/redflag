@@ -45,9 +45,10 @@ with ask_tab:
                 "What was revenue from operations in Fiscal 2026 expressed in rupees crore?", "Who are the promoters of the company?",
                 "What revenue does the company forecast for Fiscal 2028?"]
     st.caption("Example questions (answered instantly, even without an API key):")
+    labels = ["Current borrowings", "Revenue growth %", "Revenue in ₹ crore", "Who are the promoters?", "FY2028 forecast (not in the document)"]
     cols = st.columns(len(examples))
-    for i, (col, ex) in enumerate(zip(cols, examples)):
-        if col.button(ex, key=f"ex{i}", use_container_width=True):
+    for i, (col, ex, label) in enumerate(zip(cols, examples, labels)):
+        if col.button(label, key=f"ex{i}", help=ex, use_container_width=True):
             st.session_state["q"] = ex
             st.session_state["go"] = True
     st.session_state.setdefault("q", examples[0])
@@ -95,8 +96,10 @@ with eval_tab:
         s = json.loads(f.read_text(encoding="utf-8"))
         rows.append({"config": s["config"], "model": s["model"], **{k: v for k, v in s["summary"].items() if k != "accuracy_by_type"}})
     if rows:
-        st.markdown("46 questions with known answers across the three prospectuses (numbers in tables, text facts, "
-                    "growth calculations, unit conversions, and questions whose answer is not in the document).")
+        n_gold = len(json.loads((REPORTS.parent / "evals" / "gold.json").read_text(encoding="utf-8")))
+        st.markdown(f"{n_gold} questions with known answers across the three prospectuses (numbers in tables, text facts, "
+                    "growth calculations, unit conversions, and questions whose answer is not in the document). "
+                    "Rows are configurations and models; see the README for what each fix changed.")
         st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
     rp = REPORTS / "retrieval.json"
     if rp.exists():

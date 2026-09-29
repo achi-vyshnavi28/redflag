@@ -1,0 +1,1531 @@
+{
+  "doc": "madhur_steel",
+  "company": "Madhur Iron & Steel (India) Limited",
+  "targets": [
+    {
+      "target": "borrowings_breakdown",
+      "statements": 13,
+      "dropped_unverified": 0,
+      "differences": 3,
+      "conflicts": [],
+      "definition_differences": [
+        {
+          "pages": [
+            478,
+            41
+          ],
+          "a": {
+            "value": 23.57,
+            "unit": "lakhs",
+            "as_of": "August 31, 2026",
+            "label": "secured non- fund-based borrowings",
+            "page": 478,
+            "quote": "and secured non- fund-based borrowings aggregating ₹ 23.57 lakhs.",
+            "common": 0.24
+          },
+          "b": {
+            "value": 25272.88,
+            "unit": "lakhs",
+            "as_of": "August 31, 2026",
+            "label": "aggregate",
+            "page": 41,
+            "quote": "As on August 31, 2026, an aggregate of ₹ 25,272.88 lakhs was outstanding towards loans availed from banks",
+            "common": 252.73
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 478 refers specifically to 'secured non-fund-based borrowings' (23.57 lakhs), while Statement B on page 41 refers to the total aggregate of loans availed from banks (25,272.88 lakhs), which measures a different scope of borrowings (fund-based and total)."
+        },
+        {
+          "pages": [
+            478,
+            137
+          ],
+          "a": {
+            "value": 23.57,
+            "unit": "lakhs",
+            "as_of": "August 31, 2026",
+            "label": "secured non- fund-based borrowings",
+            "page": 478,
+            "quote": "and secured non- fund-based borrowings aggregating ₹ 23.57 lakhs.",
+            "common": 0.24
+          },
+          "b": {
+            "value": 25272.88,
+            "unit": "lakhs",
+            "as_of": "August 31, 2026",
+            "label": "aggregate outstanding borrowings",
+            "page": 137,
+            "quote": "As on August 31, 2026, our Company’s aggregate outstanding borrowings w as ₹25,272.88 lakhs.",
+            "common": 252.73
+          },
+          "verdict": "definition",
+          "explanation": "Page 478 breaks down the total outstanding borrowings of ₹25,272.88 lakhs as of August 31, 2026, into secured fund-based borrowings (₹25,249.31 lakhs) and secured non-fund-based borrowings (₹23.57 lakhs), showing they are distinct components that sum up to the aggregate."
+        },
+        {
+          "pages": [
+            478,
+            58
+          ],
+          "a": {
+            "value": 23.57,
+            "unit": "lakhs",
+            "as_of": "August 31, 2026",
+            "label": "secured non- fund-based borrowings",
+            "page": 478,
+            "quote": "and secured non- fund-based borrowings aggregating ₹ 23.57 lakhs.",
+            "common": 0.24
+          },
+          "b": {
+            "value": 25272.88,
+            "unit": "lakhs",
+            "as_of": "August 31, 2026",
+            "label": "secured loans",
+            "page": 58,
+            "quote": "The total amount outstanding and payable by us as secured loans was ₹ 25272.88 lakhs, as on August 31, 2026.",
+            "common": 252.73
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 478 refers specifically to secured non-fund-based borrowings (₹ 23.57 lakhs), whereas Statement B on page 58 refers to total secured loans (₹ 25272.88 lakhs), which also includes secured fund-based borrowings."
+        }
+      ]
+    },
+    {
+      "target": "tax_proceedings",
+      "statements": 2,
+      "dropped_unverified": 1,
+      "differences": 0,
+      "conflicts": [],
+      "definition_differences": []
+    },
+    {
+      "target": "litigation_against_company",
+      "statements": 0,
+      "dropped_unverified": 0,
+      "differences": 0,
+      "conflicts": [],
+      "definition_differences": []
+    },
+    {
+      "target": "revenue_fy26",
+      "statements": 12,
+      "dropped_unverified": 0,
+      "differences": 36,
+      "conflicts": [],
+      "definition_differences": [
+        {
+          "pages": [
+            169,
+            471
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 169,
+            "quote": "Revenue from operations(i) in ₹ lakhs 44401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "verdict": "definition",
+          "explanation": "Page 169 states the total revenue from operations (44,401.61 lakhs), while page 471 breaks this total down into components such as 'Sale of Manufactured Goods' (29,221.73 lakhs), representing different line items within the financial statements."
+        },
+        {
+          "pages": [
+            169,
+            471
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 169,
+            "quote": "Revenue from operations(i) in ₹ lakhs 44401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 169 refers to total revenue from operations (44,401.61 lakhs), whereas Statement B on page 471 refers to just one component of it, namely the 'Sale of Traded Goods' (15,179.88 lakhs), which sums up with manufactured goods to make the total."
+        },
+        {
+          "pages": [
+            169,
+            279
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 169,
+            "quote": "Revenue from operations(i) in ₹ lakhs 44401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "verdict": "definition",
+          "explanation": "Page 169 states the total revenue from operations as 44401.61 lakhs, whereas page 279 provides a sectoral breakdown where Power & Energy Infrastructure is 30637.11 lakhs, representing a component rather than an inconsistency in the total."
+        },
+        {
+          "pages": [
+            169,
+            279
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 169,
+            "quote": "Revenue from operations(i) in ₹ lakhs 44401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "verdict": "definition",
+          "explanation": "Page 169 states the total revenue from operations (44,401.61 lakhs), while page 279 presents a breakdown of this total by specific business segments such as Railways & Railway Electrification (11,988.43 lakhs)."
+        },
+        {
+          "pages": [
+            169,
+            279
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 169,
+            "quote": "Revenue from operations(i) in ₹ lakhs 44401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "verdict": "definition",
+          "explanation": "Page 169 states the total revenue from operations as 44401.61 lakhs, while page 279 provides a breakdown of this same total by business segments (Power & Energy, Railways, and Others totalling 44401.61 lakhs), meaning they measure the aggregate figure versus its component parts."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue from Operations",
+            "page": 471,
+            "quote": "Total Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 represents the total revenue from operations (44,401.61 lakhs), whereas Statement B on page 279 represents a specific segment breakdown component (Power & Energy Infrastructure, 30,637.11 lakhs) which measures a distinct part of the overall operations."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue from Operations",
+            "page": 471,
+            "quote": "Total Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 shows the total revenue from operations as 44,401.61 lakhs, whereas page 279 breaks down this same total into sectoral components such as 'Railways & Railway Electrification' (11,988.43 lakhs), representing different scopes of the same financial figure."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue from Operations",
+            "page": 471,
+            "quote": "Total Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "b": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 reports the total revenue from operations as 44,401.61 lakhs while page 279 provides a breakdown by segment (Power & Energy, Railways, and Others summing to the same total 44,401.61 lakhs), representing different components rather than an inconsistency."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 reports revenue broken down by product type (Sale of Manufactured Goods of 29,221.73 lakhs), while page 279 reports revenue broken down by sector/industry segment (Power & Energy Infrastructure of 30,637.11 lakhs). Both are subsets that sum to the same total revenue from operations of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 breaks down revenue by product type (Sale of Manufactured Goods of 29,221.73 lakhs), while page 279 breaks down the same total revenue by business segment or industry vertical (Railways & Railway Electrification of 11,988.43 lakhs), which represent different classifications of the overall revenue."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 represents revenue categorized by product type (Sale of Manufactured Goods), whereas Statement B on page 279 represents revenue categorized by business segment or sector (Others), both contributing to the total revenue from operations of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 279,
+            "quote": "Total 44401.61 100",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 measures a specific component ('Sale of Manufactured Goods') of 29,221.73 lakhs, whereas Statement B on page 279 provides the overall total revenue from operations of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            471,
+            380
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from contract with customers",
+            "page": 380,
+            "quote": "Revenue from contract with customers 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 measures a specific component ('Sale of Manufactured Goods'), whereas Statement B on page 380 measures the total 'Revenue from contract with customers' (or total revenue from operations), which encompasses traded goods as well."
+        },
+        {
+          "pages": [
+            471,
+            467
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 467,
+            "quote": "Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 represents a specific component ('Sale of Manufactured Goods') while Statement B on page 467 represents the aggregate 'Revenue from Operations' which also includes traded goods."
+        },
+        {
+          "pages": [
+            471,
+            35
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in lakhs)",
+            "page": 35,
+            "quote": "Revenue from operations (₹ in lakhs) 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 shows 'Sale of Manufactured Goods' as a specific sub-component (29,221.73 lakhs) of the total 'Revenue from operations' (44,401.61 lakhs) which is stated on page 35 and verified across multiple pages."
+        },
+        {
+          "pages": [
+            471,
+            470
+          ],
+          "a": {
+            "value": 29221.73,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Manufactured Goods",
+            "page": 471,
+            "quote": "Sale of Manufactured Goods 29,221.73",
+            "common": 292.22
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 470,
+            "quote": "Revenue from Operations 44,401.61 99.79%",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 reports 'Sale of Manufactured Goods' as 29,221.73 lakhs, which is a component of total revenue, whereas page 470 reports 'Revenue from Operations' as 44,401.61 lakhs representing the overall revenue."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 represents revenue categorized by product type ('Sale of Traded Goods'), whereas Statement B on page 279 represents revenue categorized by business segment ('Power & Energy Infrastructure'), which measure different aspects of the total revenue."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 breaks down revenue by product type (Sale of Traded Goods), while page 279 breaks down the same total revenue by industry/vertical (Railways & Railway Electrification), representing different categorizations of the business."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 represents 'Sale of Traded Goods' (15,179.88 lakhs), while Statement B on page 279 represents 'Others' under a segment breakdown (1,776.07 lakhs). These measure different categories of revenue that sum up to the total Revenue from Operations of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            471,
+            279
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 279,
+            "quote": "Total 44401.61 100",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 shows 'Sale of Traded Goods' as a specific component (15,179.88 lakhs) of the total revenue from operations, whereas page 279 presents the total revenue from operations (44,401.61 lakhs) broken down by business segments."
+        },
+        {
+          "pages": [
+            471,
+            380
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from contract with customers",
+            "page": 380,
+            "quote": "Revenue from contract with customers 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 reports 'Sale of Traded Goods' as 15,179.88 lakhs, which is a specific sub-component of revenue, whereas Statement B on page 380 reports total 'Revenue from contract with customers' as 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            471,
+            467
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 467,
+            "quote": "Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A (p. 471) provides 'Sale of Traded Goods' as a specific component of revenue, whereas Statement B (p. 467) states the total 'Revenue from Operations'. These represent different line items within the financial statements."
+        },
+        {
+          "pages": [
+            471,
+            35
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in lakhs)",
+            "page": 35,
+            "quote": "Revenue from operations (₹ in lakhs) 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 471 shows 'Sale of Traded Goods' as 15,179.88 lakhs which is just a component of the total 'Revenue from Operations' of 44,401.61 lakhs reported on page 35, along with manufactured goods."
+        },
+        {
+          "pages": [
+            471,
+            470
+          ],
+          "a": {
+            "value": 15179.88,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of Traded Goods",
+            "page": 471,
+            "quote": "Sale of Traded Goods 15,179.88",
+            "common": 151.8
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 470,
+            "quote": "Revenue from Operations 44,401.61 99.79%",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 471 measures only the 'Sale of Traded Goods' (15,179.88 lakhs), whereas Statement B on page 470 measures the total 'Revenue from Operations' (44,401.61 lakhs), of which traded goods is just one component."
+        },
+        {
+          "pages": [
+            279,
+            380
+          ],
+          "a": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from contract with customers",
+            "page": 380,
+            "quote": "Revenue from contract with customers 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 279 presents a segment breakdown of revenue totaling 44,401.61 lakhs where Power & Energy Infrastructure (30,637.11 lakhs) is just one component, while page 380 gives the total revenue from contracts with customers."
+        },
+        {
+          "pages": [
+            279,
+            467
+          ],
+          "a": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 467,
+            "quote": "Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 provides a sectoral breakdown (Power & Energy Infrastructure segment revenue of 30,637.11 lakhs), while Statement B on page 467 refers to the total company-wide Revenue from Operations of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            279,
+            35
+          ],
+          "a": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in lakhs)",
+            "page": 35,
+            "quote": "Revenue from operations (₹ in lakhs) 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 refers to revenue from a specific segment (Power & Energy Infrastructure), whereas Statement B on page 35 refers to the total 'Revenue from operations', of which the segment is only a part."
+        },
+        {
+          "pages": [
+            279,
+            470
+          ],
+          "a": {
+            "value": 30637.11,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Power & Energy Infrastructure",
+            "page": 279,
+            "quote": "Power & Energy Infrastructure 30637.11 69",
+            "common": 306.37
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 470,
+            "quote": "Revenue from Operations 44,401.61 99.79%",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 refers to a specific segment breakdown ('Power & Energy Infrastructure' of 30,637.11 lakhs), while Statement B on page 470 refers to total 'Revenue from Operations' (44,401.61 lakhs), which represents the sum of all segments including Power & Energy Infrastructure."
+        },
+        {
+          "pages": [
+            279,
+            380
+          ],
+          "a": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from contract with customers",
+            "page": 380,
+            "quote": "Revenue from contract with customers 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 provides a sectoral breakdown of revenue from operations (Railways & Railway Electrification), while Statement B on page 380 represents the total revenue from contracts with customers, which sums up to the total revenue from operations of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            279,
+            467
+          ],
+          "a": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 467,
+            "quote": "Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 provides a sectoral breakdown (Railways & Railway Electrification), while Statement B on page 467 represents the total 'Revenue from Operations'. The sum of the sectoral components on page 279 equals the total revenue reported on page 467."
+        },
+        {
+          "pages": [
+            279,
+            35
+          ],
+          "a": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in lakhs)",
+            "page": 35,
+            "quote": "Revenue from operations (₹ in lakhs) 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 provides a sectoral breakdown (Railways & Railway Electrification) of the total revenue, while Statement B on page 35 gives the overall aggregate 'Revenue from operations', meaning they measure different parts of the total figure."
+        },
+        {
+          "pages": [
+            279,
+            470
+          ],
+          "a": {
+            "value": 11988.43,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Railways & Railway Electrification",
+            "page": 279,
+            "quote": "Railways & Railway Electrification 11988.43 27",
+            "common": 119.88
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 470,
+            "quote": "Revenue from Operations 44,401.61 99.79%",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 provides a specific segment breakdown (\"Railways & Railway Electrification\"), whereas Statement B on page 470 reports the total \"Revenue from Operations\". The segment is merely a component of the overall revenue total."
+        },
+        {
+          "pages": [
+            279,
+            380
+          ],
+          "a": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from contract with customers",
+            "page": 380,
+            "quote": "Revenue from contract with customers 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 279 breaks down revenue by business segment ('Others' of 1,776.07 lakhs being a component), whereas page 380 states the total revenue from contracts with customers, meaning they represent different scopes rather than a contradiction."
+        },
+        {
+          "pages": [
+            279,
+            467
+          ],
+          "a": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 467,
+            "quote": "Revenue from Operations 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 279 presents a breakdown of revenue by segment (where 'Others' is 1776.07 lakhs), while page 467 shows the aggregate 'Revenue from Operations' of 44,401.61 lakhs. They measure different components of the total figure."
+        },
+        {
+          "pages": [
+            279,
+            35
+          ],
+          "a": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in lakhs)",
+            "page": 35,
+            "quote": "Revenue from operations (₹ in lakhs) 44,401.61",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 279 provides a sectoral breakdown ('Others') of revenue, whereas Statement B on page 35 states the total 'Revenue from operations'. Both numbers are consistent since the sum of the sectoral breakdown on page 279 equals the total revenue of 44,401.61 lakhs."
+        },
+        {
+          "pages": [
+            279,
+            470
+          ],
+          "a": {
+            "value": 1776.07,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Others",
+            "page": 279,
+            "quote": "Others 1776.07 4",
+            "common": 17.76
+          },
+          "b": {
+            "value": 44401.61,
+            "unit": "lakhs",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 470,
+            "quote": "Revenue from Operations 44,401.61 99.79%",
+            "common": 444.02
+          },
+          "verdict": "definition",
+          "explanation": "Page 279 presents 'Others' (1,776.07 lakhs) as a specific segment or breakdown component of revenue, whereas page 470 presents 'Revenue from Operations' (44,401.61 lakhs) as the total aggregate revenue. They measure different things as one is a subset of the other."
+        }
+      ]
+    },
+    {
+      "target": "equity_fy26",
+      "statements": 9,
+      "dropped_unverified": 0,
+      "differences": 18,
+      "conflicts": [],
+      "definition_differences": [
+        {
+          "pages": [
+            418,
+            467
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 418,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Total Equity (₹ in lakhs) (A)",
+            "page": 467,
+            "quote": "Total Equity (₹ in lakhs) (A) 11,789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers specifically to 'Equity share capital' (2,978.45 lakhs), whereas Statement B on page 467 refers to 'Total Equity' (11,789.73 lakhs), which includes both share capital and other equity as shown in the prospectus."
+        },
+        {
+          "pages": [
+            418,
+            417
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 418,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 417,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers to 'Equity share capital' while Statement B on page 417 refers to 'Other equity', which are distinct components that together make up the total equity."
+        },
+        {
+          "pages": [
+            418,
+            417
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 418,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth2 C = A + B",
+            "page": 417,
+            "quote": "Net Worth2 C = A + B 11789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to 'Equity share capital' (A = 2978.45 lakhs), whereas Statement B on page 417 refers to 'Net Worth2 C = A + B' (11789.73 lakhs), which includes both equity share capital and other equity."
+        },
+        {
+          "pages": [
+            418,
+            416
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 418,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Closing Equity3 B",
+            "page": 416,
+            "quote": "Closing Equity3 B 11789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to 'Equity share capital', whereas Statement B on page 416 refers to 'Closing Equity' (comprising both equity share capital and other equity, which equals the total net worth of 11,789.73 lakhs as shown on pages 416 and 418)."
+        },
+        {
+          "pages": [
+            418,
+            415
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 418,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth4",
+            "page": 415,
+            "quote": "Net Worth4 11,789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to the 'Equity share capital' component, whereas Statement B on page 415 refers to the total 'Net Worth' (sum of equity share capital and other equity)."
+        },
+        {
+          "pages": [
+            418,
+            467
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 418,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Total Equity (₹ in lakhs) (A)",
+            "page": 467,
+            "quote": "Total Equity (₹ in lakhs) (A) 11,789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to 'Other equity', whereas Statement B on page 467 refers to 'Total Equity', which is the sum of equity share capital and other equity as shown on page 418."
+        },
+        {
+          "pages": [
+            418,
+            417
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 418,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 417,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to 'Other equity' while Statement B on page 417 refers to 'Equity share capital'; both are distinct components that sum up to the total equity rather than being inconsistent statements of the same figure."
+        },
+        {
+          "pages": [
+            418,
+            417
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 418,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth2 C = A + B",
+            "page": 417,
+            "quote": "Net Worth2 C = A + B 11789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to 'Other equity' (8,811.28 lakhs), whereas Statement B on page 417 refers to total Net Worth or Equity as the sum of Equity share capital and Other equity (11,789.73 lakhs). They measure different financial line items rather than being inconsistent statements of the same figure."
+        },
+        {
+          "pages": [
+            418,
+            416
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 418,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Closing Equity3 B",
+            "page": 416,
+            "quote": "Closing Equity3 B 11789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers only to 'Other equity' (8,811.28 lakhs), whereas Statement B on page 416 refers to the total 'Closing Equity' (11,789.73 lakhs), which includes both equity share capital and other equity."
+        },
+        {
+          "pages": [
+            418,
+            415
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 418,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth4",
+            "page": 415,
+            "quote": "Net Worth4 11,789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A refers specifically to 'Other equity' (p. 418), whereas Statement B refers to total 'Net Worth' (p. 415), which represents the sum of Equity share capital and Other equity as detailed across the document."
+        },
+        {
+          "pages": [
+            418,
+            417
+          ],
+          "a": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth2 C = A + B",
+            "page": 418,
+            "quote": "Net Worth2 C = A + B 11789.73",
+            "common": 117.9
+          },
+          "b": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 417,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers to the total Net Worth (Equity share capital plus other equity), whereas Statement B on page 417 refers only to the Equity share capital component. They measure different line items that sum up to the total equity."
+        },
+        {
+          "pages": [
+            418,
+            417
+          ],
+          "a": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth2 C = A + B",
+            "page": 418,
+            "quote": "Net Worth2 C = A + B 11789.73",
+            "common": 117.9
+          },
+          "b": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 417,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 418 refers to the total Net Worth (Equity share capital plus Other equity) amounting to 11789.73 lakhs, whereas Statement B on page 417 refers specifically to the 'Other equity' component of 8811.28 lakhs, which are distinct financial line items."
+        },
+        {
+          "pages": [
+            467,
+            417
+          ],
+          "a": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Total Equity (₹ in lakhs) (A)",
+            "page": 467,
+            "quote": "Total Equity (₹ in lakhs) (A) 11,789.73",
+            "common": 117.9
+          },
+          "b": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 417,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 467 refers to Total Equity of 11,789.73 lakhs, whereas Statement B on page 417 refers specifically to Equity share capital of 2,978.45 lakhs, which is only a component of the total equity."
+        },
+        {
+          "pages": [
+            467,
+            417
+          ],
+          "a": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Total Equity (₹ in lakhs) (A)",
+            "page": 467,
+            "quote": "Total Equity (₹ in lakhs) (A) 11,789.73",
+            "common": 117.9
+          },
+          "b": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 417,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 467 refers to Total Equity of 11,789.73 lakhs, whereas Statement B on page 417 refers only to Other equity of 8,811.28 lakhs, which are different financial line items that sum up together to form the total equity/net worth."
+        },
+        {
+          "pages": [
+            417,
+            416
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 417,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Closing Equity3 B",
+            "page": 416,
+            "quote": "Closing Equity3 B 11789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 417 refers only to the 'Equity share capital' component, whereas Statement B on page 416 refers to the 'Closing Equity' (total net worth) which is the sum of equity share capital and other equity as detailed on pages 417-418."
+        },
+        {
+          "pages": [
+            417,
+            415
+          ],
+          "a": {
+            "value": 2978.45,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Equity share capital A",
+            "page": 417,
+            "quote": "Equity share capital A 2978.45",
+            "common": 29.78
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth4",
+            "page": 415,
+            "quote": "Net Worth4 11,789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 417 refers strictly to the 'Equity share capital' (2,978.45 lakhs), whereas Statement B on page 415 refers to the total 'Net Worth' (11,789.73 lakhs), which includes both equity share capital and other equity as shown on pages 417 and 418."
+        },
+        {
+          "pages": [
+            417,
+            416
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 417,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Closing Equity3 B",
+            "page": 416,
+            "quote": "Closing Equity3 B 11789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 417 refers only to 'Other equity' of 8811.28 lakhs, whereas Statement B on page 416 refers to the 'Closing Equity' (Net Worth) of 11789.73 lakhs, which is the sum of equity share capital and other equity as shown on page 418."
+        },
+        {
+          "pages": [
+            417,
+            415
+          ],
+          "a": {
+            "value": 8811.28,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Other equity B",
+            "page": 417,
+            "quote": "Other equity B 8811.28",
+            "common": 88.11
+          },
+          "b": {
+            "value": 11789.73,
+            "unit": "lakhs",
+            "as_of": "March 31, 2026",
+            "label": "Net Worth4",
+            "page": 415,
+            "quote": "Net Worth4 11,789.73",
+            "common": 117.9
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 417 refers only to 'Other equity' (8,811.28 lakhs), whereas Statement B on page 415 refers to 'Net Worth' (11,789.73 lakhs), which encompasses both equity share capital and other equity."
+        }
+      ]
+    }
+  ]
+}

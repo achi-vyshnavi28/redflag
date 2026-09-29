@@ -1,0 +1,1 @@
+{"out": {"verdict": "definition", "explanation": "Statement A on page 358 refers specifically to 'Scrap Sale' as a sub-component of revenue, whereas Statement B on page 30 refers to the aggregate 'Revenue from operations'."}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 0.98, "tokens_in": 883, "tokens_out": 59, "cost_usd": 0.000112, "cached": false}}

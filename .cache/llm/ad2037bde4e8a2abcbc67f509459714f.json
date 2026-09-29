@@ -1,0 +1,1 @@
+{"out": {"found": true, "answer": "854.30", "value": 854.3, "unit": "\u20b9 lakhs", "page": 470, "quote": "Current Income Tax 854.30 1.92% 664.47 1.95% 470.1 1.96%", "operation": "none", "operands": []}, "meta": {"model": "gemini-3.5-flash-lite", "latency_s": 1.38, "tokens_in": 3359, "tokens_out": 116, "cost_usd": 0.000382, "cached": false}}
