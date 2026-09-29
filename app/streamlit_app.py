@@ -61,9 +61,18 @@ with ask_tab:
 
         from redflag.llm import MissingKey
 
+        LIMITS = ("RateLimitError", "ServiceUnavailableError", "Timeout", "APIConnectionError", "MissingKey")
         try:
             with st.spinner("Retrieving, extracting and checking the citation..."):
-                r = ask(q, doc)
+                try:
+                    r = ask(q, doc)
+                except Exception as e:  # noqa: BLE001
+                    # model fallback: if the default model is out of quota (or has no key), use OpenAI gpt-oss on Groq
+                    if type(e).__name__ in LIMITS and os.getenv("GROQ_API_KEY"):
+                        st.caption("Default model unavailable (quota); answered with OpenAI gpt-oss-120b via Groq instead.")
+                        r = ask(q, doc, model="gpt-oss-120b")
+                    else:
+                        raise
         except Exception as e:  # noqa: BLE001
             if type(e).__name__ in ("RateLimitError", "ServiceUnavailableError", "Timeout", "APIConnectionError"):
                 st.warning("The free model quota for this demo is used up for now (the provider's daily/minute limit). "
