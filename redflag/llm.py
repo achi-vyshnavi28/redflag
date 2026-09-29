@@ -17,7 +17,7 @@ TRANSIENT = (litellm.RateLimitError, litellm.InternalServerError, litellm.Servic
              litellm.APIConnectionError, litellm.Timeout)
 
 
-@retry(retry=retry_if_exception_type(TRANSIENT), wait=wait_exponential(min=4, max=90), stop=stop_after_attempt(8), reraise=True)
+@retry(retry=retry_if_exception_type(TRANSIENT), wait=wait_exponential(min=4, max=90), stop=stop_after_attempt(int(os.getenv("LLM_MAX_ATTEMPTS", "8"))), reraise=True)
 def _complete(model_id: str, messages: list[dict]) -> litellm.ModelResponse:
     return litellm.completion(model=model_id, messages=messages, temperature=0, timeout=120,
                               response_format={"type": "json_object"})

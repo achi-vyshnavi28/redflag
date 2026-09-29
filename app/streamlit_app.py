@@ -12,6 +12,7 @@ import pandas as pd
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+os.environ.setdefault("LLM_MAX_ATTEMPTS", "3")  # a person is waiting: fail fast to a clear message instead of long back-offs
 
 # On Streamlit Cloud, keys come from the app's Secrets settings (never from the repo). Accept keys at the top level or
 # inside a [section], in any letter case.
@@ -63,7 +64,14 @@ with ask_tab:
         try:
             with st.spinner("Retrieving, extracting and checking the citation..."):
                 r = ask(q, doc)
-        except MissingKey:
+        except Exception as e:  # noqa: BLE001
+            if type(e).__name__ in ("RateLimitError", "ServiceUnavailableError", "Timeout", "APIConnectionError"):
+                st.warning("The free model quota for this demo is used up for now (the provider's daily/minute limit). "
+                           "The example questions above still answer instantly; new questions will work again after the limit resets.")
+                st.stop()
+            if not isinstance(e, MissingKey):
+                raise
+
             st.info("This question isn't in the demo's saved answers, and no model API key is configured on this deployment. "
                     "Try one of the example questions above, or see the Red-flag memo and reliability tabs. "
                     f"(Owner: add GEMINI_API_KEY under the app's Settings → Secrets. Status: {SECRETS_STATUS}.)")
