@@ -61,6 +61,18 @@ BM25+BGE 88% · **BGE-small 95%**. I expected hybrid to win; it didn't on these 
 **What I caught the AI getting wrong** is in [docs/pow/01_memo_review.md](docs/pow/01_memo_review.md), and every failure
 type with its fix is in [docs/failure_catalogue.md](docs/failure_catalogue.md).
 
+## Reconciliation agent (in progress)
+
+Checks whether a filing agrees with itself: finds every statement of a key figure, verifies each quote on its page,
+normalises units, and judges each disagreement as a different definition (fine) or a real conflict; an arithmetic
+check flags any "secured" total that equals secured + unsecured parts.
+
+| Filing | Known issue (found by hand) | Result so far |
+|---|---|---|
+| Atomberg | none | 0 conflicts raised across 72 revenue comparisons (correct: no false alarms) |
+| Madhur Iron & Steel | ₹9,123.93 lakh unsecured loans labelled "secured" | First run: **missed it**. The page with the unsecured sub-total was cut from the model's context, so it only saw consistent totals (and correctly raised 0 false alarms on 54 revenue/equity comparisons). Fix: targeted sub-total queries + the arithmetic check; re-run pending (free-tier quota) |
+| Anchor Offshore | 50 vs 53 tax cases | Pending (free-tier quota) |
+
 ## How it works
 
 ```

@@ -1,0 +1,1919 @@
+{
+  "doc": "atomberg",
+  "company": "Atomberg Technologies Limited",
+  "targets": [
+    {
+      "target": "borrowings_breakdown",
+      "statements": 15,
+      "dropped_unverified": 0,
+      "differences": 0,
+      "conflicts": [],
+      "definition_differences": []
+    },
+    {
+      "target": "tax_proceedings",
+      "statements": 2,
+      "dropped_unverified": 1,
+      "differences": 0,
+      "conflicts": [],
+      "definition_differences": []
+    },
+    {
+      "target": "litigation_against_company",
+      "statements": 1,
+      "dropped_unverified": 0,
+      "differences": 0,
+      "conflicts": [],
+      "definition_differences": []
+    },
+    {
+      "target": "revenue_fy26",
+      "statements": 19,
+      "dropped_unverified": 0,
+      "differences": 72,
+      "conflicts": [],
+      "definition_differences": [
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 400 reports the total revenue from operations as ₹12,937.67 million, while Statement B on page 358 lists 'Finished Goods' revenue as ₹11,798.31 million, which is merely a component making up the total revenue from operations."
+        },
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 400 reports the total revenue from operations as 12,937.67 million, whereas Statement B on page 358 lists the revenue from 'Traded Goods' specifically as 1,037.99 million, which represents a single component rather than the aggregate figure."
+        },
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "verdict": "definition",
+          "explanation": "Page 400 reports the total revenue from operations as 12,937.67 million, whereas page 358 breaks down this total into specific components such as 'Sale of services' of 23.84 million, meaning they measure different scopes of revenue."
+        },
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 400 refers to the total 'revenue from operations' of 12,937.67 million, whereas Statement B on page 358 lists 'scrap sale' of 57.93 million as merely one component of that total."
+        },
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 400 reports the aggregate revenue from operations (₹12,937.67 million), while Statement B on page 358 lists subsidy income (₹19.60 million) as just one of the individual components that make up that total."
+        },
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 400 reports the final 'Revenue from Operations' of ₹12,937.67 million, whereas Statement B on page 358 reports the 'Revenue as per contracted price' of ₹13,752.42 million before deducting discounts and rebates of ₹814.75 million."
+        },
+        {
+          "pages": [
+            400,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "verdict": "definition",
+          "explanation": "Page 400 reports the net revenue from operations as 12,937.67 million, whereas page 358 breaks down the gross revenue as 13,752.42 million minus discounts and rebates of 814.75 million, which measures a different sub-component or gross versus net basis of the revenue figure."
+        },
+        {
+          "pages": [
+            400,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Page 400 reports the total consolidated revenue from operations (₹12,937.67 million), whereas page 163 reports a segment-specific pre-inter-segment elimination figure for the Consumer Appliance Business (₹12,820.10 million), reflecting different measurement scopes."
+        },
+        {
+          "pages": [
+            400,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 400 refers to total company-wide revenue from operations (₹12,937.67 million), while Statement B on page 163 specifically measures segment-level revenue for the Home Appliances division (₹11,579.75 million), representing different scopes."
+        },
+        {
+          "pages": [
+            400,
+            30
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from Operations",
+            "page": 400,
+            "quote": "Our revenue from operations increased by 34.84% to ₹12,937.67 million for the Financial Year 2026 from ₹9,595.12 million for the Financial Year 2025",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Page 400 reports total revenue from operations for the entire company (₹12,937.67 million), whereas page 30 reports segment-specific revenue for just the Home Appliances segment (₹11,525.32 million), which represents a different scope and line item within the financial statements."
+        },
+        {
+          "pages": [
+            358,
+            368
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue from 'Finished Goods' only (11,798.31 million), whereas Statement B on page 368 measures the 'Total' revenue from operations (12,937.67 million), which includes traded goods, services, scrap, and other components."
+        },
+        {
+          "pages": [
+            358,
+            83
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Finished Goods' revenue (11,798.31 million), whereas Statement B on page 83 refers to total 'Revenue from operations' (12,937.67 million), which includes finished goods, traded goods, sale of services, and other operating income."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue from 'Finished Goods' only (11,798.31 million), whereas Statement B on page 163 measures total 'Revenue from Operations' (12,937.67 million) which encompasses finished goods, traded goods, services, and other operating income."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue specifically from 'Finished Goods' (11,798.31 million), whereas Statement B on page 163 measures pre-inter-segment elimination revenue for the 'Consumer Appliance Business' (12,820.10 million), representing different line items and operational scopes that sum up to the total revenue from operations of 12,937.67 million."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to revenue from Finished Goods (11,798.31 million), whereas Statement B on page 163 refers to Total Revenue for the Home Appliances segment under Ind AS (11,579.75 million), which measure different scopes and line items."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue specifically from finished goods, whereas Statement B on page 30 measures external customer revenue for the Home Appliances segment under Ind AS 108, representing different line items and scopes within the prospectus."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 11798.31,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Finished Goods",
+            "page": 358,
+            "quote": "- Finished Goods 11,798.31 9,180.87 7,683.82",
+            "common": 1179.83
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures a specific component of revenue (Finished Goods), whereas Statement B on page 30 measures the total Revenue from Operations, which is the sum of finished goods, traded goods, services, and other items."
+        },
+        {
+          "pages": [
+            358,
+            368
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures a specific component of revenue (Traded Goods at 1,037.99 million), whereas Statement B on page 368 measures the overall total revenue from operations (12,937.67 million)."
+        },
+        {
+          "pages": [
+            358,
+            83
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to revenue from 'Traded Goods', while Statement B on page 83 refers to the total 'Revenue from operations', of which traded goods is only a component."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 reports revenue specifically from 'Traded Goods' (1,037.99 million), whereas Statement B on page 163 reports total 'Revenue' (12,937.67 million), which encompasses finished goods, traded goods, services, and other operating revenue streams."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 lists 'Traded Goods' at 1,037.99 million as a specific product category component of revenue, whereas page 163 presents 'Consumer Appliance Business pre inter-segment elimination' at 12,820.10 million as a segment-level total before eliminations, representing different scopes and line items."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue specifically from 'Traded Goods' (1,037.99 million), whereas Statement B on page 163 measures total segment revenue for 'Home Appliances' (11,579.75 million). These represent different categories and line items within the company's financial disclosures."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue specifically from 'Traded Goods' (1,037.99 million), whereas Statement B on page 30 measures revenue from external customers for the 'Home Appliances' operating segment as per Ind AS 108 (11,525.32 million), representing different line items and scopes within the prospectus."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 1037.99,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "- Traded Goods",
+            "page": 358,
+            "quote": "- Traded Goods 1,037.99 361.99 236.97",
+            "common": 103.8
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 gives 'Traded Goods' as 1,037.99 million, which is only a sub-component of total revenue. Statement B on page 30 provides the total 'Revenue from operations' as 12,937.67 million."
+        },
+        {
+          "pages": [
+            358,
+            368
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Sale of services' (23.84 million), whereas Statement B on page 368 refers to the 'Total' revenue from operations (12,937.67 million), which is a broader aggregate that includes finished goods, traded goods, services, scrap sale, and subsidy income."
+        },
+        {
+          "pages": [
+            358,
+            83
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Sale of services' (23.84 million), whereas Statement B on page 83 refers to the overarching 'Revenue from operations' (12937.67 million), of which service sales form just one component alongside finished goods, traded goods, and other items."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Sale of services' (23.84 million), whereas Statement B on page 163 refers to total 'Revenue' (12,937.67 million), which encompasses finished goods, traded goods, services, and other components as detailed on page 358."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows specific revenue streams like 'Sale of services' (23.84 million) which are component line items that sum up to total revenue, whereas page 163 lists segment-specific figures such as the 'Consumer Appliance Business pre inter-segment elimination' (12,820.10 million) representing different scopes and segments."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 measures the total revenue from operations (12,937.67 million) as a comprehensive figure, while page 163 specifically measures segment-specific revenue for 'Home Appliances' (11,579.75 million), representing different scopes and line items."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures a specific line item component ('Sale of services' at 23.84 million), whereas Statement B on page 30 measures the revenue from external customers for a specific segment ('Home Appliances' at 11,525.32 million). These represent different scopes and line items that contribute differently to the overall revenue from operations."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 23.84,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Sale of services",
+            "page": 358,
+            "quote": "Sale of services 23.84 7.02 2.17",
+            "common": 2.38
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows 'Sale of services' as a specific component (23.84 million) of revenue, whereas page 30 presents the overall 'Revenue from operations' (12,937.67 million) which aggregates all revenue streams."
+        },
+        {
+          "pages": [
+            358,
+            368
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Scrap Sale' (57.93 million), whereas Statement B on page 368 refers to the 'Total' revenue from operations (12,937.67 million), which encompasses multiple distinct line items including finished goods, traded goods, services, scrap sale, and subsidy income."
+        },
+        {
+          "pages": [
+            358,
+            83
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers to 'Scrap Sale' (57.93 million) which is a specific sub-component, whereas Statement B on page 83 refers to total 'Revenue from operations' (12,937.67 million), which encompasses multiple revenue streams including scrap sale."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 breaks down total revenue from operations (12,937.67 million) into sub-components like scrap sale (57.93 million), showing they measure different scopes."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to scrap sales (57.93 million), while Statement B on page 163 refers to the consumer appliance business pre-inter-segment elimination (12,820.10 million), representing different line items and segments rather than inconsistent reporting of the same figure."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows 'Scrap Sale' of 57.93 million as a specific sub-component of total revenue from operations, whereas page 163 shows 'Total Revenue – Home Appliances as per Ind AS' of 11579.75 million representing a distinct segment's revenue scope."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to scrap sales (57.93 million), whereas Statement B on page 30 refers to revenue from external customers for the Home Appliances segment under Ind AS 108 (11,525.32 million). These represent different line items and scopes rather than an inconsistent statement of the same figure."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 57.93,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Scrap Sale",
+            "page": 358,
+            "quote": "Scrap Sale 57.93 34.23 46.80",
+            "common": 5.79
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Scrap Sale' as a sub-component of revenue, whereas Statement B on page 30 refers to the aggregate 'Revenue from operations'."
+        },
+        {
+          "pages": [
+            358,
+            368
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "The statements refer to different line items and components that make up the overall revenue from operations (such as Subsidy Income of 19.60 million on page 358 versus the grand total of 12,937.67 million on page 368), representing parts of the whole rather than an inconsistent figure for the same metric."
+        },
+        {
+          "pages": [
+            358,
+            83
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers to 'Subsidy Income' of 19.60 million, whereas Statement B on page 83 refers to the broader category of 'Revenue from operations' totaling 12,937.67 million. These measure different line items, where Subsidy Income is merely a component included within the total revenue from operations."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers to a specific component line item (Subsidy Income) of 19.6 million, whereas Statement B on page 163 refers to the total Revenue from Operations of 12,937.67 million."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers to a specific component line item ('Subsidy Income' of 19.60 million), whereas Statement B on page 163 refers to 'Consumer Appliance Business pre inter-segment elimination' (12,820.10 million), which measures a different segment scope and basis rather than the total revenue from operations of 12,937.67 million."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 lists Subsidy Income as a specific component (19.60 million) included within overall Revenue from Operations, whereas Page 163 reports Total Revenue specifically for the Home Appliances segment (11,579.75 million), representing different scopes and line items."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 describes 'Subsidy Income', while Statement B on page 30 measures 'Revenue from external customers – Home Appliances as per Ind AS 108'. These figures represent different line items and operational scopes that contribute differently to the overall revenue structure."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 19.6,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Subsidy Income",
+            "page": 358,
+            "quote": "Subsidy Income 19.60 11.01 -",
+            "common": 1.96
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 refers specifically to 'Subsidy Income' (19.60 million), whereas Statement B on page 30 refers to the total 'Revenue from operations' (12,937.67 million), of which subsidy income is merely a component or separate line item included in the total."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 358,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 represents the total consolidated revenue from operations (12,937.67 million), whereas Statement B on page 163 represents the pre-inter-segment elimination revenue for a specific business segment (Consumer Appliance Business) of 12,820.10 million. They measure different scopes and line items within the financial statements."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 358,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows total revenue from operations of 12,937.67 million, whereas page 163 shows 'Total Revenue – Home Appliances as per Ind AS' of 11,579.75 million, representing a specific segment rather than total company operations."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 358,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 represents the total consolidated revenue from operations (12,937.67 million), whereas Statement B on page 30 represents a specific segment's revenue from external customers under Ind AS 108 (1,1525.32 million), which measure different financial scopes."
+        },
+        {
+          "pages": [
+            368,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 368 gives the total Revenue from Operations of 12,937.67 million, whereas Statement B on page 358 gives the 'Revenue as per contracted price' of 13,752.42 million before accounting for discounts and rebates of -814.75 million, which together reconcile to the same total revenue figure."
+        },
+        {
+          "pages": [
+            368,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows 'Revenue as per contracted price' of 13,752.42 million and 'Discount & Rebates' of -814.75 million, which together define the net 'Revenue from operations' of 12,937.67 million as reported on page 368."
+        },
+        {
+          "pages": [
+            368,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 368 represents the total consolidated revenue from operations (12,937.67 million), whereas Statement B on page 163 represents the pre inter-segment elimination revenue specifically for the Consumer Appliance Business (12,820.10 million), which measure different scopes of revenue."
+        },
+        {
+          "pages": [
+            368,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 368 refers to total company revenue from operations (12,937.67 million), whereas Statement B on page 163 specifically measures revenue for a single segment (Home Appliances as per Ind AS, 11,579.75 million)."
+        },
+        {
+          "pages": [
+            368,
+            30
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total",
+            "page": 368,
+            "quote": "Total 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A (p. 368) refers to total revenue from operations (12,937.67 million), whereas Statement B (p. 30) refers specifically to revenue from external customers for the Home Appliances segment under Ind AS 108 (11,525.32 million), which represents a different scope and line item within the financial statements."
+        },
+        {
+          "pages": [
+            83,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "verdict": "definition",
+          "explanation": "Page 83 states 'Revenue from operations' as 12,937.67 million, while page 358 shows 'Revenue as per contracted price' as 13,752.42 million before deducting discounts and rebates of 814.75 million to arrive at the revenue from operations."
+        },
+        {
+          "pages": [
+            83,
+            358
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 83 reports the net revenue from operations (12,937.67 million), while Statement B on page 358 reports the gross revenue breakdown including 'Discount & Rebates' (-814.75 million) that lead to this net total."
+        },
+        {
+          "pages": [
+            83,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Page 83 presents total consolidated revenue from operations (12,937.67 million), whereas page 163 presents a segment-specific figure representing the Consumer Appliance Business pre inter-segment elimination (12,820.10 million), reflecting a difference in scope and business lines."
+        },
+        {
+          "pages": [
+            83,
+            163
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 83 refers to the total company-wide revenue from operations (12,937.67 million), whereas Statement B on page 163 refers specifically to the segment-level revenue for Home Appliances as per Ind AS (11,579.75 million)."
+        },
+        {
+          "pages": [
+            83,
+            30
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations",
+            "page": 83,
+            "quote": "Revenue from operations 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 83 refers to total consolidated revenue from operations, whereas Statement B on page 30 represents segment-specific revenue from external customers for Home Appliances under Ind AS 108, which are two different financial metrics with different scopes."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 shows 'Revenue as per contracted price' of 13,752.42 million before accounting for 'Discount & Rebates' of -814.75 million, whereas Statement B on page 163 shows the final 'Revenue' of 12,937.67 million after these deductions."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue as per contracted price before deductions for discounts and rebates, whereas Statement B on page 163 measures segment-specific pre inter-segment elimination revenue for the Consumer Appliance Business, which represent different financial scopes and line items."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 represents the gross revenue as per contracted price before deducting discounts and rebates, whereas Statement B on page 163 represents a specific segment revenue (Home Appliances as per Ind AS) which measures a different scope and line item within the company."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures revenue as per contracted price before deducting discounts and rebates, whereas Statement B on page 30 measures revenue from external customers specifically for the Home Appliances segment under Ind AS 108, representing different scopes and line item definitions."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": 13752.42,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue as per contracted price",
+            "page": 358,
+            "quote": "Revenue as per contracted price 13,752.42 10,360.14 8,486.16",
+            "common": 1375.24
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows that 'Revenue as per contracted price' of 13,752.42 million is reduced by 'Discount & Rebates' of 814.75 million to arrive at the net 'Revenue from operations' of 12,937.67 million reported on page 30, meaning they measure different line item scopes."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures discounts and rebates (-814.75 million), while Statement B on page 163 measures total revenue (12,937.67 million), representing different financial line items rather than an inconsistent figure."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "b": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures discounts and rebates (-814.75 million) deducted from revenue, whereas Statement B on page 163 measures pre-intersegment elimination revenue specifically for the Consumer Appliance Business (12,820.10 million), representing different scopes and line items."
+        },
+        {
+          "pages": [
+            358,
+            163
+          ],
+          "a": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "b": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures discounts and rebates (-814.75 million), while Statement B on page 163 measures total revenue specifically for the Home Appliances segment (11,579.75 million), which represent different financial metrics and scopes rather than an inconsistent reporting of the same figure."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 358 measures discounts and rebates, whereas Statement B on page 30 measures revenue from external customers specifically for the Home Appliances segment under Ind AS 108, representing different line items and scopes."
+        },
+        {
+          "pages": [
+            358,
+            30
+          ],
+          "a": {
+            "value": -814.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Discount & Rebates",
+            "page": 358,
+            "quote": "Discount & Rebates (814.75) (776.02) (516.40)",
+            "common": -81.48
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Page 358 shows revenue as per contracted price before deductions along with discounts and rebates (-814.75 million), which reconcile to the net revenue from operations figure of 12,937.67 million reported on page 30 and elsewhere."
+        },
+        {
+          "pages": [
+            163,
+            30
+          ],
+          "a": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue",
+            "page": 163,
+            "quote": "Revenue (1) (₹ in million) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 163 represents total revenue from operations (12,937.67 million), whereas Statement B on page 30 represents segment-specific revenue from external customers for Home Appliances under Ind AS 108 (11,525.32 million), representing different scopes and reporting bases."
+        },
+        {
+          "pages": [
+            163,
+            30
+          ],
+          "a": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "b": {
+            "value": 11525.32,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A)",
+            "page": 30,
+            "quote": "Revenue from external customers – Home Appliances as per Ind AS 108 (Operating Segments) (₹ in million) (A) 11,525.32 9,365.59 7,915.82",
+            "common": 1152.53
+          },
+          "verdict": "definition",
+          "explanation": "Statement A on page 163 represents pre-intersegment elimination revenue for the consumer appliance business, whereas Statement B on page 30 represents revenue from external customers as per Ind AS 108 for home appliances, which measure different scopes of segment reporting."
+        },
+        {
+          "pages": [
+            163,
+            30
+          ],
+          "a": {
+            "value": 12820.1,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C)",
+            "page": 163,
+            "quote": "Consumer Appliance Business pre inter -segment elimination (3) (A) = (B) + (C) (₹ in million) 12,820.10 9,558.82 7,969.76",
+            "common": 1282.01
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Page 163 presents a segment-specific pre-inter-segment elimination figure (12,820.10 million) for the Consumer Appliance Business, whereas page 30 states the total company-wide revenue from operations (12,937.67 million), representing different scopes of measurement."
+        },
+        {
+          "pages": [
+            163,
+            30
+          ],
+          "a": {
+            "value": 11579.75,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Total Revenue – Home Appliances as per Ind AS",
+            "page": 163,
+            "quote": "Total Revenue – Home Appliances as per Ind AS (₹ in million) 11,579.75 9,365.59 7,915.82",
+            "common": 1157.98
+          },
+          "b": {
+            "value": 12937.67,
+            "unit": "million",
+            "as_of": "Fiscal 2026",
+            "label": "Revenue from operations (₹ in million) (B)",
+            "page": 30,
+            "quote": "Revenue from operations (₹ in million) (B) 12,937.67 9,595.12 7,969.76",
+            "common": 1293.77
+          },
+          "verdict": "definition",
+          "explanation": "Page 163 states total revenue for the Home Appliances segment (11,579.75 million), whereas page 30 states the total company-wide revenue from operations (12,937.67 million), which represent two different measurement scopes."
+        }
+      ]
+    },
+    {
+      "target": "equity_fy26",
+      "statements": 0,
+      "dropped_unverified": 0,
+      "differences": 0,
+      "conflicts": [],
+      "definition_differences": []
+    }
+  ]
+}
