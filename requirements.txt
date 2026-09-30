@@ -1,3 +1,4 @@
+boto3==1.43.103
 fastapi==0.141.1
 fastembed==0.8.1
 httpx==0.28.1
@@ -8,9 +9,12 @@ langgraph==1.2.12
 litellm==1.102.1
 llama-index-core==0.14.25
 mcp==2.2.0
+mongomock==4.3.0
+moto[s3]==5.2.3
 numpy==2.5.3
 pandas==3.0.6
 pydantic==2.13.5
+pymongo==4.18.2
 pypdf==6.19.0
 pytest==9.1.1
 python-dotenv==1.2.3
