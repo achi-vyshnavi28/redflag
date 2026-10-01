@@ -3,12 +3,27 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: {POSTGRES_PASSWORD: rf, POSTGRES_DB: redflag}
+        ports: ["5432:5432"]
+        options: --health-cmd pg_isready --health-interval 5s --health-retries 10
+      mysql:
+        image: mysql:8.4
+        env: {MYSQL_ROOT_PASSWORD: rf, MYSQL_DATABASE: redflag}
+        ports: ["3306:3306"]
+        options: --health-cmd "mysqladmin ping -prf" --health-interval 5s --health-retries 20
+    env:
+      REDFLAG_TEST_PG_URL: postgresql+psycopg://postgres:rf@localhost:5432/redflag
+      REDFLAG_TEST_MYSQL_URL: mysql+pymysql://root:rf@127.0.0.1:3306/redflag
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: pip install -r requirements.txt
-      - run: pytest -q
+      - name: Tests, including the answer log on PostgreSQL and MySQL, MongoDB (mongomock) and S3 (moto)
+        run: pytest -q
   quality-gate:
     runs-on: ubuntu-latest
     timeout-minutes: 30

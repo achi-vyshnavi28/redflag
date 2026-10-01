@@ -94,7 +94,29 @@ def ask_endpoint(body: AskIn) -> dict:
     t = time.time()
     r = ask(body.question, body.doc, "full", body.model)
     case = review_queue().route(body.doc, body.question, r)  # unverified answers go to a human, not to the user
+    answer_log().record(body.doc, body.question, r, model=body.model, review_case=case)
     return {**r, "wall_s": round(time.time() - t, 2), "review_case": case}
+
+
+@lru_cache
+def answer_log():
+    from redflag.answer_log import AnswerLog
+
+    REPORTS.mkdir(exist_ok=True)
+    return AnswerLog()  # REDFLAG_DB_URL: PostgreSQL or MySQL in production, SQLite file by default
+
+
+@app.get("/answers/report")
+def answers_report() -> dict:
+    """Per-document verification rate, latency and cost from the relational answer log."""
+    log = answer_log()
+    return {"by_document": log.report(), "latency": log.latency_percentiles()}
+
+
+@app.get("/answers/{doc}")
+def recent_answers(doc: str) -> list[dict]:
+    _check(doc, None)
+    return answer_log().recent(doc)
 
 
 @app.post("/memo")
