@@ -93,7 +93,11 @@ memo:  financials ┐
 - **LangGraph** for both agents, **LangChain** BM25 retriever, **LlamaIndex** chunking with page, unit and section metadata,
   **Qdrant** vector store, **fastembed** local embeddings (MiniLM, BGE-small), **LiteLLM** so any model works
   (Gemini, OpenAI gpt-oss and Qwen benchmarked; Claude wired in, used when its key is set).
-- **FastAPI** (`/ask`, `/memo`, `/feedback`), **Streamlit** app, **Docker** image, **GitHub Actions** CI that builds the
+- **Data stores:** a relational **answer log on PostgreSQL or MySQL** (SQLAlchemy; every answer with verification,
+  page, model, latency and cost, and per-document reporting in SQL), a **MongoDB** human-review queue for unverified
+  answers (corrections become new test questions), and memo storage on **AWS S3** (encrypted, presigned links).
+  CI runs PostgreSQL and MySQL service containers.
+- **FastAPI** (`/ask`, `/memo`, `/feedback`, `/reviews`, `/answers/report`), **Streamlit** app, **Docker** image, **GitHub Actions** CI that builds the
   image and checks the running API.
 - Reliability: pydantic-validated JSON with a repair retry, rate-limit back-off, a disk cache (re-running an
   evaluation costs nothing), per-answer latency, tokens and cost.
