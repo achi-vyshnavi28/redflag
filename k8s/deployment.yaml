@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redflag-api
+  namespace: redflag
+  labels: {app: redflag-api}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: redflag-api}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: {maxUnavailable: 0, maxSurge: 1}
+  template:
+    metadata:
+      labels: {app: redflag-api}
+    spec:
+      securityContext: {runAsNonRoot: true}
+      containers:
+        - name: api
+          image: redflag:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - {name: http, containerPort: 8900}
+          envFrom:
+            - configMapRef: {name: redflag-config}
+          env:
+            - name: GEMINI_API_KEY      # optional: without it the API serves health, docs and stored answers
+              valueFrom:
+                secretKeyRef: {name: redflag-secrets, key: GEMINI_API_KEY, optional: true}
+          readinessProbe:
+            httpGet: {path: /health, port: http}
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: {path: /health, port: http}
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            failureThreshold: 4
+          resources:
+            requests: {cpu: 100m, memory: 256Mi}
+            limits: {cpu: "1", memory: 1Gi}

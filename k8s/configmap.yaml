@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redflag-config
+  namespace: redflag
+data:
+  # 0 = download the public SEBI filings and build the index on first start; 1 = skip (health checks, CI)
+  REDFLAG_SKIP_SETUP: "0"
+  PYTHONUNBUFFERED: "1"

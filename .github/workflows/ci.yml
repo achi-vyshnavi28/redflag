@@ -47,3 +47,36 @@ jobs:
           docker run -d -p 8900:8900 -e REDFLAG_SKIP_SETUP=1 --name rf redflag
           for i in $(seq 1 30); do curl -sf localhost:8900/health && exit 0; sleep 2; done
           docker logs rf; exit 1
+  kubernetes:
+    name: Deploy to a Kubernetes cluster (kind) and verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: helm/kind-action@v1
+        with: {cluster_name: redflag}
+      - name: Build the image and load it into the cluster
+        run: |
+          docker build -t redflag:ci .
+          kind load docker-image redflag:ci --name redflag
+      - name: Apply the manifests (Namespace, ConfigMap, Deployment, Service, HPA)
+        run: |
+          kubectl apply -k k8s/ci
+          kubectl -n redflag rollout status deploy/redflag-api --timeout=180s
+          kubectl -n redflag get deploy,rs,pods,svc,hpa -o wide
+      - name: Both replicas ready, and the Service answers /health
+        run: |
+          test "$(kubectl -n redflag get deploy redflag-api -o jsonpath='{.status.readyReplicas}')" = "2"
+          kubectl -n redflag port-forward svc/redflag-api 8080:80 &
+          for i in $(seq 1 20); do curl -sf localhost:8080/health && break; sleep 2; done
+          curl -sf localhost:8080/health
+      - name: Self healing, a deleted pod is replaced and the Deployment returns to 2 ready replicas
+        run: |
+          POD="$(kubectl -n redflag get pods -l app=redflag-api -o jsonpath='{.items[0].metadata.name}')"
+          kubectl -n redflag delete pod "$POD"
+          sleep 5
+          kubectl -n redflag wait --for=condition=Ready pod -l app=redflag-api --timeout=180s
+          test "$(kubectl -n redflag get deploy redflag-api -o jsonpath='{.status.readyReplicas}')" = "2"
+      - name: Logs on failure
+        if: failure()
+        run: kubectl -n redflag describe pods; kubectl -n redflag logs -l app=redflag-api --tail=100

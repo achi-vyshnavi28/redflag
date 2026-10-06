@@ -127,3 +127,20 @@ Set `GEMINI_API_KEY` in `.env` (optionally `ANTHROPIC_API_KEY` / `OPENAI_API_KEY
 - Not investment advice; the memos are a first pass for an analyst.
 
 Proof-of-work documents for the Binocs Forward Deployed Engineer role are in [docs/pow/](docs/pow/).
+
+## Kubernetes
+
+`k8s/` deploys the API as a Kubernetes Deployment (2 replicas, rolling updates, readiness and liveness probes on
+`/health`, CPU and memory limits, non-root), a ClusterIP Service, a ConfigMap, an optional Secret for the LLM key
+and a HorizontalPodAutoscaler (2 to 5 pods at 70% CPU).
+
+```bash
+docker build -t redflag:latest .
+kubectl apply -k k8s/                        # production settings: downloads the filings on first start
+kubectl create secret generic redflag-secrets -n redflag --from-literal=GEMINI_API_KEY=...   # optional
+kubectl -n redflag port-forward svc/redflag-api 8080:80
+```
+
+CI deploys the same manifests to a real cluster on every push (`kind`, Kubernetes in Docker) using the `k8s/ci`
+overlay, then checks that both replicas are ready, that the Service answers `/health`, and that a deleted pod is
+replaced automatically.
