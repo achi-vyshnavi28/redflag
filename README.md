@@ -141,6 +141,6 @@ kubectl create secret generic redflag-secrets -n redflag --from-literal=GEMINI_A
 kubectl -n redflag port-forward svc/redflag-api 8080:80
 ```
 
-CI deploys the same manifests to a real cluster on every push (`kind`, Kubernetes in Docker) using the `k8s/ci`
-overlay, then checks that both replicas are ready, that the Service answers `/health`, and that a deleted pod is
+CI deploys the same manifests to a real cluster on every push (`kind`, Kubernetes in Docker) using the same manifests with the CI image patched in
+steps (the CI image and setup skipped), then checks that both replicas are ready, that the Service answers `/health`, and that a deleted pod is
 replaced automatically.

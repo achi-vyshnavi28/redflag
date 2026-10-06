@@ -61,7 +61,10 @@ jobs:
           kind load docker-image redflag:ci --name redflag
       - name: Apply the manifests (Namespace, ConfigMap, Deployment, Service, HPA)
         run: |
-          kubectl apply -k k8s/ci
+          set -o pipefail
+          kubectl apply -k k8s/ 2>&1 | tee apply.log || { echo "::error::apply $(paste -sd ' ' apply.log | cut -c1-900)"; exit 1; }
+          kubectl -n redflag patch configmap redflag-config --type merge -p '{"data":{"REDFLAG_SKIP_SETUP":"1"}}'
+          kubectl -n redflag set image deploy/redflag-api api=redflag:ci
           kubectl -n redflag rollout status deploy/redflag-api --timeout=300s
           kubectl -n redflag get deploy,rs,pods,svc,hpa -o wide
       - name: Both replicas ready, and the Service answers /health
