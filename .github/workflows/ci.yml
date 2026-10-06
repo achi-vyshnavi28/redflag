@@ -84,10 +84,7 @@ jobs:
           kubectl -n redflag describe pods | tail -60 || true
           kubectl -n redflag logs -l app=redflag-api --tail=40 || true
           for p in $(kubectl -n redflag get pods -o name); do
-            echo "::error::$p $(kubectl -n redflag get "$p" -o jsonpath='{range .status.containerStatuses[*]}{.state}{" last="}{.lastState}{end}' | tr -d '
-' | cut -c1-600)"
+            echo "::error::$p $(kubectl -n redflag get "$p" -o jsonpath='{.status.containerStatuses[0].state} last={.status.containerStatuses[0].lastState}' | cut -c1-600)"
           done
-          echo "::error::events $(kubectl -n redflag get events --sort-by=.lastTimestamp -o custom-columns=R:.reason,M:.message --no-headers | tail -8 | tr '
-' ' ' | cut -c1-900)"
-          echo "::error::logs $(kubectl -n redflag logs -l app=redflag-api --tail=15 2>&1 | tr '
-' ' ' | cut -c1-900)"
+          echo "::error::events $(kubectl -n redflag get events --sort-by=.lastTimestamp -o custom-columns=R:.reason,M:.message --no-headers | tail -8 | paste -sd ' ' | cut -c1-900)"
+          echo "::error::logs $(kubectl -n redflag logs -l app=redflag-api --tail=15 2>&1 | paste -sd ' ' | cut -c1-900)"
