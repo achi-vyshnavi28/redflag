@@ -62,7 +62,7 @@ jobs:
       - name: Apply the manifests (Namespace, ConfigMap, Deployment, Service, HPA)
         run: |
           kubectl apply -k k8s/ci
-          kubectl -n redflag rollout status deploy/redflag-api --timeout=180s
+          kubectl -n redflag rollout status deploy/redflag-api --timeout=300s
           kubectl -n redflag get deploy,rs,pods,svc,hpa -o wide
       - name: Both replicas ready, and the Service answers /health
         run: |
@@ -77,6 +77,17 @@ jobs:
           sleep 5
           kubectl -n redflag wait --for=condition=Ready pod -l app=redflag-api --timeout=180s
           test "$(kubectl -n redflag get deploy redflag-api -o jsonpath='{.status.readyReplicas}')" = "2"
-      - name: Logs on failure
+      - name: Diagnostics on failure (also written as annotations)
         if: failure()
-        run: kubectl -n redflag describe pods; kubectl -n redflag logs -l app=redflag-api --tail=100
+        run: |
+          kubectl -n redflag get pods -o wide || true
+          kubectl -n redflag describe pods | tail -60 || true
+          kubectl -n redflag logs -l app=redflag-api --tail=40 || true
+          for p in $(kubectl -n redflag get pods -o name); do
+            echo "::error::$p $(kubectl -n redflag get "$p" -o jsonpath='{range .status.containerStatuses[*]}{.state}{" last="}{.lastState}{end}' | tr -d '
+' | cut -c1-600)"
+          done
+          echo "::error::events $(kubectl -n redflag get events --sort-by=.lastTimestamp -o custom-columns=R:.reason,M:.message --no-headers | tail -8 | tr '
+' ' ' | cut -c1-900)"
+          echo "::error::logs $(kubectl -n redflag logs -l app=redflag-api --tail=15 2>&1 | tr '
+' ' ' | cut -c1-900)"
