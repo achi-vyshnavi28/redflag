@@ -9,8 +9,8 @@ COPY app/ app/
 COPY evals/ evals/
 COPY data/processed/ data/processed/
 # Prospectus PDFs and the vector index are built at start-up if missing (public SEBI filings).
-RUN useradd -m redflag && chown -R redflag /app
-USER redflag
+RUN useradd -m -u 1000 redflag && chown -R redflag /app
+USER 1000
 EXPOSE 8900
 HEALTHCHECK CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8900/health')"
 CMD ["sh", "-c", "python -m redflag.setup && uvicorn redflag.api:app --host 0.0.0.0 --port 8900"]

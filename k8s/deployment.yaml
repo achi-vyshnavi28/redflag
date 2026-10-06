@@ -15,7 +15,7 @@ spec:
     metadata:
       labels: {app: redflag-api}
     spec:
-      securityContext: {runAsNonRoot: true}
+      securityContext: {runAsNonRoot: true, runAsUser: 1000, runAsGroup: 1000}
       containers:
         - name: api
           image: redflag:latest
